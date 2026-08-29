@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Wifi, BatteryMedium, Sparkles, Timer as TimerIcon } from 'lucide-react';
+import React from 'react';
+import { Sparkles, Timer as TimerIcon } from 'lucide-react';
 
 interface IosStatusBarProps {
   timerSeconds?: number | null;
@@ -14,20 +14,6 @@ export const IosStatusBar: React.FC<IosStatusBarProps> = ({
   currentDay,
   onDynamicIslandClick
 }) => {
-  const [timeStr, setTimeStr] = useState<string>('09:41');
-
-  useEffect(() => {
-    const updateTime = () => {
-      const d = new Date();
-      const h = d.getHours().toString().padStart(2, '0');
-      const m = d.getMinutes().toString().padStart(2, '0');
-      setTimeStr(`${h}:${m}`);
-    };
-    updateTime();
-    const interval = setInterval(updateTime, 30000);
-    return () => clearInterval(interval);
-  }, []);
-
   const hasActiveTimer = typeof timerSeconds === 'number' && timerSeconds > 0;
 
   const formatTimerMinSec = (s: number) => {
@@ -37,12 +23,7 @@ export const IosStatusBar: React.FC<IosStatusBarProps> = ({
   };
 
   return (
-    <div className="w-full select-none text-slate-800 pt-2 px-6 pb-1 flex items-center justify-between text-xs font-semibold">
-      {/* iOS Clock */}
-      <span className="font-extrabold tracking-tight text-[13px] text-[#1F2937] w-12">
-        {timeStr}
-      </span>
-
+    <div className="w-full select-none pt-2 pb-1 flex justify-center">
       {/* Dynamic Island pill */}
       <div
         onClick={onDynamicIslandClick}
@@ -65,18 +46,6 @@ export const IosStatusBar: React.FC<IosStatusBarProps> = ({
         )}
 
         <div className="w-2.5 h-2.5 rounded-full bg-indigo-950/80 border border-indigo-700/60 shrink-0" />
-      </div>
-
-      {/* Status Icons: Wi-Fi, 5G, Battery */}
-      <div className="flex items-center justify-end gap-1.5 text-[#1F2937] w-12">
-        <span className="text-[10px] font-extrabold tracking-tighter">5G</span>
-        <Wifi className="w-3.5 h-3.5 stroke-[2.5]" />
-        <div className="relative flex items-center">
-          <div className="w-5 h-2.5 rounded-sm border border-slate-700/80 p-0.5 flex items-center">
-            <div className="bg-emerald-500 h-full w-[85%] rounded-[1px]" />
-          </div>
-          <div className="w-0.5 h-1 bg-slate-700/80 rounded-r-xs" />
-        </div>
       </div>
     </div>
   );
