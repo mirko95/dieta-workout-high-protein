@@ -1,11 +1,42 @@
-import React from 'react';
-import { X, Sparkles, Flame, Dumbbell, ShieldCheck, Share, Smartphone } from 'lucide-react';
+import React, { useRef } from 'react';
+import { X, Sparkles, Flame, Dumbbell, ShieldCheck, Share, Smartphone, Download, Upload } from 'lucide-react';
 
 interface InfoModalProps {
   onClose: () => void;
 }
 
 export const InfoModal: React.FC<InfoModalProps> = ({ onClose }) => {
+  const backupInputRef = useRef<HTMLInputElement>(null);
+
+  const downloadBackup = () => {
+    const data = Object.fromEntries(Object.entries(localStorage).filter(([key]) => key.startsWith('diet_')));
+    const file = new Blob([JSON.stringify({ version: 1, savedAt: new Date().toISOString(), data }, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(file);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `dieta-fit-backup-${new Date().toISOString().slice(0, 10)}.json`;
+    link.click();
+    URL.revokeObjectURL(url);
+  };
+
+  const restoreBackup = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+
+    try {
+      const { data } = JSON.parse(await file.text()) as { data?: Record<string, unknown> };
+      if (!data || !Object.entries(data).every(([key, value]) => key.startsWith('diet_') && typeof value === 'string')) throw new Error('invalid backup');
+      if (!window.confirm('Il backup sostituirà i dati attuali su questo telefono. Continuare?')) return;
+      Object.keys(localStorage).filter((key) => key.startsWith('diet_')).forEach((key) => localStorage.removeItem(key));
+      Object.entries(data).forEach(([key, value]) => localStorage.setItem(key, value as string));
+      window.location.reload();
+    } catch {
+      window.alert('File di backup non valido.');
+    } finally {
+      event.target.value = '';
+    }
+  };
+
   return (
     <div
       role="dialog"
@@ -40,6 +71,24 @@ export const InfoModal: React.FC<InfoModalProps> = ({ onClose }) => {
 
         {/* Scrollable Body */}
         <div className="overflow-y-auto px-5 py-4 space-y-3.5 text-xs text-slate-700 leading-relaxed overscroll-contain">
+          <div className="bg-sky-50 rounded-3xl p-4.5 border border-sky-200/80 space-y-3 shadow-xs">
+            <div>
+              <h3 className="font-extrabold text-sky-950 flex items-center gap-1.5 text-xs uppercase tracking-wider">
+                <ShieldCheck className="w-4 h-4 text-sky-700" /> Backup dati
+              </h3>
+              <p className="mt-1 font-medium">Salva i tuoi pasti, spesa e progressi palestra in un file da conservare sul telefono o nel cloud.</p>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <button onClick={downloadBackup} className="py-2.5 rounded-xl bg-sky-700 text-white font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all">
+                <Download className="w-3.5 h-3.5" /> Esporta
+              </button>
+              <button onClick={() => backupInputRef.current?.click()} className="py-2.5 rounded-xl bg-white border border-sky-200 text-sky-800 font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all">
+                <Upload className="w-3.5 h-3.5" /> Ripristina
+              </button>
+              <input ref={backupInputRef} type="file" accept="application/json,.json" onChange={restoreBackup} className="hidden" />
+            </div>
+          </div>
+
           {/* iOS Tip Card */}
           <div className="bg-emerald-50/90 rounded-3xl p-4.5 border border-emerald-200/80 space-y-2 shadow-xs">
             <div className="flex items-center gap-2 text-emerald-950 font-extrabold text-sm">
