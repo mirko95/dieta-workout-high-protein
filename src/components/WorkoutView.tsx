@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { MONTHLY_PROGRAMS, WORKOUT_GUIDELINES } from '../data/workoutPlan';
 import { MonthProgram, WorkoutExercise, WorkoutSession } from '../types';
 import { Dumbbell, Timer, Flame, Footprints, ShieldAlert, TrendingUp, Info, Check, Play } from 'lucide-react';
@@ -12,6 +12,17 @@ export const WorkoutView: React.FC<WorkoutViewProps> = ({ onStartTimer }) => {
   const [selectedMonthId, setSelectedMonthId] = useState<string>('settembre');
   const [activeTab, setActiveTab] = useState<'scheda' | 'gomito' | 'progressione'>('scheda');
   const [selectedWorkoutId, setSelectedWorkoutId] = useState<string>('');
+  const [exerciseProgress, setExerciseProgress] = useState<Record<string, { weight: string; reps: string; done: boolean }>>(() => {
+    try {
+      return JSON.parse(localStorage.getItem('diet_exercise_progress') || '{}');
+    } catch {
+      return {};
+    }
+  });
+
+  useEffect(() => {
+    localStorage.setItem('diet_exercise_progress', JSON.stringify(exerciseProgress));
+  }, [exerciseProgress]);
 
   const currentProgram: MonthProgram = MONTHLY_PROGRAMS.find((p) => p.id === selectedMonthId) || MONTHLY_PROGRAMS[0];
 
@@ -157,10 +168,13 @@ export const WorkoutView: React.FC<WorkoutViewProps> = ({ onStartTimer }) => {
 
             {/* Exercises List */}
             <div className="space-y-2.5">
-              {activeWorkout.exercises.map((ex: WorkoutExercise, idx: number) => (
-                <div
-                  key={idx}
-                  className="p-3.5 rounded-2xl bg-[#F0F4F3]/60 border border-slate-200/80 hover:border-emerald-400 transition-all flex items-start justify-between gap-3"
+              {activeWorkout.exercises.map((ex: WorkoutExercise, idx: number) => {
+                const key = `${activeWorkout.id}:${idx}`;
+                const progress = exerciseProgress[key] || { weight: '', reps: '', done: false };
+
+                return <div
+                  key={key}
+                  className={`p-3.5 rounded-2xl border transition-all flex items-start justify-between gap-3 ${progress.done ? 'bg-emerald-50 border-emerald-300' : 'bg-[#F0F4F3]/60 border-slate-200/80 hover:border-emerald-400'}`}
                 >
                   <div className="min-w-0 flex-1">
                     <div className="flex items-center gap-2">
@@ -185,22 +199,53 @@ export const WorkoutView: React.FC<WorkoutViewProps> = ({ onStartTimer }) => {
                         {ex.notes}
                       </p>
                     )}
+
+                    <div className="flex gap-2 mt-3 pl-7">
+                      <input
+                        type="number"
+                        inputMode="decimal"
+                        min="0"
+                        placeholder="kg"
+                        value={progress.weight}
+                        onChange={(event) => setExerciseProgress((current) => ({ ...current, [key]: { ...progress, weight: event.target.value } }))}
+                        className="w-16 rounded-lg border border-slate-200 bg-white px-2 py-1.5 text-xs font-bold text-slate-700 outline-none focus:border-emerald-500"
+                        aria-label={`Carico per ${ex.name}`}
+                      />
+                      <input
+                        type="text"
+                        inputMode="numeric"
+                        placeholder="reps fatte"
+                        value={progress.reps}
+                        onChange={(event) => setExerciseProgress((current) => ({ ...current, [key]: { ...progress, reps: event.target.value } }))}
+                        className="w-24 rounded-lg border border-slate-200 bg-white px-2 py-1.5 text-xs font-bold text-slate-700 outline-none focus:border-emerald-500"
+                        aria-label={`Ripetizioni eseguite per ${ex.name}`}
+                      />
+                    </div>
                   </div>
 
-                  {/* 1-Tap Rest Timer Button */}
-                  <button
-                    onClick={() => {
-                      triggerHaptic('medium');
-                      onStartTimer(ex.restSeconds, `Recupero: ${ex.name}`);
-                    }}
-                    className="shrink-0 px-3.5 py-2 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-emerald-500 hover:text-emerald-700 active:scale-90 text-xs font-bold flex items-center gap-1.5 shadow-xs transition-all"
-                    title={`Avvia timer recupero (${ex.restSeconds}s)`}
-                  >
-                    <Play className="w-3 h-3 fill-current text-emerald-600" />
-                    {ex.restSeconds}s
-                  </button>
-                </div>
-              ))}
+                  <div className="flex flex-col items-end gap-2">
+                    <button
+                      onClick={() => {
+                        triggerHaptic('medium');
+                        onStartTimer(ex.restSeconds, `Recupero: ${ex.name}`);
+                      }}
+                      className="shrink-0 px-3.5 py-2 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-emerald-500 hover:text-emerald-700 active:scale-90 text-xs font-bold flex items-center gap-1.5 shadow-xs transition-all"
+                      title={`Avvia timer recupero (${ex.restSeconds}s)`}
+                    >
+                      <Play className="w-3 h-3 fill-current text-emerald-600" />
+                      {ex.restSeconds}s
+                    </button>
+                    <button
+                      onClick={() => setExerciseProgress((current) => ({ ...current, [key]: { ...progress, done: !progress.done } }))}
+                      className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all ${progress.done ? 'bg-emerald-600 border-emerald-600 text-white' : 'bg-white border-slate-200 text-transparent'}`}
+                      title="Segna esercizio completato"
+                      aria-label={`Segna ${ex.name} come completato`}
+                    >
+                      <Check className="w-4 h-4" />
+                    </button>
+                  </div>
+                </div>;
+              })}
             </div>
           </div>
 
