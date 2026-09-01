@@ -130,6 +130,7 @@ export const RecipeModal: React.FC<RecipeModalProps> = ({
               {showHpVariant && (
                 <div className="mt-3 text-xs text-emerald-950 space-y-1.5 bg-white/80 rounded-2xl p-3 border border-emerald-100">
                   <p className="font-bold text-emerald-900">{recipe.hpVariant.description}</p>
+                  <p className="text-[11px] font-semibold text-emerald-800">Quantità indicate per {recipe.defaultServings} {recipe.defaultServings === 1 ? 'porzione' : 'porzioni'}.</p>
                   <ul className="list-disc list-inside space-y-0.5 text-slate-700 pl-1">
                     {recipe.hpVariant.adjustments.map((adj, i) => (
                       <li key={i} className="font-medium">{adj}</li>
