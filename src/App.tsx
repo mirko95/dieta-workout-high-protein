@@ -8,9 +8,9 @@ import { TabType, Navigation } from './components/Navigation';
 import { Header } from './components/Header';
 import { DayView } from './components/DayView';
 import { RecipesView } from './components/RecipesView';
-import { HpVariantsView } from './components/HpVariantsView';
 import { ShoppingView } from './components/ShoppingView';
 import { WorkoutView } from './components/WorkoutView';
+import { BodyMetricsView } from './components/BodyMetricsView';
 import { RecipeModal } from './components/RecipeModal';
 import { InfoModal } from './components/InfoModal';
 import { FloatingTimer } from './components/FloatingTimer';
@@ -22,7 +22,7 @@ export default function App() {
   const [currentDay, setCurrentDay] = useState<number>(() => {
     try {
       const saved = localStorage.getItem('diet_current_day');
-      return saved ? parseInt(saved, 10) : 1;
+      return saved ? parseInt(saved, 10) : new Date().getDate();
     } catch {
       return 1;
     }
@@ -89,12 +89,10 @@ export default function App() {
           />
         )}
 
+        {activeTab === 'dati' && <BodyMetricsView />}
+
         {activeTab === 'ricette' && (
           <RecipesView onOpenRecipe={handleOpenRecipe} />
-        )}
-
-        {activeTab === 'hp' && (
-          <HpVariantsView onOpenRecipe={handleOpenRecipe} />
         )}
 
         {activeTab === 'spesa' && (

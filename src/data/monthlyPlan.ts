@@ -1,6 +1,45 @@
 import { DayPlan } from '../types';
 
-export const MONTHLY_PLAN: DayPlan[] = [
+const PLANK_START_DAY = 7;
+const PLANK_WEEK: Omit<DayPlan, 'dayNumber'>[] = [
+  { totalKcal: 0, totalProtein: 0, meals: [
+    { type: 'COLAZIONE', name: 'Caffè senza zucchero', isHp: false },
+    { type: 'PRANZO', name: '2 uova sode e spinaci poco salati', isHp: false },
+    { type: 'CENA', name: 'Una grande bistecca o 3 fette di arrosto con insalata verde e sedano', isHp: false }
+  ] },
+  { totalKcal: 0, totalProtein: 0, meals: [
+    { type: 'COLAZIONE', name: 'Caffè senza zucchero e un po’ di pane', isHp: false },
+    { type: 'PRANZO', name: '1 bistecca con insalata e frutta', isHp: false },
+    { type: 'CENA', name: 'Prosciutto cotto', isHp: false }
+  ] },
+  { totalKcal: 0, totalProtein: 0, meals: [
+    { type: 'COLAZIONE', name: 'Caffè senza zucchero e un po’ di pane', isHp: false },
+    { type: 'PRANZO', name: '2 uova sode e insalata con pomodori', isHp: false },
+    { type: 'CENA', name: 'Prosciutto cotto e insalata', isHp: false }
+  ] },
+  { totalKcal: 0, totalProtein: 0, meals: [
+    { type: 'COLAZIONE', name: 'Caffè senza zucchero e un po’ di pane', isHp: false },
+    { type: 'PRANZO', name: '1 uovo, carote crude o bollite e formaggio svizzero', isHp: false },
+    { type: 'CENA', name: 'Frutta e 1 yogurt', isHp: false }
+  ] },
+  { totalKcal: 0, totalProtein: 0, meals: [
+    { type: 'COLAZIONE', name: 'Carote, limone e caffè senza zucchero', isHp: false },
+    { type: 'PRANZO', name: 'Pesce al vapore e pomodori', isHp: false },
+    { type: 'CENA', name: '1 bistecca con contorno di insalata', isHp: false }
+  ] },
+  { totalKcal: 0, totalProtein: 0, meals: [
+    { type: 'COLAZIONE', name: 'Caffè senza zucchero e un po’ di pane', isHp: false },
+    { type: 'PRANZO', name: 'Pollo alla griglia', isHp: false },
+    { type: 'CENA', name: '2 uova sode e carote', isHp: false }
+  ] },
+  { totalKcal: 0, totalProtein: 0, meals: [
+    { type: 'COLAZIONE', name: 'Tè con succo di limone', isHp: false },
+    { type: 'PRANZO', name: 'Una bistecca alla griglia e frutta', isHp: false },
+    { type: 'CENA', name: 'Tutto quello che si desidera, ma niente alcol', isHp: false }
+  ] }
+];
+
+const BASE_MONTHLY_PLAN: DayPlan[] = [
   {
     dayNumber: 1,
     totalKcal: 1806,
@@ -374,3 +413,10 @@ export const MONTHLY_PLAN: DayPlan[] = [
     ]
   }
 ];
+
+export const MONTHLY_PLAN = BASE_MONTHLY_PLAN.map((day) => {
+  const plankDay = day.dayNumber < PLANK_START_DAY || day.dayNumber >= PLANK_START_DAY + 14
+    ? undefined
+    : PLANK_WEEK[(day.dayNumber - PLANK_START_DAY) % PLANK_WEEK.length];
+  return plankDay ? { ...plankDay, dayNumber: day.dayNumber } : day;
+});

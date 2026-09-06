@@ -10,17 +10,12 @@ interface RecipesViewProps {
 export const RecipesView: React.FC<RecipesViewProps> = ({ onOpenRecipe }) => {
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [selectedCategory, setSelectedCategory] = useState<string>('TUTTE');
-  const [filterHpOnly, setFilterHpOnly] = useState<boolean>(false);
   const [filterQuickOnly, setFilterQuickOnly] = useState<boolean>(false);
 
   const filteredRecipes = useMemo(() => {
     return RECIPES.filter((r) => {
       // Category filter
       if (selectedCategory !== 'TUTTE' && r.category !== selectedCategory) {
-        return false;
-      }
-      // HP only filter
-      if (filterHpOnly && !r.hpVariant) {
         return false;
       }
       // Quick filter (< 25 min)
@@ -37,7 +32,7 @@ export const RecipesView: React.FC<RecipesViewProps> = ({ onOpenRecipe }) => {
       }
       return true;
     });
-  }, [searchQuery, selectedCategory, filterHpOnly, filterQuickOnly]);
+  }, [searchQuery, selectedCategory, filterQuickOnly]);
 
   const categories = [
     { id: 'TUTTE', label: 'Tutte', count: RECIPES.length },
@@ -88,18 +83,6 @@ export const RecipesView: React.FC<RecipesViewProps> = ({ onOpenRecipe }) => {
       {/* Quick Filters */}
       <div className="flex items-center gap-2 text-xs">
         <button
-          onClick={() => setFilterHpOnly(!filterHpOnly)}
-          className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-full font-bold transition-all ${
-            filterHpOnly
-              ? 'bg-emerald-600 text-white shadow-md shadow-emerald-500/20'
-              : 'bg-white text-emerald-800 border border-emerald-200/80 hover:bg-emerald-50'
-          }`}
-        >
-          <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
-          Solo Varianti HP
-        </button>
-
-        <button
           onClick={() => setFilterQuickOnly(!filterQuickOnly)}
           className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-full font-bold transition-all ${
             filterQuickOnly
@@ -129,7 +112,7 @@ export const RecipesView: React.FC<RecipesViewProps> = ({ onOpenRecipe }) => {
           filteredRecipes.map((recipe) => (
             <div
               key={recipe.id}
-              onClick={() => onOpenRecipe(recipe, !!recipe.hpVariant)}
+              onClick={() => onOpenRecipe(recipe, true)}
               className="group bg-white rounded-2xl p-4 border border-slate-200/80 shadow-xs hover:border-emerald-400 active:scale-[0.99] transition-all cursor-pointer"
             >
               <div className="flex items-start justify-between gap-3">
@@ -138,12 +121,9 @@ export const RecipesView: React.FC<RecipesViewProps> = ({ onOpenRecipe }) => {
                     <span className="text-[10px] font-extrabold uppercase tracking-wider text-emerald-800 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-100">
                       {recipe.category}
                     </span>
-                    {recipe.hpVariant && (
-                      <span className="inline-flex items-center gap-1 text-[10px] font-bold text-teal-800 bg-teal-50 px-2 py-0.5 rounded-full border border-teal-200/60">
-                        <Sparkles className="w-2.5 h-2.5" />
-                        HP Disponibile
-                      </span>
-                    )}
+                    <span className="inline-flex items-center gap-1 text-[10px] font-bold text-teal-800 bg-teal-50 px-2 py-0.5 rounded-full border border-teal-200/60">
+                      <Sparkles className="w-2.5 h-2.5" /> High-Protein
+                    </span>
                   </div>
 
                   <h3 className="text-base font-bold text-[#1F2937] leading-snug group-hover:text-emerald-700 transition-colors">
@@ -156,13 +136,11 @@ export const RecipesView: React.FC<RecipesViewProps> = ({ onOpenRecipe }) => {
 
                   <div className="flex flex-wrap items-center gap-2 mt-3 text-xs">
                     <span className="font-extrabold text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200/50">
-                      🔥 {recipe.hpVariant ? recipe.hpVariant.kcal : recipe.kcal} kcal
+                      🔥 {recipe.hpVariant!.kcal} kcal
                     </span>
-                    {recipe.hpVariant && (
-                      <span className="font-extrabold text-sky-800 bg-sky-50 px-2.5 py-1 rounded-full border border-sky-200/50">
-                        ⚡ ~{recipe.hpVariant.proteinGrams}g proteine
-                      </span>
-                    )}
+                    <span className="font-extrabold text-sky-800 bg-sky-50 px-2.5 py-1 rounded-full border border-sky-200/50">
+                      ⚡ ~{recipe.hpVariant!.proteinGrams}g proteine
+                    </span>
                     <span className="text-slate-500 flex items-center gap-1 font-semibold bg-[#F0F4F3] px-2 py-1 rounded-full">
                       <Clock className="w-3 h-3 text-slate-400" />
                       {recipe.timeMinutes} min

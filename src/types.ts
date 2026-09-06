@@ -19,7 +19,7 @@ export interface Recipe {
   defaultServings: number;
   ingredients: Ingredient[];
   instructions: string[];
-  hpVariant?: {
+  hpVariant: {
     title: string;
     description: string;
     kcal: number;
@@ -79,6 +79,7 @@ export interface WorkoutExercise {
   reps: string;
   restSeconds: number;
   notes?: string;
+  gifUrl?: string;
 }
 
 export interface WorkoutSession {

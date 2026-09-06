@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { MONTHLY_PROGRAMS, WORKOUT_GUIDELINES } from '../data/workoutPlan';
 import { MonthProgram, WorkoutExercise, WorkoutSession } from '../types';
-import { Dumbbell, Timer, Flame, Footprints, ShieldAlert, TrendingUp, Info, Check, Play } from 'lucide-react';
+import { Dumbbell, Timer, Flame, Footprints, ShieldAlert, TrendingUp, Info, Check, Play, GalleryHorizontalEnd } from 'lucide-react';
 import { triggerHaptic } from '../utils/haptics';
 
 interface WorkoutViewProps {
@@ -12,6 +12,7 @@ export const WorkoutView: React.FC<WorkoutViewProps> = ({ onStartTimer }) => {
   const [selectedMonthId, setSelectedMonthId] = useState<string>('settembre');
   const [activeTab, setActiveTab] = useState<'scheda' | 'gomito' | 'progressione'>('scheda');
   const [selectedWorkoutId, setSelectedWorkoutId] = useState<string>('');
+  const [openGifKey, setOpenGifKey] = useState<string | null>(null);
   const [exerciseProgress, setExerciseProgress] = useState<Record<string, { weight: string; reps: string; done: boolean }>>(() => {
     try {
       return JSON.parse(localStorage.getItem('diet_exercise_progress') || '{}');
@@ -198,6 +199,22 @@ export const WorkoutView: React.FC<WorkoutViewProps> = ({ onStartTimer }) => {
                       <p className="text-[11px] text-slate-500 mt-1 pl-7 italic font-medium">
                         {ex.notes}
                       </p>
+                    )}
+
+                    {ex.gifUrl && (
+                      <div className="mt-2 pl-7">
+                        <button
+                          onClick={() => setOpenGifKey((current) => current === key ? null : key)}
+                          className="inline-flex items-center gap-1.5 rounded-full bg-indigo-50 px-3 py-1.5 text-[11px] font-bold text-indigo-800 border border-indigo-200 hover:bg-indigo-100 active:scale-95"
+                        >
+                          <GalleryHorizontalEnd className="w-3.5 h-3.5" /> {openGifKey === key ? 'Nascondi GIF' : 'Vedi esecuzione'}
+                        </button>
+                        {openGifKey === key && (
+                          <div className="mt-2 overflow-hidden rounded-2xl border border-slate-200 bg-white p-2">
+                            <img src={ex.gifUrl} alt={`Esecuzione di ${ex.name}`} loading="lazy" className="mx-auto max-h-56 rounded-xl object-contain" />
+                          </div>
+                        )}
+                      </div>
                     )}
 
                     <div className="flex gap-2 mt-3 pl-7">

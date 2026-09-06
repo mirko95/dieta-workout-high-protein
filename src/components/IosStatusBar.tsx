@@ -1,5 +1,6 @@
 import React from 'react';
 import { Sparkles, Timer as TimerIcon } from 'lucide-react';
+import { formatCalendarDate } from '../utils/dates';
 
 interface IosStatusBarProps {
   timerSeconds?: number | null;
@@ -41,7 +42,7 @@ export const IosStatusBar: React.FC<IosStatusBarProps> = ({
         ) : (
           <div className="flex items-center gap-1 text-[10px] font-bold text-slate-300">
             <Sparkles className="w-2.5 h-2.5 text-emerald-400" />
-            <span>Giorno {currentDay}</span>
+            <span>{formatCalendarDate(currentDay, { day: 'numeric', month: 'short' })}</span>
           </div>
         )}
 

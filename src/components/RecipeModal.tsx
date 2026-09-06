@@ -11,12 +11,10 @@ interface RecipeModalProps {
 
 export const RecipeModal: React.FC<RecipeModalProps> = ({
   recipe,
-  initialIsHp = false,
   onClose,
   onStartTimer
 }) => {
   const [servings, setServings] = useState<number>(recipe.defaultServings || 1);
-  const [showHpVariant, setShowHpVariant] = useState<boolean>(initialIsHp && !!recipe.hpVariant);
   const [checkedIngredients, setCheckedIngredients] = useState<Record<string, boolean>>({});
   const [completedSteps, setCompletedSteps] = useState<Record<number, boolean>>({});
 
@@ -43,14 +41,10 @@ export const RecipeModal: React.FC<RecipeModalProps> = ({
   };
 
   const scaledKcal = Math.round(
-    (showHpVariant && recipe.hpVariant ? recipe.hpVariant.kcal : recipe.kcal) * (servings / recipe.defaultServings)
+    recipe.hpVariant!.kcal * (servings / recipe.defaultServings)
   );
 
-  const estimatedProtein = showHpVariant && recipe.hpVariant
-    ? Math.round(recipe.hpVariant.proteinGrams * (servings / recipe.defaultServings))
-    : recipe.originalProteinGrams
-    ? Math.round(recipe.originalProteinGrams * (servings / recipe.defaultServings))
-    : null;
+  const estimatedProtein = Math.round(recipe.hpVariant!.proteinGrams * (servings / recipe.defaultServings));
 
   return (
     <div
@@ -107,44 +101,20 @@ export const RecipeModal: React.FC<RecipeModalProps> = ({
 
         {/* Scrollable Content */}
         <div className="overflow-y-auto px-5 py-4 space-y-4.5 flex-1 overscroll-contain">
-          {/* HP Variant Selector (if recipe has an HP variant) */}
-          {recipe.hpVariant && (
-            <div className="p-4 rounded-3xl bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200/80 shadow-xs">
-              <div className="flex items-center justify-between gap-2">
-                <div className="flex items-center gap-2">
-                  <Sparkles className="w-4 h-4 text-emerald-600" />
-                  <span className="text-xs font-extrabold text-emerald-900">Variante High-Protein</span>
-                </div>
-                <button
-                  onClick={() => setShowHpVariant(!showHpVariant)}
-                  className={`text-xs px-3.5 py-1.5 rounded-full font-bold transition-all shadow-xs ${
-                    showHpVariant
-                      ? 'bg-emerald-600 text-white shadow-md shadow-emerald-500/25'
-                      : 'bg-white text-emerald-700 border border-emerald-300'
-                  }`}
-                >
-                  {showHpVariant ? 'Attiva (Consigliata)' : 'Mostra versione HP'}
-                </button>
-              </div>
-
-              {showHpVariant && (
-                <div className="mt-3 text-xs text-emerald-950 space-y-1.5 bg-white/80 rounded-2xl p-3 border border-emerald-100">
-                  <p className="font-bold text-emerald-900">{recipe.hpVariant.description}</p>
-                  <p className="text-[11px] font-semibold text-emerald-800">Quantità indicate per {recipe.defaultServings} {recipe.defaultServings === 1 ? 'porzione' : 'porzioni'}.</p>
-                  <ul className="list-disc list-inside space-y-0.5 text-slate-700 pl-1">
-                    {recipe.hpVariant.adjustments.map((adj, i) => (
-                      <li key={i} className="font-medium">{adj}</li>
-                    ))}
-                  </ul>
-                  {recipe.hpVariant.tips && (
-                    <p className="text-[11px] text-emerald-800 font-semibold italic pt-1.5 border-t border-emerald-100">
-                      💡 {recipe.hpVariant.tips}
-                    </p>
-                  )}
-                </div>
-              )}
+          <div className="p-4 rounded-3xl bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200/80 shadow-xs">
+            <div className="flex items-center gap-2">
+              <Sparkles className="w-4 h-4 text-emerald-600" />
+              <span className="text-xs font-extrabold text-emerald-900">Ricetta High-Protein</span>
             </div>
-          )}
+            <div className="mt-3 text-xs text-emerald-950 space-y-1.5 bg-white/80 rounded-2xl p-3 border border-emerald-100">
+              <p className="font-bold text-emerald-900">{recipe.hpVariant!.description}</p>
+              <p className="text-[11px] font-semibold text-emerald-800">Quantità indicate per {recipe.defaultServings} {recipe.defaultServings === 1 ? 'porzione' : 'porzioni'}.</p>
+              <ul className="list-disc list-inside space-y-0.5 text-slate-700 pl-1">
+                {recipe.hpVariant!.adjustments.map((adj, i) => <li key={i} className="font-medium">{adj}</li>)}
+              </ul>
+              {recipe.hpVariant!.tips && <p className="text-[11px] text-emerald-800 font-semibold italic pt-1.5 border-t border-emerald-100">💡 {recipe.hpVariant!.tips}</p>}
+            </div>
+          </div>
 
           {/* Description */}
           <p className="text-xs text-slate-600 leading-relaxed bg-[#F0F4F3] p-3.5 rounded-2xl border border-slate-200/80 font-medium">

@@ -66,12 +66,12 @@ export const MONTHLY_PROGRAMS: MonthProgram[] = [
         targetFocus: 'Gambe & Spinta/Tirata Orizzontale',
         schedule: 'Lunedì',
         exercises: [
-          { name: 'Leg press 45°', sets: '3', reps: '10–12', restSeconds: 120, notes: 'Piedi a larghezza spalle, discesa controllata' },
-          { name: 'Chest press presa neutra', sets: '3', reps: '8–12', restSeconds: 90, notes: 'Presa neutra salva-gomito' },
-          { name: 'Seated row presa neutra', sets: '3', reps: '8–12', restSeconds: 90, notes: 'Tira con i gomiti, adduci le scapole' },
-          { name: 'Leg curl seduto', sets: '3', reps: '10–15', restSeconds: 75, notes: 'Blocca bene i cuscinetti' },
-          { name: 'Alzate laterali alla macchina', sets: '2', reps: '12–15', restSeconds: 60, notes: 'Movimento fluido senza slancio' },
-          { name: 'Crunch machine', sets: '2', reps: '12–15', restSeconds: 60, notes: 'Espira in contrazione' }
+          { name: 'Leg press 45°', sets: '3', reps: '10–12', restSeconds: 120, notes: 'Piedi a larghezza spalle, discesa controllata', gifUrl: 'https://assets-v2.lottiefiles.com/a/b24f11bc-85e7-11ee-98ac-339ebd655a22/0vs2LFfPg3.gif' },
+          { name: 'Chest press presa neutra', sets: '3', reps: '8–12', restSeconds: 90, notes: 'Presa neutra salva-gomito', gifUrl: 'https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUybmJ1ODI2NjN6dTM5YTlqcHlicHoyOHRlMmdhcG5iMzllZmV0Nm8xdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/gIxeFoOB3xBEeviCn8/source.gif' },
+          { name: 'Seated row presa neutra', sets: '3', reps: '8–12', restSeconds: 90, notes: 'Tira con i gomiti, adduci le scapole', gifUrl: 'https://cdnl.iconscout.com/lottie/premium/thumb/man-doing-lever-seated-wide-grip-row-exercise-for-back-animation-gif-download-9729922.gif' },
+          { name: 'Leg curl seduto', sets: '3', reps: '10–15', restSeconds: 75, notes: 'Blocca bene i cuscinetti', gifUrl: 'https://cdnl.iconscout.com/lottie/premium/thumb/man-doing-lever-seated-leg-curl-exercise-for-legs-animation-gif-download-9729958.gif' },
+          { name: 'Alzate laterali alla macchina', sets: '2', reps: '12–15', restSeconds: 60, notes: 'Movimento fluido senza slancio', gifUrl: 'https://cdnl.iconscout.com/lottie/premium/thumb/mujer-haciendo-ejercicio-de-elevacion-lateral-con-palanca-para-hombros-animation-gif-download-11535510.gif' },
+          { name: 'Crunch machine', sets: '2', reps: '12–15', restSeconds: 60, notes: 'Espira in contrazione', gifUrl: 'https://my-trakk.com/media/instructional-videos/inst_gif_158.gif' }
         ]
       },
       {
@@ -80,12 +80,12 @@ export const MONTHLY_PROGRAMS: MonthProgram[] = [
         targetFocus: 'Quadricipiti, Trazione & Catena Posteriore',
         schedule: 'Mercoledì',
         exercises: [
-          { name: 'Hack squat', sets: '3', reps: '8–12', restSeconds: 120, notes: 'Schiena ben aderente allo schienale' },
-          { name: 'Lat machine presa neutra', sets: '3', reps: '8–12', restSeconds: 90, notes: 'Presa a triangolo o barra parallela' },
-          { name: 'Chest press inclinata', sets: '3', reps: '8–12', restSeconds: 90, notes: 'Focus parte alta del petto' },
-          { name: 'Hip thrust machine', sets: '3', reps: '10–12', restSeconds: 90, notes: '1 secondo di fermo in cima per i glutei' },
-          { name: 'Reverse pec deck', sets: '2', reps: '12–15', restSeconds: 60, notes: 'Per deltoidi posteriori e postura' },
-          { name: 'Plank a terra', sets: '2', reps: '30–45 s', restSeconds: 60, notes: 'Addome e glutei contratti' }
+          { name: 'Hack squat', sets: '3', reps: '8–12', restSeconds: 120, notes: 'Schiena ben aderente allo schienale', gifUrl: 'https://cdnl.iconscout.com/lottie/premium/thumb/man-doing-sled-reverse-hack-squat-exercise-for-legs-animation-gif-download-9729946.gif' },
+          { name: 'Lat machine presa neutra', sets: '3', reps: '8–12', restSeconds: 90, notes: 'Presa a triangolo o barra parallela', gifUrl: 'https://my-trakk.com/media/instructional-videos/inst_gif_312.gif' },
+          { name: 'Chest press inclinata', sets: '3', reps: '8–12', restSeconds: 90, notes: 'Focus parte alta del petto', gifUrl: 'https://cdnl.iconscout.com/lottie/premium/thumb/man-doing-chest-press-machine-workout-animation-gif-download-14427299.gif' },
+          { name: 'Hip thrust machine', sets: '3', reps: '10–12', restSeconds: 90, notes: '1 secondo di fermo in cima per i glutei', gifUrl: 'https://cdnl.iconscout.com/lottie/premium/thumb/woman-doing-smith-hip-thrust-exercise-for-legs-animation-gif-download-11625782.gif' },
+          { name: 'Reverse pec deck', sets: '2', reps: '12–15', restSeconds: 60, notes: 'Per deltoidi posteriori e postura', gifUrl: 'https://i.pinimg.com/originals/a2/12/cd/a212cde8804175ee82be3abe83ca51e3.gif' },
+          { name: 'Plank a terra', sets: '2', reps: '30–45 s', restSeconds: 60, notes: 'Addome e glutei contratti', gifUrl: 'https://media2.giphy.com/media/BWRHz2mlwxTIHMlNS6/giphy.gif?cid=790b7611a387e602b6ae3476e9445416dfe3dc64d9272e74&ct=g&rid=giphy.gif' }
         ]
       },
       {
@@ -94,13 +94,13 @@ export const MONTHLY_PROGRAMS: MonthProgram[] = [
         targetFocus: 'Full Body Macchine & Isolamento',
         schedule: 'Venerdì',
         exercises: [
-          { name: 'Leg press', sets: '3', reps: '10–12', restSeconds: 120, notes: 'Spinta uniforme sui talloni' },
-          { name: 'Chest-supported row', sets: '3', reps: '8–12', restSeconds: 90, notes: 'Petto in appoggio sullo schienale' },
-          { name: 'Pec deck', sets: '3', reps: '10–15', restSeconds: 75, notes: 'Gomiti leggermente flessi' },
-          { name: 'Leg extension', sets: '3', reps: '10–15', restSeconds: 75, notes: 'Controllo completo in discesa' },
-          { name: 'Leg curl', sets: '2', reps: '10–15', restSeconds: 75, notes: 'Femorali' },
-          { name: 'Calf raise alla macchina', sets: '2', reps: '12–15', restSeconds: 60, notes: 'Massima estensione in basso' },
-          { name: 'Addome macchina', sets: '2', reps: '12–15', restSeconds: 60, notes: '45-60s recupero' }
+          { name: 'Leg press', sets: '3', reps: '10–12', restSeconds: 120, notes: 'Spinta uniforme sui talloni', gifUrl: 'https://assets-v2.lottiefiles.com/a/b24f11bc-85e7-11ee-98ac-339ebd655a22/0vs2LFfPg3.gif' },
+          { name: 'Chest-supported row', sets: '3', reps: '8–12', restSeconds: 90, notes: 'Petto in appoggio sullo schienale', gifUrl: 'https://cdnl.iconscout.com/lottie/premium/thumb/man-doing-chest-supported-row-exercise-animation-gif-download-13797987.gif' },
+          { name: 'Pec deck', sets: '3', reps: '10–15', restSeconds: 75, notes: 'Gomiti leggermente flessi', gifUrl: 'https://cdnl.iconscout.com/lottie/premium/thumb/mujer-haciendo-el-ejercicio-de-palanca-pec-deck-para-el-pecho-animation-gif-download-11535533.gif' },
+          { name: 'Leg extension', sets: '3', reps: '10–15', restSeconds: 75, notes: 'Controllo completo in discesa', gifUrl: 'https://sistemasca.blob.core.windows.net/arquivos/exercicios/193.gif' },
+          { name: 'Leg curl', sets: '2', reps: '10–15', restSeconds: 75, notes: 'Femorali', gifUrl: 'https://cdnl.iconscout.com/lottie/premium/thumb/man-doing-lever-seated-leg-curl-exercise-for-legs-animation-gif-download-9729958.gif' },
+          { name: 'Calf raise alla macchina', sets: '2', reps: '12–15', restSeconds: 60, notes: 'Massima estensione in basso', gifUrl: 'https://cdnl.iconscout.com/lottie/premium/thumb/man-doing-lever-standing-calf-raise-exercise-for-legs-animation-gif-download-9729938.gif' },
+          { name: 'Addome macchina', sets: '2', reps: '12–15', restSeconds: 60, notes: '45-60s recupero', gifUrl: 'https://my-trakk.com/media/instructional-videos/inst_gif_158.gif' }
         ]
       }
     ],
