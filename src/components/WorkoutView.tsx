@@ -185,13 +185,13 @@ export const WorkoutView: React.FC<WorkoutViewProps> = ({ onStartTimer }) => {
                       <h5 className="text-xs sm:text-sm font-bold text-[#1F2937]">{ex.name}</h5>
                     </div>
 
-                    <div className="flex items-center gap-3 mt-1.5 text-xs text-slate-600 pl-7">
+                    <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1.5 text-xs text-slate-600 pl-7">
                       <span className="font-extrabold text-[#1F2937] bg-white px-2.5 py-0.5 rounded-full border border-slate-200/80 shadow-2xs">
                         {ex.sets} × {ex.reps}
                       </span>
                       <span className="text-slate-500 flex items-center gap-1 font-semibold">
                         <Timer className="w-3.5 h-3.5 text-slate-400" />
-                        Rip. {ex.restSeconds} s
+                        Rip. {ex.restLabel ?? ex.restSeconds} s
                       </span>
                     </div>
 

@@ -78,6 +78,7 @@ export interface WorkoutExercise {
   sets: string;
   reps: string;
   restSeconds: number;
+  restLabel?: string;
   notes?: string;
   gifUrl?: string;
 }
