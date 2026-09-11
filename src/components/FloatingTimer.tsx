@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { Play, Pause, X, Bell, RotateCcw } from 'lucide-react';
 
 interface FloatingTimerProps {
@@ -11,16 +11,18 @@ export const FloatingTimer: React.FC<FloatingTimerProps> = ({ initialSeconds, la
   const [secondsLeft, setSecondsLeft] = useState<number>(initialSeconds);
   const [isActive, setIsActive] = useState<boolean>(true);
   const [hasFinished, setHasFinished] = useState<boolean>(false);
+  const [targetEndMs, setTargetEndMs] = useState<number>(() => Date.now() + initialSeconds * 1000);
+  const notifiedRef = useRef(false);
   const [notificationPermission, setNotificationPermission] = useState<NotificationPermission | 'unsupported'>(() =>
     'Notification' in window ? Notification.permission : 'unsupported'
   );
 
-  const notifyCompletion = () => {
+  const notifyCompletion = useCallback(() => {
     if ('vibrate' in navigator) navigator.vibrate([100, 50, 150]);
     if (notificationPermission === 'granted') {
       new Notification('Timer terminato', { body: label, tag: 'dieta-fit-timer' });
     }
-  };
+  }, [label, notificationPermission]);
 
   const enableNotifications = async () => {
     if (!('Notification' in window)) return;
@@ -29,39 +31,57 @@ export const FloatingTimer: React.FC<FloatingTimerProps> = ({ initialSeconds, la
 
   useEffect(() => {
     setSecondsLeft(initialSeconds);
+    setTargetEndMs(Date.now() + initialSeconds * 1000);
     setIsActive(true);
     setHasFinished(false);
+    notifiedRef.current = false;
   }, [initialSeconds, label]);
 
   useEffect(() => {
-    let interval: ReturnType<typeof setInterval> | null = null;
-
-    if (isActive && secondsLeft > 0) {
-      interval = setInterval(() => {
-        setSecondsLeft((prev) => {
-          if (prev <= 1) {
-            setIsActive(false);
-            setHasFinished(true);
-            notifyCompletion();
-            return 0;
-          }
-          return prev - 1;
-        });
-      }, 1000);
-    }
-
-    return () => {
-      if (interval) clearInterval(interval);
+    if (!isActive || hasFinished) return;
+    const syncTime = () => {
+      const next = Math.max(0, Math.ceil((targetEndMs - Date.now()) / 1000));
+      setSecondsLeft(next);
+      if (next === 0) {
+        setIsActive(false);
+        setHasFinished(true);
+        if (!notifiedRef.current) {
+          notifiedRef.current = true;
+          notifyCompletion();
+        }
+      }
     };
-  }, [isActive, secondsLeft]);
+    syncTime();
+    const interval = setInterval(syncTime, 1000);
+    window.addEventListener('focus', syncTime);
+    document.addEventListener('visibilitychange', syncTime);
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener('focus', syncTime);
+      document.removeEventListener('visibilitychange', syncTime);
+    };
+  }, [hasFinished, isActive, notifyCompletion, targetEndMs]);
+
+  const startTimer = (duration: number) => {
+    setTargetEndMs(Date.now() + duration * 1000);
+    setSecondsLeft(duration);
+    setHasFinished(false);
+    setIsActive(true);
+    notifiedRef.current = false;
+  };
+
+  const pauseTimer = () => {
+    setSecondsLeft(Math.max(0, Math.ceil((targetEndMs - Date.now()) / 1000)));
+    setIsActive(false);
+  };
 
   const togglePlay = () => {
     if (hasFinished) {
-      setSecondsLeft(initialSeconds);
-      setHasFinished(false);
-      setIsActive(true);
+      startTimer(initialSeconds);
+    } else if (isActive) {
+      pauseTimer();
     } else {
-      setIsActive(!isActive);
+      startTimer(secondsLeft);
     }
   };
 
@@ -69,6 +89,8 @@ export const FloatingTimer: React.FC<FloatingTimerProps> = ({ initialSeconds, la
     setSecondsLeft(initialSeconds);
     setIsActive(false);
     setHasFinished(false);
+    setTargetEndMs(Date.now() + initialSeconds * 1000);
+    notifiedRef.current = false;
   };
 
   const formatTime = (secs: number) => {

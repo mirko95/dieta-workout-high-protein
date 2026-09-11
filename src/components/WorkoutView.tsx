@@ -96,6 +96,16 @@ export const WorkoutView: React.FC<WorkoutViewProps> = ({ onStartTimer }) => {
         {workout ? workout.exercises.map((exercise, index) => (
           <section key={`${selectedDate}:${index}`} className="rounded-2xl border border-slate-200 bg-white p-4 space-y-3">
             <h4 className="text-sm font-bold">{index + 1}. {exercise.name}</h4>
+            <label className="block text-xs font-bold text-slate-700">Variante usata
+              <select
+                className={`${inputClass} mt-1`}
+                value={log.variants?.[String(index)] ?? exercise.name}
+                onChange={event => updateDay({ variants: { ...(log.variants ?? {}), [String(index)]: event.target.value } })}
+              >
+                <option value={exercise.name}>Esercizio principale</option>
+                {exercise.alternatives?.map(alternative => <option key={alternative.datasetId} value={alternative.name}>{alternative.name}</option>)}
+              </select>
+            </label>
             {exercise.gifUrl && <details className="rounded-xl bg-slate-50 p-3">
               <summary className="cursor-pointer text-xs font-bold text-emerald-800">Guarda animazione e istruzioni</summary>
               <div className="mt-3 flex gap-3">

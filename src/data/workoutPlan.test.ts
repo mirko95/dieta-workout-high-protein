@@ -39,6 +39,11 @@ assert.equal(treadmillProgress['2026-09-14'].cardioMinutes, '18');
 assert.equal(treadmillProgress['2026-09-15'].treadmillDone, true);
 assert.equal(treadmillProgress['2026-09-16'].treadmillDone, false);
 assert.throws(() => parseProgress(JSON.stringify({ '2026-09-14': { ...legacyDay, treadmillDone: 'yes' } })));
+const variantProgress = parseProgress(JSON.stringify({
+  '2026-09-14': { ...legacyDay, variants: { '0': 'Leg press', '3': 'Stacco rumeno con bilanciere' } },
+}));
+assert.equal(variantProgress['2026-09-14'].variants?.['0'], 'Leg press');
+assert.throws(() => parseProgress(JSON.stringify({ '2026-09-14': { ...legacyDay, variants: { '0': 42 } } })));
 assert.equal(WORKOUT_DAYS.filter(day => day.elbowRoutine).length, 40);
 assert.equal(ELBOW_ROUTINE.length, 4);
 assert.equal(new Set(ELBOW_ROUTINE.map(exercise => exercise.id)).size, 4);

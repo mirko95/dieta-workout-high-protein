@@ -75,9 +75,9 @@ export const WORKOUT_DAYS = Array.from({ length: 56 }, (_, index) => ({
 
 export const PROGRESS_KEY = 'diet_workout_progress_2026_09_14';
 export type SetProgress = { weight: string; reps: string; done: boolean };
-export type DayProgress = { sets: Record<string, SetProgress>; cardioMinutes: string; treadmillDone?: boolean; notes: string; done: boolean };
+export type DayProgress = { sets: Record<string, SetProgress>; variants?: Record<string, string>; cardioMinutes: string; treadmillDone?: boolean; notes: string; done: boolean };
 export type WorkoutProgress = Record<string, DayProgress>;
-export const emptyDay = (): DayProgress => ({ sets: {}, cardioMinutes: '', treadmillDone: false, notes: '', done: false });
+export const emptyDay = (): DayProgress => ({ sets: {}, variants: {}, cardioMinutes: '', treadmillDone: false, notes: '', done: false });
 
 export function parseProgress(raw: string | null): WorkoutProgress {
   const value = JSON.parse(raw ?? '{}');
@@ -86,7 +86,13 @@ export function parseProgress(raw: string | null): WorkoutProgress {
     if (!WORKOUT_DAYS.some(d => d.date === date) || !day || typeof day.notes !== 'string' ||
         typeof day.cardioMinutes !== 'string' || typeof day.done !== 'boolean' ||
         (day.treadmillDone !== undefined && typeof day.treadmillDone !== 'boolean') ||
+        (day.variants !== undefined && (typeof day.variants !== 'object' || Array.isArray(day.variants))) ||
         !day.sets || typeof day.sets !== 'object' || Array.isArray(day.sets)) throw new Error('Invalid day');
+    if (day.variants) {
+      for (const variant of Object.values(day.variants)) {
+        if (typeof variant !== 'string') throw new Error('Invalid variant');
+      }
+    }
     for (const set of Object.values(day.sets)) {
       if (!set || typeof set.weight !== 'string' || typeof set.reps !== 'string' || typeof set.done !== 'boolean') throw new Error('Invalid set');
     }
