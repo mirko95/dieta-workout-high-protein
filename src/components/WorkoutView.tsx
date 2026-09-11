@@ -95,24 +95,28 @@ export const WorkoutView: React.FC<WorkoutViewProps> = ({ onStartTimer }) => {
         </section>
         {workout ? workout.exercises.map((exercise, index) => (
           <section key={`${selectedDate}:${index}`} className="rounded-2xl border border-slate-200 bg-white p-4 space-y-3">
-            <h4 className="text-sm font-bold">{index + 1}. {exercise.name}</h4>
+            {(() => {
+              const variantName = log.variants?.[String(index)] ?? exercise.name;
+              const selectedExercise = exercise.alternatives?.find(alternative => alternative.name === variantName) ?? exercise;
+              return <>
+            <h4 className="text-sm font-bold">{index + 1}. {selectedExercise.name}</h4>
             <label className="block text-xs font-bold text-slate-700">Variante usata
               <select
                 className={`${inputClass} mt-1`}
-                value={log.variants?.[String(index)] ?? exercise.name}
+                value={variantName}
                 onChange={event => updateDay({ variants: { ...(log.variants ?? {}), [String(index)]: event.target.value } })}
               >
-                <option value={exercise.name}>Esercizio principale</option>
+                <option value={exercise.name}>{exercise.name}</option>
                 {exercise.alternatives?.map(alternative => <option key={alternative.datasetId} value={alternative.name}>{alternative.name}</option>)}
               </select>
             </label>
-            {exercise.gifUrl && <details className="rounded-xl bg-slate-50 p-3">
+            {selectedExercise.gifUrl && <details className="rounded-xl bg-slate-50 p-3" defaultOpen={selectedExercise !== exercise}>
               <summary className="cursor-pointer text-xs font-bold text-emerald-800">Guarda animazione e istruzioni</summary>
               <div className="mt-3 flex gap-3">
-                <img src={exercise.gifUrl} alt={`Animazione: ${exercise.name}`} className="h-28 w-28 shrink-0 rounded-lg object-cover" loading="lazy" />
+                <img src={selectedExercise.gifUrl} alt={`Animazione: ${selectedExercise.name}`} className="h-28 w-28 shrink-0 rounded-lg object-cover" loading="lazy" />
                 <div className="min-w-0 text-xs text-slate-700">
-                  <p className="font-semibold">Attrezzo: {exercise.equipment}</p>
-                  <ol className="mt-2 list-decimal space-y-1 pl-4">{exercise.instructionSteps?.map(step => <li key={step}>{step}</li>)}</ol>
+                  <p className="font-semibold">Attrezzo: {selectedExercise.equipment}</p>
+                  <ol className="mt-2 list-decimal space-y-1 pl-4">{selectedExercise.instructionSteps?.map(step => <li key={step}>{step}</li>)}</ol>
                   <a href={DATASET_SOURCE} target="_blank" rel="noreferrer" className="mt-2 inline-block text-[10px] text-slate-500 underline">Exercise Dataset · © Gym visual</a>
                 </div>
               </div>
@@ -134,6 +138,8 @@ export const WorkoutView: React.FC<WorkoutViewProps> = ({ onStartTimer }) => {
                 </div>)}
               </div>
             </details>}
+            </>;
+            })()}
             <div className="grid grid-cols-[2rem_1fr_1.4fr_2rem] gap-2 text-[10px] text-slate-500" aria-hidden="true"><span>Serie</span><span>Kg</span><span>{exercise.perSide ? (exercise.name === 'Side plank' ? 'Secondi per lato' : 'Reps per gamba') : 'Reps'}</span><span>Fatto</span></div>
             {Array.from({ length: Number(exercise.sets) }, (_, setIndex) => {
               const key = `${index}:${setIndex}`;
