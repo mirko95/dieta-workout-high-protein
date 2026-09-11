@@ -1,37 +1,38 @@
 import { WorkoutSession } from '../types';
+import { datasetExercise } from './exerciseDataset';
 
 export const WORKOUTS: WorkoutSession[] = [
   {
     id: 'a', name: 'Workout A', targetFocus: 'Full body', schedule: 'Lunedì',
     exercises: [
-      { name: 'Hack squat or leg press', sets: '3', reps: '8–12', restSeconds: 180, restLabel: '120–180' },
-      { name: 'Machine chest press', sets: '3', reps: '8–12', restSeconds: 120 },
-      { name: 'Chest-supported machine row', sets: '3', reps: '8–12', restSeconds: 120 },
-      { name: 'Dumbbell Romanian deadlift (RDL)', sets: '3', reps: '8–12', restSeconds: 120 },
-      { name: 'Seated leg curl', sets: '2', reps: '10–15', restSeconds: 90, restLabel: '60–90' },
-      { name: 'Reverse crunch', sets: '3', reps: '10–15', restSeconds: 60 },
+      { name: 'Hack squat alla slitta', sets: '3', reps: '8–12', restSeconds: 180, restLabel: '120–180', ...datasetExercise('0743') },
+      { name: 'Chest press alla macchina', sets: '3', reps: '8–12', restSeconds: 120, ...datasetExercise('0577') },
+      { name: 'Rematore da seduto alla macchina', sets: '3', reps: '8–12', restSeconds: 120, ...datasetExercise('1350') },
+      { name: 'Stacco rumeno con manubri', sets: '3', reps: '8–12', restSeconds: 120, ...datasetExercise('1459') },
+      { name: 'Leg curl da seduto alla macchina', sets: '2', reps: '10–15', restSeconds: 90, restLabel: '60–90', ...datasetExercise('0599') },
+      { name: 'Crunch inverso', sets: '3', reps: '10–15', restSeconds: 60, ...datasetExercise('0872') },
     ],
   },
   {
     id: 'b', name: 'Workout B', targetFocus: 'Full body', schedule: 'Mercoledì',
     exercises: [
-      { name: '45° back extension / hip extension', sets: '3', reps: '10–15', restSeconds: 120 },
-      { name: 'Neutral-grip lat pulldown', sets: '3', reps: '8–12', restSeconds: 120 },
-      { name: 'Supported split squat', sets: '3', reps: '8–10 per leg', restSeconds: 120 },
-      { name: 'Neutral-grip machine shoulder press', sets: '2', reps: '8–12', restSeconds: 120 },
-      { name: 'Leg extension', sets: '2', reps: '10–15', restSeconds: 90, restLabel: '60–90' },
-      { name: 'Side plank', sets: '3', reps: '20–40 sec per side', restSeconds: 60 },
+      { name: 'Iperestensioni su panca', sets: '3', reps: '10–15', restSeconds: 120, ...datasetExercise('0488') },
+      { name: 'Lat machine con maniglie parallele', sets: '3', reps: '8–12', restSeconds: 120, ...datasetExercise('0818') },
+      { name: 'Split squat con supporto', sets: '3', reps: '8–10 per gamba', restSeconds: 120, perSide: true, ...datasetExercise('2368') },
+      { name: 'Shoulder press alla macchina con presa neutra', sets: '2', reps: '8–12', restSeconds: 120, ...datasetExercise('0603') },
+      { name: 'Leg extension alla macchina', sets: '2', reps: '10–15', restSeconds: 90, restLabel: '60–90', ...datasetExercise('0585') },
+      { name: 'Side plank', sets: '3', reps: '20–40 sec per lato', restSeconds: 60, perSide: true, ...datasetExercise('0705') },
     ],
   },
   {
     id: 'c', name: 'Workout C', targetFocus: 'Full body', schedule: 'Venerdì',
     exercises: [
-      { name: 'Leg press or Smith-machine box squat', sets: '3', reps: '8–12', restSeconds: 180, restLabel: '120–180' },
-      { name: 'Incline machine chest press', sets: '3', reps: '8–12', restSeconds: 120 },
-      { name: 'Chest-supported row', sets: '3', reps: '8–12', restSeconds: 120 },
-      { name: 'Cable pull-through', sets: '3', reps: '10–15', restSeconds: 120 },
-      { name: 'Neutral-grip lat pulldown', sets: '2', reps: '10–12', restSeconds: 90 },
-      { name: 'Reverse crunch', sets: '3', reps: '10–15', restSeconds: 60 },
+      { name: 'Squat alla Smith machine', sets: '3', reps: '8–12', restSeconds: 180, restLabel: '120–180', ...datasetExercise('0770') },
+      { name: 'Chest press inclinata alla macchina', sets: '3', reps: '8–12', restSeconds: 120, ...datasetExercise('1299') },
+      { name: 'Rematore da seduto alla macchina', sets: '3', reps: '8–12', restSeconds: 120, ...datasetExercise('1350') },
+      { name: 'Pull-through ai cavi con corda', sets: '3', reps: '10–15', restSeconds: 120, ...datasetExercise('0196') },
+      { name: 'Lat machine con maniglie parallele', sets: '2', reps: '10–12', restSeconds: 90, ...datasetExercise('0818') },
+      { name: 'Crunch inverso', sets: '3', reps: '10–15', restSeconds: 60, ...datasetExercise('0872') },
     ],
   },
 ];

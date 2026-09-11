@@ -11,9 +11,10 @@ for (let week = 1; week <= 8; week++) {
   assert.deepEqual(WORKOUT_DAYS.filter(day => day.week === week).map(day => day.elbowRoutine), [true, true, true, false, true, true, false]);
 }
 assert.deepEqual(WORKOUTS.map(workout => workout.exercises.length), [6, 6, 6]);
-assert.equal(WORKOUTS[0].exercises[3].name, 'Dumbbell Romanian deadlift (RDL)');
-assert.equal(WORKOUTS[2].exercises[3].name, 'Cable pull-through');
-assert.equal(WORKOUTS[1].exercises[5].reps, '20–40 sec per side');
+assert.equal(WORKOUTS[0].exercises[3].name, 'Stacco rumeno con manubri');
+assert.equal(WORKOUTS[2].exercises[3].name, 'Pull-through ai cavi con corda');
+assert.equal(WORKOUTS[1].exercises[5].reps, '20–40 sec per lato');
+assert.ok(WORKOUTS.flatMap(workout => workout.exercises).every(exercise => exercise.gifUrl?.includes('raw.githubusercontent.com') && exercise.instructionSteps?.length));
 const progress = {
   '2026-09-14': { ...emptyDay(), sets: { '0:0': { weight: '42.5', reps: '12', done: true } }, cardioMinutes: '18', notes: 'Leg press', done: true },
   '2026-09-21': emptyDay(),

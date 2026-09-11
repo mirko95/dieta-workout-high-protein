@@ -93,7 +93,11 @@ export interface WorkoutExercise {
   restSeconds: number;
   restLabel?: string;
   notes?: string;
+  datasetId?: string;
+  equipment?: string;
+  instructionSteps?: string[];
   gifUrl?: string;
+  perSide?: boolean;
 }
 
 export interface WorkoutSession {

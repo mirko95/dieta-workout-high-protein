@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Check, ChevronLeft, ChevronRight, Play } from 'lucide-react';
 import { ELBOW_ROUTINE, elbowLoadGuidance, WORKOUT_DAYS, PROGRESS_KEY, emptyDay, parseProgress, DayProgress, WorkoutProgress } from '../data/workoutPlan';
+import { DATASET_SOURCE } from '../data/exerciseDataset';
 
 interface WorkoutViewProps {
   onStartTimer: (seconds: number, label: string) => void;
@@ -90,11 +91,22 @@ export const WorkoutView: React.FC<WorkoutViewProps> = ({ onStartTimer }) => {
         {workout ? workout.exercises.map((exercise, index) => (
           <section key={`${selectedDate}:${index}`} className="rounded-2xl border border-slate-200 bg-white p-4 space-y-3">
             <h4 className="text-sm font-bold">{index + 1}. {exercise.name}</h4>
+            {exercise.gifUrl && <details className="rounded-xl bg-slate-50 p-3">
+              <summary className="cursor-pointer text-xs font-bold text-emerald-800">Guarda animazione e istruzioni</summary>
+              <div className="mt-3 flex gap-3">
+                <img src={exercise.gifUrl} alt={`Animazione: ${exercise.name}`} className="h-28 w-28 shrink-0 rounded-lg object-cover" loading="lazy" />
+                <div className="min-w-0 text-xs text-slate-700">
+                  <p className="font-semibold">Attrezzo: {exercise.equipment}</p>
+                  <ol className="mt-2 list-decimal space-y-1 pl-4">{exercise.instructionSteps?.map(step => <li key={step}>{step}</li>)}</ol>
+                  <a href={DATASET_SOURCE} target="_blank" rel="noreferrer" className="mt-2 inline-block text-[10px] text-slate-500 underline">Exercise Dataset · © Gym visual</a>
+                </div>
+              </div>
+            </details>}
             <div className="flex flex-wrap justify-between items-center gap-2 text-xs">
               <span>{exercise.sets} × {exercise.reps} · Recupero {exercise.restLabel ?? exercise.restSeconds} s</span>
               <button type="button" onClick={() => onStartTimer(exercise.restSeconds, `Recupero: ${exercise.name}`)} className="flex items-center gap-1 rounded-full border px-3 py-2 text-emerald-800" aria-label={`Avvia recupero per ${exercise.name}`}><Play className="h-3 w-3" />{exercise.restSeconds} s</button>
             </div>
-            <div className="grid grid-cols-[2rem_1fr_1.4fr_2rem] gap-2 text-[10px] text-slate-500" aria-hidden="true"><span>Serie</span><span>Kg</span><span>{exercise.name === 'Side plank' ? 'Secondi per lato' : exercise.name === 'Supported split squat' ? 'Reps per gamba' : 'Reps'}</span><span>Fatto</span></div>
+            <div className="grid grid-cols-[2rem_1fr_1.4fr_2rem] gap-2 text-[10px] text-slate-500" aria-hidden="true"><span>Serie</span><span>Kg</span><span>{exercise.perSide ? (exercise.name === 'Side plank' ? 'Secondi per lato' : 'Reps per gamba') : 'Reps'}</span><span>Fatto</span></div>
             {Array.from({ length: Number(exercise.sets) }, (_, setIndex) => {
               const key = `${index}:${setIndex}`;
               const set = log.sets[key] ?? { weight: '', reps: '', done: false };
@@ -103,7 +115,7 @@ export const WorkoutView: React.FC<WorkoutViewProps> = ({ onStartTimer }) => {
               return <div key={key} className="grid grid-cols-[2rem_1fr_1.4fr_2rem] items-center gap-2">
                 <span className="text-xs font-bold">{setIndex + 1}</span>
                 <input className={inputClass} type="number" min="0" step="any" inputMode="decimal" aria-label={`Kg: ${label}`} value={set.weight} onChange={event => { if (event.target.validity.valid) updateSet({ weight: event.target.value }); }} />
-                <input className={inputClass} type="text" placeholder={exercise.name === 'Side plank' || exercise.name === 'Supported split squat' ? 'sx / dx' : ''} aria-label={`${exercise.name === 'Side plank' ? 'Secondi per lato' : 'Ripetizioni'}: ${label}`} value={set.reps} onChange={event => updateSet({ reps: event.target.value })} />
+                <input className={inputClass} type="text" placeholder={exercise.perSide ? 'sx / dx' : ''} aria-label={`${exercise.name === 'Side plank' ? 'Secondi per lato' : 'Ripetizioni'}: ${label}`} value={set.reps} onChange={event => updateSet({ reps: event.target.value })} />
                 <input type="checkbox" className="h-5 w-5 accent-emerald-600" aria-label={`Completata: ${label}`} checked={set.done} onChange={event => updateSet({ done: event.target.checked })} />
               </div>;
             })}
