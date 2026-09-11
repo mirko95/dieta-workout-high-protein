@@ -20,7 +20,7 @@ export const Navigation: React.FC<NavigationProps> = ({
     { id: 'dati' as TabType, label: 'Dati', icon: UserRound },
     { id: 'ricette' as TabType, label: 'Ricette', icon: BookOpen },
     { id: 'spesa' as TabType, label: 'Spesa', icon: ShoppingBag },
-    { id: 'allenamento' as TabType, label: 'Workout', icon: Dumbbell }
+    { id: 'allenamento' as TabType, label: 'Pesi', icon: Dumbbell }
   ];
 
   return (
@@ -36,7 +36,7 @@ export const Navigation: React.FC<NavigationProps> = ({
             <button
               key={tab.id}
               onClick={() => onTabChange(tab.id)}
-              className={`relative flex-1 flex flex-col items-center justify-center py-1 px-1 rounded-2xl transition-all duration-200 select-none ${
+              className={`relative flex-1 flex flex-col items-center justify-center min-h-14 py-1 px-1 rounded-2xl transition-all duration-200 select-none ${
                 isActive
                   ? 'text-[#047857]'
                   : 'text-slate-500 hover:text-slate-800 active:scale-95'

@@ -42,14 +42,19 @@ export const WorkoutView: React.FC<WorkoutViewProps> = ({ onStartTimer }) => {
   }
 
   return (
-    <div className="space-y-4 pb-4">
-      <div className="rounded-3xl bg-slate-900 p-5 text-white space-y-2">
+    <div className="space-y-4">
+      <div className="rounded-2xl bg-slate-900 p-4 text-white space-y-2">
         <h2 className="text-xl font-extrabold">Il tuo programma · 8 settimane</h2>
         <p className="text-sm text-emerald-300">14 settembre – 8 novembre 2026</p>
-        <p className="text-xs">Lunedì A · Mercoledì B · Venerdì C. Gli altri giorni: recupero dai pesi. Ogni giorno: 30 minuti di tapis roulant a casa durante l’home office.</p>
-        <p className="text-xs">Mantieni 2–3 ripetizioni in riserva in tutte le serie, soprattutto nelle prime settimane. Preferisci prese neutre e interrompi o cambia i movimenti che aggravano il gomito.</p>
-        <p className="text-xs">Routine gomito: lunedì, martedì, mercoledì, venerdì e sabato. Giovedì e domenica: riposo dalla routine.</p>
         <p className="text-sm font-bold">{WORKOUT_DAYS.filter(d => d.workout && progress[d.date]?.done).length} / 24 allenamenti completati</p>
+        <details className="rounded-xl bg-white/10 p-3">
+          <summary className="cursor-pointer text-xs font-bold text-emerald-200">Linee guida</summary>
+          <div className="mt-2 space-y-2 text-xs text-slate-100">
+            <p>Lunedì A · Mercoledì B · Venerdì C. Gli altri giorni: recupero dai pesi. Ogni giorno: 30 minuti di tapis roulant a casa durante l’home office.</p>
+            <p>Mantieni 2–3 ripetizioni in riserva in tutte le serie, soprattutto nelle prime settimane. Preferisci prese neutre e interrompi o cambia i movimenti che aggravano il gomito.</p>
+            <p>Routine gomito: lunedì, martedì, mercoledì, venerdì e sabato. Giovedì e domenica: riposo dalla routine.</p>
+          </div>
+        </details>
       </div>
 
       <div className="flex items-center justify-between gap-2">

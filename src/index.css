@@ -8,6 +8,25 @@
     background-color: #F0F4F3;
     color: #1F2937;
   }
+
+  button,
+  a,
+  input,
+  select,
+  textarea,
+  summary {
+    touch-action: manipulation;
+  }
+
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  summary:focus-visible {
+    outline: 2px solid #10B981;
+    outline-offset: 2px;
+  }
 }
 
 /* iOS Safe Areas helper */
@@ -20,7 +39,7 @@
 }
 
 .safe-bottom-nav {
-  padding-bottom: max(5.5rem, calc(4.75rem + env(safe-area-inset-bottom)));
+  padding-bottom: max(8rem, calc(7rem + env(safe-area-inset-bottom)));
 }
 
 /* Hide scrollbar for clean horizontal tab bars */
@@ -31,4 +50,3 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-

@@ -85,7 +85,7 @@ export default function App() {
       />
 
       {/* Main Screen Content with iOS bottom padding to avoid bottom bar overlap */}
-      <main className="flex-1 max-w-md w-full mx-auto px-3.5 pt-3 pb-28">
+      <main className="flex-1 max-w-md w-full mx-auto px-3.5 pt-3 safe-bottom-nav">
         {activeTab === 'oggi' && (
           <DayView
             currentDay={currentDay}

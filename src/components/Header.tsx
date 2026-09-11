@@ -39,7 +39,7 @@ export const Header: React.FC<HeaderProps> = ({ currentDay, onSelectDay, onOpenI
           <button
             onClick={onOpenInfo}
             aria-label="Info e Linee Guida"
-            className="w-8 h-8 rounded-full bg-slate-100/80 text-slate-600 flex items-center justify-center hover:bg-emerald-50 hover:text-emerald-700 active:scale-90 transition-all border border-slate-200/50"
+            className="w-11 h-11 rounded-full bg-slate-100/80 text-slate-600 flex items-center justify-center hover:bg-emerald-50 hover:text-emerald-700 active:scale-90 transition-all border border-slate-200/50"
           >
             <Info className="w-4 h-4" />
           </button>
@@ -66,7 +66,7 @@ export const Header: React.FC<HeaderProps> = ({ currentDay, onSelectDay, onOpenI
           </div>
           <button
             onClick={dismissPwaBanner}
-            className="p-1 rounded-full text-emerald-700 hover:bg-emerald-200/50 shrink-0"
+            className="min-h-10 min-w-10 rounded-full text-emerald-700 hover:bg-emerald-200/50 shrink-0 flex items-center justify-center"
             aria-label="Chiudi avviso"
           >
             <X className="w-3.5 h-3.5" />
