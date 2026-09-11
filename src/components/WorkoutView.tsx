@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Check, ChevronLeft, ChevronRight, Play } from 'lucide-react';
+import { Check, ChevronLeft, ChevronRight, Play, X } from 'lucide-react';
 import { ELBOW_ROUTINE, elbowLoadGuidance, WORKOUT_DAYS, PROGRESS_KEY, emptyDay, parseProgress, DayProgress, WorkoutProgress } from '../data/workoutPlan';
 import { DATASET_SOURCE } from '../data/exerciseDataset';
 
@@ -24,6 +24,7 @@ export const WorkoutView: React.FC<WorkoutViewProps> = ({ onStartTimer }) => {
   });
   const [progress, setProgress] = useState(initial.progress);
   const [error, setError] = useState(initial.error);
+  const [zoomedGif, setZoomedGif] = useState<{ src: string; alt: string } | null>(null);
   const day = WORKOUT_DAYS.find(item => item.date === selectedDate)!;
   const log = progress[selectedDate] ?? emptyDay();
   const workout = day.workout;
@@ -113,7 +114,9 @@ export const WorkoutView: React.FC<WorkoutViewProps> = ({ onStartTimer }) => {
             {selectedExercise.gifUrl && <details className="rounded-xl bg-slate-50 p-3" defaultOpen={selectedExercise !== exercise}>
               <summary className="cursor-pointer text-xs font-bold text-emerald-800">Guarda animazione e istruzioni</summary>
               <div className="mt-3 flex gap-3">
-                <img src={selectedExercise.gifUrl} alt={`Animazione: ${selectedExercise.name}`} className="h-28 w-28 shrink-0 rounded-lg object-cover" loading="lazy" />
+                <button type="button" onClick={() => setZoomedGif({ src: selectedExercise.gifUrl!, alt: `Animazione: ${selectedExercise.name}` })} className="shrink-0 rounded-lg" aria-label={`Ingrandisci animazione: ${selectedExercise.name}`}>
+                  <img src={selectedExercise.gifUrl} alt={`Animazione: ${selectedExercise.name}`} className="h-28 w-28 rounded-lg object-cover" loading="lazy" />
+                </button>
                 <div className="min-w-0 text-xs text-slate-700">
                   <p className="font-semibold">Attrezzo: {selectedExercise.equipment}</p>
                   <ol className="mt-2 list-decimal space-y-1 pl-4">{selectedExercise.instructionSteps?.map(step => <li key={step}>{step}</li>)}</ol>
@@ -129,7 +132,9 @@ export const WorkoutView: React.FC<WorkoutViewProps> = ({ onStartTimer }) => {
               <summary className="cursor-pointer text-xs font-bold text-slate-700">Alternative con animazione</summary>
               <div className="mt-3 grid gap-3 sm:grid-cols-2">
                 {exercise.alternatives.map(alternative => <div key={alternative.datasetId} className="flex gap-3 rounded-lg bg-slate-50 p-2">
-                  <img src={alternative.gifUrl} alt={`Animazione: ${alternative.name}`} className="h-20 w-20 shrink-0 rounded-lg object-cover" loading="lazy" />
+                  <button type="button" onClick={() => setZoomedGif({ src: alternative.gifUrl, alt: `Animazione: ${alternative.name}` })} className="shrink-0 rounded-lg" aria-label={`Ingrandisci animazione: ${alternative.name}`}>
+                    <img src={alternative.gifUrl} alt={`Animazione: ${alternative.name}`} className="h-20 w-20 rounded-lg object-cover" loading="lazy" />
+                  </button>
                   <div className="min-w-0 text-xs text-slate-700">
                     <p className="font-bold">{alternative.name}</p>
                     <p>Attrezzo: {alternative.equipment}</p>
@@ -192,6 +197,14 @@ export const WorkoutView: React.FC<WorkoutViewProps> = ({ onStartTimer }) => {
         <button type="button" onClick={() => updateDay({})} className="w-full rounded-full bg-emerald-700 py-3 text-sm font-bold text-white">Salva progressi</button>
       </fieldset>
       <p role="status" className="text-xs text-emerald-800">{saved}</p>
+      {zoomedGif && <div className="fixed inset-0 z-[70] flex items-center justify-center bg-slate-950/80 p-4" role="dialog" aria-modal="true" aria-label={zoomedGif.alt} onClick={() => setZoomedGif(null)}>
+        <div className="relative max-w-lg w-full" onClick={event => event.stopPropagation()}>
+          <button type="button" onClick={() => setZoomedGif(null)} className="absolute right-2 top-2 z-10 rounded-full bg-white/90 p-2 text-slate-900 shadow" aria-label="Chiudi animazione ingrandita">
+            <X className="h-5 w-5" />
+          </button>
+          <img src={zoomedGif.src} alt={zoomedGif.alt} className="max-h-[80vh] w-full rounded-2xl object-contain bg-white" />
+        </div>
+      </div>}
     </div>
   );
 };
