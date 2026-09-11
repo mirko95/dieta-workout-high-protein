@@ -1,3 +1,4 @@
+import { calendarDateKey, dayNumberFromDate } from '../utils/dates';
 import React, { useState } from 'react';
 import { Share, ChevronRight, X, Info, Flame, ShieldAlert } from 'lucide-react';
 
@@ -7,7 +8,7 @@ interface HeaderProps {
   onOpenInfo: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ currentDay, onSelectDay: _onSelectDay, onOpenInfo }) => {
+export const Header: React.FC<HeaderProps> = ({ currentDay, onSelectDay, onOpenInfo }) => {
   const [showPwaBanner, setShowPwaBanner] = useState<boolean>(() => {
     return !localStorage.getItem('pwa_banner_dismissed');
   });
@@ -29,7 +30,7 @@ export const Header: React.FC<HeaderProps> = ({ currentDay, onSelectDay: _onSele
               Dieta & Fit <span className="text-[#047857] text-[10px] font-bold px-2 py-0.5 bg-emerald-100/70 rounded-full border border-emerald-200">High-Protein</span>
             </h1>
             <p className="text-[11px] text-slate-500 font-semibold">
-              Piano 31 Giorni • ~1.800 kcal • ~142g prot
+              6 settimane • 21 set – 1 nov 2026
             </p>
           </div>
         </div>
@@ -44,6 +45,15 @@ export const Header: React.FC<HeaderProps> = ({ currentDay, onSelectDay: _onSele
           </button>
         </div>
       </div>
+
+      <label className="max-w-md mx-auto px-4 pb-2 flex items-center justify-between gap-3 text-xs font-semibold text-slate-600">
+        Data del piano alimentare
+        <input type="date" min="2026-09-01" max="2026-11-01" value={calendarDateKey(currentDay)} onChange={event => {
+          if (!event.target.value || !event.target.validity.valid) return;
+          const day = dayNumberFromDate(event.target.value);
+          if (day >= 1 && day <= 62) onSelectDay(day);
+        }} className="min-w-0 rounded-xl border border-slate-200 bg-white px-2 py-1.5 text-slate-800" />
+      </label>
 
       {/* iOS Add to Home Screen tip banner (dismissible) */}
       {showPwaBanner && (

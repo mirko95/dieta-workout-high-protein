@@ -1,0 +1,4343 @@
+[
+  {
+    "id": "healthy-03",
+    "title": "Overnight oats proteici al burro di arachidi",
+    "category": "COLAZIONE",
+    "kcal": 230.0,
+    "timeMinutes": 10,
+    "timeLabel": "10 minuti, più il riposo notturno",
+    "difficulty": "facile",
+    "defaultServings": 8,
+    "maxServings": 8,
+    "yieldLabel": "8 vasetti",
+    "description": "Overnight oats proteici al burro di arachidi",
+    "tags": [
+      "COLAZIONI"
+    ],
+    "ingredients": [
+      {
+        "name": "fiocchi d'avena",
+        "sourceText": "160 g di fiocchi d'avena",
+        "quantity": 160.0,
+        "quantityMax": 160.0,
+        "unit": "g"
+      },
+      {
+        "name": "proteine in polvere alla vaniglia, facoltativi (il PDF non specifica il peso di ogni misurino)",
+        "sourceText": "4 misurini di proteine in polvere alla vaniglia, facoltativi (il PDF non specifica il peso di ogni misurino)",
+        "quantity": 4.0,
+        "quantityMax": 4.0,
+        "unit": "misurini"
+      },
+      {
+        "name": "yogurt bianco",
+        "sourceText": "245 g di yogurt bianco",
+        "quantity": 245.0,
+        "quantityMax": 245.0,
+        "unit": "g"
+      },
+      {
+        "name": "1/4 di sciroppo d'acero oppure miele (nel PDF manca l'unità di misura dopo “1/4”, quindi non è possibile convertirla correttamente senza aggiungere un dato non presente nella fonte)",
+        "sourceText": "1/4 di sciroppo d'acero oppure miele (nel PDF manca l'unità di misura dopo “1/4”, quindi non è possibile convertirla correttamente senza aggiungere un dato non presente nella fonte)"
+      },
+      {
+        "name": "burro di arachidi cremoso",
+        "sourceText": "64 g di burro di arachidi cremoso",
+        "quantity": 64.0,
+        "quantityMax": 64.0,
+        "unit": "g"
+      },
+      {
+        "name": "latte a scelta",
+        "sourceText": "530 ml di latte a scelta",
+        "quantity": 530.0,
+        "quantityMax": 530.0,
+        "unit": "ml"
+      },
+      {
+        "name": "estratto di vaniglia",
+        "sourceText": "5 ml di estratto di vaniglia",
+        "quantity": 5.0,
+        "quantityMax": 5.0,
+        "unit": "ml"
+      },
+      {
+        "name": "Fragole fresche, per servire",
+        "sourceText": "Fragole fresche, per servire"
+      }
+    ],
+    "instructions": [
+      "Metti tutti gli ingredienti in un frullatore.",
+      "Frulla per 8-10 secondi, solo fino a quando gli ingredienti saranno amalgamati. Non frullare eccessivamente.",
+      "Dividi il composto in 8 vasetti.",
+      "Copri i vasetti e lasciali riposare in frigorifero per tutta la notte.",
+      "Servi con fragole fresche."
+    ],
+    "sourceUrl": "https://healthyfitnessmeals.com/peanut-butter-overnight-oats/",
+    "sourcePage": 3,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nCalorie: 230 kcal\nCarboidrati: 23 g\nProteine: 18 g\nGrassi: 8 g\nGrassi saturi: 3 g\nGrassi polinsaturi: 2 g\nGrassi monoinsaturi: 3 g\nColesterolo: 38 mg\nSodio: 120 mg\nPotassio: 335 mg\nFibre: 3 g\nZuccheri: 7 g\nVitamina A: 160 IU\nVitamina C: 1 mg\nCalcio: 211 mg\nFerro: 1 mg",
+    "sourceNotes": "In caso di necessità si possono utilizzare fiocchi d'avena a cottura rapida, anche se la ricetta consiglia i fiocchi d'avena tradizionali. Il burro di arachidi può essere sostituito con un altro burro di frutta secca. Come dolcificante si possono utilizzare miele, sciroppo d'acero oppure agave. È possibile utilizzare qualsiasi tipo o gusto di proteine in polvere, comprese quelle vegetali. Se non si utilizzano le proteine in polvere, il PDF suggerisce di sostituirle con circa 60 g di yogurt oppure 24-36 g di semi di chia. Si possono utilizzare fragole, altri frutti di bosco o altra frutta a scelta. La ricetta consiglia latte al 2% di grassi, ma è possibile utilizzare qualsiasi altro latte, compreso quello di mandorla.",
+    "originalProteinGrams": 18.0
+  },
+  {
+    "id": "healthy-05",
+    "title": "Uova strapazzate con pomodori e funghi",
+    "category": "COLAZIONE",
+    "kcal": 255.0,
+    "timeMinutes": 15,
+    "timeLabel": "5 minuti + 10 minuti",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 4,
+    "yieldLabel": "4",
+    "description": "Uova strapazzate con pomodori, funghi e pane integrale",
+    "tags": [
+      "COLAZIONI"
+    ],
+    "ingredients": [
+      {
+        "name": "pomodori, tagliati a metà",
+        "sourceText": "4 pomodori, tagliati a metà",
+        "quantity": 4.0,
+        "quantityMax": 4.0,
+        "unit": "pz"
+      },
+      {
+        "name": "funghi champignon piccoli",
+        "sourceText": "2 manciate di funghi champignon piccoli",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "manciate"
+      },
+      {
+        "name": "pane integrale",
+        "sourceText": "4 fette di pane integrale",
+        "quantity": 4.0,
+        "quantityMax": 4.0,
+        "unit": "fette"
+      },
+      {
+        "name": "uova",
+        "sourceText": "8 uova",
+        "quantity": 8.0,
+        "quantityMax": 8.0,
+        "unit": "pz"
+      },
+      {
+        "name": "latte con l’1% di grassi",
+        "sourceText": "4 cucchiai di latte con l’1% di grassi",
+        "quantity": 4.0,
+        "quantityMax": 4.0,
+        "unit": "cucchiai"
+      },
+      {
+        "name": "crema spalmabile a ridotto contenuto di grassi",
+        "sourceText": "2 cucchiaini di crema spalmabile a ridotto contenuto di grassi",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "cucchiaini"
+      },
+      {
+        "name": "pepe nero macinato",
+        "sourceText": "1 pizzico di pepe nero macinato",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pizzico"
+      }
+    ],
+    "instructions": [
+      "Preriscalda il grill. Disponi i pomodori e i funghi sulla griglia e cuocili per 8-10 minuti. Nel frattempo, tosta le fette di pane.",
+      "Alternativa: se preferisci, puoi sostituire i pomodori con alcune fette di peperone rosso o giallo grigliato.",
+      "In una ciotola, sbatti insieme le uova e il latte.",
+      "Sciogli la crema spalmabile a ridotto contenuto di grassi in un pentolino antiaderente, quindi versa il composto di uova.",
+      "Per un gusto più piccante: puoi aggiungere alle uova un pizzico di peperoncino in polvere o di fiocchi di peperoncino essiccato.",
+      "Cuoci a fuoco medio, mescolando continuamente con un cucchiaio di legno, finché le uova iniziano a rapprendersi, per circa 1 minuto.",
+      "Per evitare che diventino troppo asciutte, toglile dal fuoco quando sono ancora leggermente morbide: continueranno a cuocere con il calore residuo della pentola per un altro minuto o due.",
+      "Servi le uova strapazzate sulle fette di pane tostato, accompagnandole con i pomodori e i funghi grigliati. Completa con pepe nero a piacere."
+    ],
+    "sourceUrl": "https://www.nhs.uk/healthier-families/recipes/super-scrambled-eggs/",
+    "sourcePage": 5,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nEnergia: 1.067 kJ / 255 kcal\nProteine: 17 g\nGrassi: 13 g\ndi cui saturi: 3,5 g\nCarboidrati: 19 g\ndi cui zuccheri: 4 g\nFibre: 3 g\nSale: 1 g",
+    "sourceNotes": "",
+    "originalProteinGrams": 17.0
+  },
+  {
+    "id": "healthy-07",
+    "title": "Frullato ai frutti di bosco",
+    "category": "COLAZIONE",
+    "kcal": 157.0,
+    "timeMinutes": 5,
+    "timeLabel": "5 minuti + nessuna",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 4,
+    "yieldLabel": "4",
+    "description": "Frullato ai frutti di bosco",
+    "tags": [
+      "COLAZIONI"
+    ],
+    "ingredients": [
+      {
+        "name": "banana, sbucciata",
+        "sourceText": "1 banana, sbucciata",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "frutti di bosco estivi surgelati oppure mix di frutti di bosco",
+        "sourceText": "150 g di frutti di bosco estivi surgelati oppure mix di frutti di bosco",
+        "quantity": 150.0,
+        "quantityMax": 150.0,
+        "unit": "g"
+      },
+      {
+        "name": "yogurt naturale magro",
+        "sourceText": "150 g di yogurt naturale magro",
+        "quantity": 150.0,
+        "quantityMax": 150.0,
+        "unit": "g"
+      },
+      {
+        "name": "latte con l’1% di grassi",
+        "sourceText": "750 ml di latte con l’1% di grassi",
+        "quantity": 750.0,
+        "quantityMax": 750.0,
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "Taglia la banana a pezzi e mettila nel frullatore insieme ai frutti di bosco surgelati. Non è necessario scongelarli prima.",
+      "Aggiungi lo yogurt magro e il latte. Frulla per 15-20 secondi, quindi versa il frullato in 4 bicchieri.",
+      "Servi subito, ben freddo.",
+      "Suggerimento: puoi utilizzare frutti di bosco misti o lamponi surgelati. Usandoli ancora congelati otterrai un frullato particolarmente fresco.",
+      "Se non hai un frullatore tradizionale, puoi utilizzare anche un frullatore a immersione.",
+      "Alternativa senza latticini: sostituisci latte e yogurt con alternative a base di soia."
+    ],
+    "sourceUrl": "https://www.nhs.uk/healthier-families/recipes/forest-fruit-milkshake/",
+    "sourcePage": 7,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nEnergia: 657 kJ / 157 kcal\nProteine: 9 g\nCarboidrati: 23 g\ndi cui zuccheri: 22 g\nGrassi: 4,5 g\ndi cui saturi: 2 g\nFibre: 1 g\nSale: 0,25 g",
+    "sourceNotes": "",
+    "originalProteinGrams": 9.0
+  },
+  {
+    "id": "healthy-09",
+    "title": "Pancake con fiocchi di latte",
+    "category": "COLAZIONE",
+    "kcal": 92.0,
+    "timeMinutes": 20,
+    "timeLabel": "20 minuti",
+    "difficulty": "facile",
+    "defaultServings": 8,
+    "maxServings": 8,
+    "yieldLabel": "8 pancake",
+    "description": "Pancake con fiocchi di latte",
+    "tags": [
+      "COLAZIONI"
+    ],
+    "ingredients": [
+      {
+        "name": "fiocchi d'avena",
+        "sourceText": "240 ml di fiocchi d'avena",
+        "quantity": 240.0,
+        "quantityMax": 240.0,
+        "unit": "ml"
+      },
+      {
+        "name": "banana grande",
+        "sourceText": "1 banana grande",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "estratto di vaniglia",
+        "sourceText": "5 ml di estratto di vaniglia",
+        "quantity": 5.0,
+        "quantityMax": 5.0,
+        "unit": "ml"
+      },
+      {
+        "name": "lievito per dolci",
+        "sourceText": "5 ml di lievito per dolci",
+        "quantity": 5.0,
+        "quantityMax": 5.0,
+        "unit": "ml"
+      },
+      {
+        "name": "bicarbonato di sodio",
+        "sourceText": "2,5 ml di bicarbonato di sodio",
+        "quantity": 2.5,
+        "quantityMax": 2.5,
+        "unit": "ml"
+      },
+      {
+        "name": "uovo grande",
+        "sourceText": "1 uovo grande",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "fiocchi di latte",
+        "sourceText": "120 ml di fiocchi di latte",
+        "quantity": 120.0,
+        "quantityMax": 120.0,
+        "unit": "ml"
+      },
+      {
+        "name": "olio di cocco",
+        "sourceText": "15 ml di olio di cocco",
+        "quantity": 15.0,
+        "quantityMax": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "Frutta fresca, facoltativa",
+        "sourceText": "Frutta fresca, facoltativa"
+      },
+      {
+        "name": "Sciroppo d'acero, facoltativo",
+        "sourceText": "Sciroppo d'acero, facoltativo"
+      }
+    ],
+    "instructions": [
+      "Metti i fiocchi d'avena in un frullatore ad alta potenza e frulla fino a ridurli finemente.",
+      "Aggiungi la banana, la vaniglia, il lievito, il bicarbonato, l'uovo e i fiocchi di latte. Frulla solo fino a ottenere un composto omogeneo.",
+      "Scalda una padella antiaderente a fuoco medio-basso e ungila con una piccola quantità di olio di cocco.",
+      "Versa circa 60 ml di impasto per ogni pancake. Puoi cuocerne circa 4 alla volta.",
+      "Poiché l'impasto è piuttosto denso, allargalo leggermente con una spatola.",
+      "Cuoci per circa 2 minuti, gira il pancake e cuoci per altri 2 minuti.",
+      "Ripeti con l'impasto e l'olio rimanenti.",
+      "Servi con frutta fresca e, se desideri, un filo di sciroppo d'acero."
+    ],
+    "sourceUrl": "https://healthyfitnessmeals.com/cottage-cheese-pancakes/",
+    "sourcePage": 9,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nCalorie: 92 kcal\nCarboidrati: 11 g\nProteine: 4 g\nGrassi: 4 g\nGrassi saturi: 2 g\nGrassi polinsaturi: 0,4 g\nGrassi monoinsaturi: 1 g\nGrassi trans: 0,003 g\nColesterolo: 25 mg\nSodio: 172 mg\nPotassio: 121 mg\nFibre: 1 g\nZuccheri: 3 g\nVitamina A: 63 IU\nVitamina C: 1 mg\nCalcio: 50 mg\nFerro: 1 mg",
+    "sourceNotes": "I pancake avanzati si conservano molto bene sia in frigorifero sia nel congelatore. In frigorifero: conservarli in un contenitore ermetico o in un sacchetto richiudibile per un massimo di 4 giorni. Nel congelatore: disponili su una teglia senza sovrapporli e congelali per circa 30 minuti. Trasferiscili poi in sacchetti o contenitori adatti al congelatore e conservali fino a 3 mesi. Per riscaldarli direttamente da congelati, mettili nel microonde per 30-60 secondi, oppure utilizza tostapane, fornetto o friggitrice ad aria.",
+    "originalProteinGrams": 4.0
+  },
+  {
+    "id": "healthy-11",
+    "title": "Pancake alla banana e fiocchi di latte",
+    "category": "COLAZIONE",
+    "kcal": 122.0,
+    "timeMinutes": 30,
+    "timeLabel": "30 minuti",
+    "difficulty": "facile",
+    "defaultServings": 12,
+    "maxServings": 14,
+    "yieldLabel": "12-14 pancake",
+    "description": "Pancake banana e fiocchi di latte",
+    "tags": [
+      "COLAZIONI"
+    ],
+    "ingredients": [
+      {
+        "name": "uova grandi",
+        "sourceText": "2 uova grandi",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "pz"
+      },
+      {
+        "name": "fiocchi di latte",
+        "sourceText": "240 ml di fiocchi di latte",
+        "quantity": 240.0,
+        "quantityMax": 240.0,
+        "unit": "ml"
+      },
+      {
+        "name": "banane mature, schiacciate",
+        "sourceText": "2 banane mature, schiacciate",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "pz"
+      },
+      {
+        "name": "miele",
+        "sourceText": "80 ml di miele",
+        "quantity": 80.0,
+        "quantityMax": 80.0,
+        "unit": "ml"
+      },
+      {
+        "name": "latte intero",
+        "sourceText": "80 ml di latte intero",
+        "quantity": 80.0,
+        "quantityMax": 80.0,
+        "unit": "ml"
+      },
+      {
+        "name": "estratto di vaniglia",
+        "sourceText": "10 ml di estratto di vaniglia",
+        "quantity": 10.0,
+        "quantityMax": 10.0,
+        "unit": "ml"
+      },
+      {
+        "name": "farina d'avena",
+        "sourceText": "360 ml di farina d'avena",
+        "quantity": 360.0,
+        "quantityMax": 360.0,
+        "unit": "ml"
+      },
+      {
+        "name": "lievito per dolci",
+        "sourceText": "5 ml di lievito per dolci",
+        "quantity": 5.0,
+        "quantityMax": 5.0,
+        "unit": "ml"
+      },
+      {
+        "name": "bicarbonato di sodio",
+        "sourceText": "2,5 ml di bicarbonato di sodio",
+        "quantity": 2.5,
+        "quantityMax": 2.5,
+        "unit": "ml"
+      },
+      {
+        "name": "Olio vegetale oppure spray da cucina, per la cottura",
+        "sourceText": "Olio vegetale oppure spray da cucina, per la cottura"
+      },
+      {
+        "name": "Miele oppure sciroppo d'acero",
+        "notes": "PER SERVIRE, FACOLTATIVO",
+        "sourceText": "Miele oppure sciroppo d'acero"
+      },
+      {
+        "name": "Frutta fresca",
+        "notes": "PER SERVIRE, FACOLTATIVO",
+        "sourceText": "Frutta fresca"
+      },
+      {
+        "name": "Frutta secca, tritata",
+        "notes": "PER SERVIRE, FACOLTATIVO",
+        "sourceText": "Frutta secca, tritata"
+      }
+    ],
+    "instructions": [
+      "In una ciotola, sbatti le uova insieme ai fiocchi di latte, alle banane schiacciate, al miele, al latte e all'estratto di vaniglia.",
+      "In una seconda ciotola, mescola la farina d'avena con il lievito e il bicarbonato.",
+      "Aggiungi gli ingredienti secchi al composto di uova e mescola fino ad amalgamare.",
+      "Scalda una padella antiaderente grande a fuoco medio-basso e ungila leggermente con olio vegetale o spray da cucina.",
+      "Versa circa 3 cucchiaiate di impasto per ogni pancake.",
+      "Cuoci per circa 2 minuti per lato. In una padella grande puoi cuocere circa 4 pancake alla volta.",
+      "Non realizzare pancake troppo grandi, perché risulterebbero difficili da girare.",
+      "Servi, se desideri, con miele o sciroppo d'acero, frutta fresca o frutta secca."
+    ],
+    "sourceUrl": "https://healthyfitnessmeals.com/banana-cottage-cheese-pancakes/",
+    "sourcePage": 11,
+    "nutritionLabel": "Per 1 pancake:",
+    "nutritionDetails": "Per 1 pancake:\nCalorie: 122 kcal\nCarboidrati: 20 g\nProteine: 5 g\nGrassi: 3 g\nGrassi saturi: 1 g\nGrassi polinsaturi: 1 g\nGrassi monoinsaturi: 1 g\nGrassi trans: 0,003 g\nColesterolo: 30 mg\nSodio: 132 mg\nPotassio: 147 mg\nFibre: 1 g\nZuccheri: 10 g\nVitamina A: 80 IU\nVitamina C: 2 mg\nCalcio: 49 mg\nFerro: 1 mg",
+    "sourceNotes": "La ricetta produce circa 12-14 pancake. I valori nutrizionali indicati sono riferiti a 1 pancake. Il PDF indica che si possono considerare circa 4 porzioni, servendo 3 pancake a persona. In frigorifero: lascia raffreddare i pancake e conservali in un contenitore richiudibile per un massimo di 3 giorni. Per riscaldarli, utilizza il tostapane. Nel congelatore: lascia raffreddare i pancake, disponili in un unico strato su un vassoio e congelali fino a quando saranno solidi. Trasferiscili poi in un sacchetto richiudibile e conservali fino a 3 mesi. I pancake congelati possono essere riscaldati direttamente nel tostapane fino a quando saranno scongelati e ben caldi.",
+    "originalProteinGrams": 5.0
+  },
+  {
+    "id": "healthy-13",
+    "title": "Avena al forno con mirtilli in friggitrice ad aria",
+    "category": "COLAZIONE",
+    "kcal": 0,
+    "timeMinutes": 12,
+    "timeLabel": "10-12 minuti",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 4,
+    "yieldLabel": "4",
+    "description": "Avena al forno con mirtilli",
+    "tags": [
+      "COLAZIONI"
+    ],
+    "ingredients": [
+      {
+        "name": "uova",
+        "sourceText": "2 uova",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "pz"
+      },
+      {
+        "name": "latte",
+        "sourceText": "400 ml di latte",
+        "quantity": 400.0,
+        "quantityMax": 400.0,
+        "unit": "ml"
+      },
+      {
+        "name": "miele liquido oppure sciroppo d’acero",
+        "sourceText": "4 cucchiai di miele liquido oppure sciroppo d’acero",
+        "quantity": 4.0,
+        "quantityMax": 4.0,
+        "unit": "cucchiai"
+      },
+      {
+        "name": "fiocchi d’avena",
+        "sourceText": "200 g di fiocchi d’avena",
+        "quantity": 200.0,
+        "quantityMax": 200.0,
+        "unit": "g"
+      },
+      {
+        "name": "lievito in polvere",
+        "sourceText": "2 cucchiaini di lievito in polvere",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "cucchiaini"
+      },
+      {
+        "name": "abbondante di sale",
+        "sourceText": "1 pizzico abbondante di sale",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pizzico"
+      },
+      {
+        "name": "mirtilli freschi oppure altri frutti di bosco surgelati",
+        "sourceText": "100 g di mirtilli freschi oppure altri frutti di bosco surgelati",
+        "quantity": 100.0,
+        "quantityMax": 100.0,
+        "unit": "g"
+      },
+      {
+        "name": "Yogurt bianco, per servire (facoltativo)",
+        "sourceText": "Yogurt bianco, per servire (facoltativo)"
+      }
+    ],
+    "instructions": [
+      "Sbatti insieme le uova, il latte e il miele in una ciotola capiente.",
+      "Aggiungi i fiocchi d’avena, il lievito e il sale e mescola fino a ottenere un composto ben amalgamato.",
+      "Se hai tempo, lascia riposare il composto per 5-10 minuti, in modo che l’avena possa assorbire parte del latte.",
+      "Preriscalda la friggitrice ad aria a 175°C.",
+      "Dividi il composto tra 4 piccoli recipienti resistenti al calore, oppure ramekin da circa 150 ml ciascuno. Distribuisci i mirtilli sulla superficie.",
+      "Cuoci nella friggitrice ad aria per 10-12 minuti, finché l’avena sarà rappresa e leggermente dorata.",
+      "Servi calda oppure fredda e, se desideri, completa ogni porzione con un cucchiaio di yogurt bianco."
+    ],
+    "sourceUrl": "https://www.bbc.co.uk/food/recipes/air_fryer_baked_79434",
+    "sourcePage": 13,
+    "nutritionLabel": "Non sono indicati valori nutrizionali nella ricetta BBC Food originale.",
+    "nutritionDetails": "Non sono indicati valori nutrizionali nella ricetta BBC Food originale.",
+    "sourceNotes": ""
+  },
+  {
+    "id": "healthy-15",
+    "title": "French toast alla frutta",
+    "category": "COLAZIONE",
+    "kcal": 115.0,
+    "timeMinutes": 15,
+    "timeLabel": "10 minuti + 5 minuti",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 4,
+    "yieldLabel": "4",
+    "description": "French toast alla frutta",
+    "tags": [
+      "COLAZIONI"
+    ],
+    "ingredients": [
+      {
+        "name": "pane alla frutta",
+        "sourceText": "4 fette di pane alla frutta",
+        "quantity": 4.0,
+        "quantityMax": 4.0,
+        "unit": "fette"
+      },
+      {
+        "name": "uovo",
+        "sourceText": "1 uovo",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "latte con l’1% di grassi",
+        "sourceText": "150 ml di latte con l’1% di grassi",
+        "quantity": 150.0,
+        "quantityMax": 150.0,
+        "unit": "ml"
+      },
+      {
+        "name": "estratto di vaniglia",
+        "sourceText": "1 cucchiaino di estratto di vaniglia",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "cucchiaino"
+      },
+      {
+        "name": "olio vegetale",
+        "sourceText": "½ cucchiaino di olio vegetale",
+        "quantity": 0.5,
+        "quantityMax": 0.5,
+        "unit": "cucchiaino"
+      },
+      {
+        "name": "banane, sbucciate e affettate",
+        "sourceText": "4 banane, sbucciate e affettate",
+        "quantity": 4.0,
+        "quantityMax": 4.0,
+        "unit": "pz"
+      },
+      {
+        "name": "frutti di bosco estivi surgelati, scongelati",
+        "sourceText": "200 g di frutti di bosco estivi surgelati, scongelati",
+        "quantity": 200.0,
+        "quantityMax": 200.0,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "Taglia ogni fetta di pane diagonalmente a metà. Il pane alla frutta leggermente raffermo è particolarmente adatto, perché assorbe meglio il composto di uova e latte.",
+      "In un piatto largo e poco profondo, sbatti insieme l’uovo, il latte e l’estratto di vaniglia. Immergi il pane e lascialo riposare per circa 2-3 minuti, girandolo una volta in modo che si impregni bene su entrambi i lati.",
+      "Scalda una grande padella antiaderente con l’olio. Cuoci il pane a fuoco dolce per 1-2 minuti, finché sarà dorato, quindi giralo e cuoci l’altro lato per altri 1-2 minuti.",
+      "Distribuisci il French toast su 4 piatti caldi. Completa con le banane affettate e i frutti di bosco scongelati.",
+      "Varianti: al posto di banane e frutti di bosco puoi utilizzare mango fresco a fette, ananas o pesche al naturale, oppure fragole, lamponi o mirtilli freschi quando sono di stagione."
+    ],
+    "sourceUrl": "https://www.nhs.uk/healthier-families/recipes/fruity-french-toast/",
+    "sourcePage": 15,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nEnergia: 481 kJ / 115 kcal\nProteine: 4 g\nCarboidrati: 20 g\ndi cui zuccheri: 18 g\nGrassi: 3 g\ndi cui saturi: 1 g\nFibre: 1 g\nSale: 0,08 g",
+    "sourceNotes": "",
+    "originalProteinGrams": 4.0
+  },
+  {
+    "id": "healthy-17",
+    "title": "Frullato proteico al cioccolato e burro di arachidi",
+    "category": "COLAZIONE",
+    "kcal": 320.0,
+    "timeMinutes": 5,
+    "timeLabel": "5 minuti",
+    "difficulty": "facile",
+    "defaultServings": 2,
+    "maxServings": 2,
+    "yieldLabel": "2",
+    "description": "Frullato cioccolato e burro di arachidi",
+    "tags": [
+      "COLAZIONI"
+    ],
+    "ingredients": [
+      {
+        "name": "banane congelate",
+        "sourceText": "2 banane congelate",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "pz"
+      },
+      {
+        "name": "burro di arachidi",
+        "sourceText": "30 ml di burro di arachidi",
+        "quantity": 30.0,
+        "quantityMax": 30.0,
+        "unit": "ml"
+      },
+      {
+        "name": "latte di mandorla oppure altro latte a scelta",
+        "sourceText": "120 ml di latte di mandorla oppure altro latte a scelta",
+        "quantity": 120.0,
+        "quantityMax": 120.0,
+        "unit": "ml"
+      },
+      {
+        "name": "cacao amaro in polvere",
+        "sourceText": "30 ml di cacao amaro in polvere",
+        "quantity": 30.0,
+        "quantityMax": 30.0,
+        "unit": "ml"
+      },
+      {
+        "name": "proteine in polvere al cioccolato, equivalente a circa 80 ml di volume",
+        "sourceText": "1 misurino di proteine in polvere al cioccolato, equivalente a circa 80 ml di volume",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "misurino"
+      },
+      {
+        "name": "semi di lino macinati",
+        "sourceText": "15 ml di semi di lino macinati",
+        "quantity": 15.0,
+        "quantityMax": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "miele, facoltativo",
+        "sourceText": "15 ml di miele, facoltativo",
+        "quantity": 15.0,
+        "quantityMax": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "Una manciata di cubetti di ghiaccio",
+        "sourceText": "Una manciata di cubetti di ghiaccio"
+      },
+      {
+        "name": "Cioccolato grattugiato o tritato",
+        "notes": "GUARNIZIONI FACOLTATIVE",
+        "sourceText": "Cioccolato grattugiato o tritato"
+      },
+      {
+        "name": "Fiocchi d'avena",
+        "notes": "GUARNIZIONI FACOLTATIVE",
+        "sourceText": "Fiocchi d'avena"
+      },
+      {
+        "name": "Codette decorative",
+        "notes": "GUARNIZIONI FACOLTATIVE",
+        "sourceText": "Codette decorative"
+      },
+      {
+        "name": "Arachidi tostate tritate",
+        "notes": "GUARNIZIONI FACOLTATIVE",
+        "sourceText": "Arachidi tostate tritate"
+      },
+      {
+        "name": "Burro di arachidi",
+        "notes": "GUARNIZIONI FACOLTATIVE",
+        "sourceText": "Burro di arachidi"
+      },
+      {
+        "name": "Sciroppo al cioccolato",
+        "notes": "GUARNIZIONI FACOLTATIVE",
+        "sourceText": "Sciroppo al cioccolato"
+      }
+    ],
+    "instructions": [
+      "Metti nel frullatore le banane congelate, il burro di arachidi, il latte, il cacao, le proteine in polvere, i semi di lino, il miele e una manciata di ghiaccio.",
+      "Frulla ad alta velocità fino a ottenere un composto liscio e cremoso.",
+      "Versa il frullato in 2 bicchieri o vasetti.",
+      "Aggiungi, se desideri, cioccolato tritato, fiocchi d'avena, codette, arachidi tostate oppure un filo di burro di arachidi o sciroppo al cioccolato.",
+      "Servi subito."
+    ],
+    "sourceUrl": "https://healthyfitnessmeals.com/chocolate-peanut-butter-protein-shake/",
+    "sourcePage": 17,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nCalorie: 320 kcal\nCarboidrati: 47 g\nProteine: 16 g\nGrassi: 12 g\nGrassi saturi: 3 g\nGrassi polinsaturi: 3 g\nGrassi monoinsaturi: 5 g\nColesterolo: 18 mg\nSodio: 215 mg\nPotassio: 737 mg\nFibre: 9 g\nZuccheri: 25 g\nVitamina A: 76 IU\nVitamina C: 10 mg\nCalcio: 206 mg\nFerro: 2 mg",
+    "sourceNotes": "Per aumentare il contenuto proteico, il PDF suggerisce di utilizzare latte vaccino, latte di soia oppure aggiungere qualche cucchiaio di fiocchi di latte a basso contenuto di grassi. Per una versione meno calorica, sostituisci il burro di arachidi con burro di arachidi in polvere, come PB2. A seconda della dolcezza delle banane e delle proteine in polvere, potrebbe non essere necessario aggiungere il miele. In alternativa al miele si possono utilizzare un paio di datteri denocciolati, che aggiungono dolcezza e fibre.",
+    "originalProteinGrams": 16.0
+  },
+  {
+    "id": "healthy-19",
+    "title": "Budino di chia vegano alla torta di mele e cannella",
+    "category": "COLAZIONE",
+    "kcal": 255.0,
+    "timeMinutes": 250,
+    "timeLabel": "4 ore e 10 minuti",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 4,
+    "yieldLabel": "4",
+    "description": "Budino di chia mela e cannella",
+    "tags": [
+      "COLAZIONI"
+    ],
+    "ingredients": [
+      {
+        "name": "semi di chia",
+        "notes": "PER IL BUDINO DI CHIA",
+        "sourceText": "55 g di semi di chia",
+        "quantity": 55.0,
+        "quantityMax": 55.0,
+        "unit": "g"
+      },
+      {
+        "name": "purea di mele senza zucchero",
+        "notes": "PER IL BUDINO DI CHIA",
+        "sourceText": "80 g di purea di mele senza zucchero",
+        "quantity": 80.0,
+        "quantityMax": 80.0,
+        "unit": "g"
+      },
+      {
+        "name": "latte a scelta",
+        "notes": "PER IL BUDINO DI CHIA",
+        "sourceText": "300 ml di latte a scelta",
+        "quantity": 300.0,
+        "quantityMax": 300.0,
+        "unit": "ml"
+      },
+      {
+        "name": "sciroppo d'acero",
+        "notes": "PER IL BUDINO DI CHIA",
+        "sourceText": "30 ml di sciroppo d'acero",
+        "quantity": 30.0,
+        "quantityMax": 30.0,
+        "unit": "ml"
+      },
+      {
+        "name": "estratto di vaniglia",
+        "notes": "PER IL BUDINO DI CHIA",
+        "sourceText": "5 ml di estratto di vaniglia",
+        "quantity": 5.0,
+        "quantityMax": 5.0,
+        "unit": "ml"
+      },
+      {
+        "name": "cannella in polvere",
+        "notes": "PER IL BUDINO DI CHIA",
+        "sourceText": "1,3 g di cannella in polvere",
+        "quantity": 1.3,
+        "quantityMax": 1.3,
+        "unit": "g"
+      },
+      {
+        "name": "olio di cocco",
+        "notes": "PER LA GUARNIZIONE ALLA TORTA DI MELE",
+        "sourceText": "14 g di olio di cocco",
+        "quantity": 14.0,
+        "quantityMax": 14.0,
+        "unit": "g"
+      },
+      {
+        "name": "mele grandi, sbucciate e tagliate a cubetti",
+        "notes": "PER LA GUARNIZIONE ALLA TORTA DI MELE",
+        "sourceText": "2 mele grandi, sbucciate e tagliate a cubetti",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "pz"
+      },
+      {
+        "name": "cannella",
+        "notes": "PER LA GUARNIZIONE ALLA TORTA DI MELE",
+        "sourceText": "1,3 g di cannella",
+        "quantity": 1.3,
+        "quantityMax": 1.3,
+        "unit": "g"
+      },
+      {
+        "name": "noce moscata macinata",
+        "notes": "PER LA GUARNIZIONE ALLA TORTA DI MELE",
+        "sourceText": "0,5 g di noce moscata macinata",
+        "quantity": 0.5,
+        "quantityMax": 0.5,
+        "unit": "g"
+      },
+      {
+        "name": "sciroppo d'acero",
+        "notes": "PER LA GUARNIZIONE ALLA TORTA DI MELE",
+        "sourceText": "30 ml di sciroppo d'acero",
+        "quantity": 30.0,
+        "quantityMax": 30.0,
+        "unit": "ml"
+      },
+      {
+        "name": "Noci pecan, facoltative, per guarnire",
+        "notes": "PER LA GUARNIZIONE ALLA TORTA DI MELE",
+        "sourceText": "Noci pecan, facoltative, per guarnire"
+      }
+    ],
+    "instructions": [
+      "In una ciotola, mescola bene tutti gli ingredienti del budino di chia.",
+      "Metti il composto in frigorifero e lascialo riposare per almeno 4 ore, o per tutta la notte, finché avrà raggiunto una consistenza densa.",
+      "Per preparare la guarnizione di mele, scalda l'olio di cocco in una padella a fuoco alto.",
+      "Aggiungi le mele tagliate a cubetti, la cannella e la noce moscata.",
+      "Cuoci per 4-5 minuti, mescolando di tanto in tanto.",
+      "Aggiungi lo sciroppo d'acero e continua la cottura per altri 2 minuti circa.",
+      "Quando il budino di chia si sarà addensato, dividilo in 4 vasetti o ciotole.",
+      "Distribuisci sopra ogni porzione le mele speziate. Aggiungi, se desideri, le noci pecan.",
+      "Servi subito oppure conserva in frigorifero."
+    ],
+    "sourceUrl": "https://healthyfitnessmeals.com/apple-pie-chia-pudding-recipe/",
+    "sourcePage": 19,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nCalorie: 255 kcal\nCarboidrati: 42 g\nProteine: 5 g\nGrassi: 9 g\nGrassi saturi: 4 g\nGrassi polinsaturi: 3 g\nGrassi monoinsaturi: 1 g\nGrassi trans: 0,02 g\nColesterolo: 4 mg\nSodio: 35 mg\nPotassio: 358 mg\nFibre: 8 g\nZuccheri: 29 g\nVitamina A: 220 IU\nVitamina C: 6 mg\nCalcio: 217 mg\nFerro: 1 mg",
+    "sourceNotes": "Per una versione completamente vegana, utilizza un latte vegetale, come latte di cocco, latte di mandorla o latte di anacardi. Se non è necessario che la ricetta sia vegana, lo sciroppo d'acero può essere sostituito con miele. Al posto della cannella e della noce moscata si può utilizzare un mix di spezie per torta di mele. Lascia i semi di chia in ammollo in frigorifero per almeno 4 ore oppure per tutta la notte.",
+    "originalProteinGrams": 5.0
+  },
+  {
+    "id": "healthy-21",
+    "title": "Shakshuka verde",
+    "category": "PRANZO / CENA",
+    "kcal": 337.0,
+    "timeMinutes": 35,
+    "timeLabel": "10 minuti + 25 minuti",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 4,
+    "yieldLabel": "4",
+    "description": "Shakshuka verde",
+    "tags": [
+      "COLAZIONI"
+    ],
+    "ingredients": [
+      {
+        "name": "olio d’oliva",
+        "sourceText": "3 cucchiai di olio d’oliva",
+        "quantity": 3.0,
+        "quantityMax": 3.0,
+        "unit": "cucchiai"
+      },
+      {
+        "name": "porri, lavati e affettati",
+        "sourceText": "2 porri, lavati e affettati",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "pz"
+      },
+      {
+        "name": "spinaci baby",
+        "sourceText": "200 g di spinaci baby",
+        "quantity": 200.0,
+        "quantityMax": 200.0,
+        "unit": "g"
+      },
+      {
+        "name": "piselli surgelati",
+        "sourceText": "250 g di piselli surgelati",
+        "quantity": 250.0,
+        "quantityMax": 250.0,
+        "unit": "g"
+      },
+      {
+        "name": "aglio grandi, tritati finemente",
+        "sourceText": "2 spicchi d’aglio grandi, tritati finemente",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "spicchi"
+      },
+      {
+        "name": "semi di cumino",
+        "sourceText": "1 cucchiaio di semi di cumino",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "cucchiaio"
+      },
+      {
+        "name": "piccolo mazzetto di prezzemolo, tritato grossolanamente",
+        "sourceText": "1 piccolo mazzetto di prezzemolo, tritato grossolanamente",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "piccolo mazzetto di coriandolo, tritato grossolanamente",
+        "sourceText": "1 piccolo mazzetto di coriandolo, tritato grossolanamente",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "piccolo mazzetto di menta, con le foglie tritate grossolanamente; conservarne alcune per decorare",
+        "sourceText": "1 piccolo mazzetto di menta, con le foglie tritate grossolanamente; conservarne alcune per decorare",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "uova medie",
+        "sourceText": "8 uova medie",
+        "quantity": 8.0,
+        "quantityMax": 8.0,
+        "unit": "pz"
+      },
+      {
+        "name": "yogurt naturale",
+        "sourceText": "150 g di yogurt naturale",
+        "quantity": 150.0,
+        "quantityMax": 150.0,
+        "unit": "g"
+      },
+      {
+        "name": "harissa",
+        "sourceText": "1 cucchiaio di harissa",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "cucchiaio"
+      },
+      {
+        "name": "Pane piatto oppure pane a lievitazione naturale croccante, per servire",
+        "sourceText": "Pane piatto oppure pane a lievitazione naturale croccante, per servire"
+      },
+      {
+        "name": "Sale e pepe q.b.",
+        "sourceText": "Sale e pepe q.b."
+      }
+    ],
+    "instructions": [
+      "Scalda l’olio in una padella larga e poco profonda a fuoco medio. Aggiungi i porri con un pizzico di sale e cuocili per circa 4 minuti, finché diventano morbidi. Unisci gradualmente gli spinaci e mescola finché appassiscono.",
+      "Aggiungi i piselli, l’aglio, i semi di cumino, il prezzemolo, il coriandolo e la menta. Regola di sale e pepe e lascia insaporire per qualche minuto.",
+      "Crea quattro spazi tra le verdure e rompi due uova in ciascuno. Copri la padella e cuoci per circa 10 minuti, finché gli albumi risultano rappresi ma i tuorli sono ancora morbidi.",
+      "Completa con un po’ di sale in fiocchi. Distribuisci sulla superficie lo yogurt e l’harissa, quindi aggiungi le foglie di menta tenute da parte. Servi subito accompagnando con pane piatto o pane croccante."
+    ],
+    "sourceUrl": "https://www.bbcgoodfood.com/recipes/green-shakshuka",
+    "sourcePage": 21,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nEnergia: 337 kcal\nGrassi: 20 g\ndi cui saturi: 5 g\nCarboidrati: 13 g\ndi cui zuccheri: 8 g\nFibre: 7 g\nProteine: 22 g\nSale: 0,6 g",
+    "sourceNotes": "",
+    "originalProteinGrams": 22.0
+  },
+  {
+    "id": "healthy-23",
+    "title": "Chili vegetariano con fagioli e quinoa",
+    "category": "PRANZO / CENA",
+    "kcal": 348.0,
+    "timeMinutes": 40,
+    "timeLabel": "40 minuti",
+    "difficulty": "facile",
+    "defaultServings": 8,
+    "maxServings": 8,
+    "yieldLabel": "8",
+    "description": "Chili vegetariano con fagioli e quinoa",
+    "tags": [
+      "LEGUMI E PROTEINE VEGETALI"
+    ],
+    "ingredients": [
+      {
+        "name": "olio extravergine d’oliva",
+        "sourceText": "15 ml di olio extravergine d’oliva",
+        "quantity": 15.0,
+        "quantityMax": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "cipolla rossa grande, tagliata a cubetti",
+        "sourceText": "1 cipolla rossa grande, tagliata a cubetti",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "aglio, tritati",
+        "sourceText": "4 spicchi d’aglio, tritati",
+        "quantity": 4.0,
+        "quantityMax": 4.0,
+        "unit": "spicchi"
+      },
+      {
+        "name": "pomodori a cubetti con il loro succo",
+        "sourceText": "circa 400 g di pomodori a cubetti con il loro succo",
+        "quantity": 400.0,
+        "quantityMax": 400.0,
+        "unit": "g"
+      },
+      {
+        "name": "pomodori tritati",
+        "sourceText": "circa 800 g di pomodori tritati",
+        "quantity": 800.0,
+        "quantityMax": 800.0,
+        "unit": "g"
+      },
+      {
+        "name": "quinoa cruda",
+        "sourceText": "circa 170 g di quinoa cruda",
+        "quantity": 170.0,
+        "quantityMax": 170.0,
+        "unit": "g"
+      },
+      {
+        "name": "brodo vegetale",
+        "sourceText": "1,2 litri di brodo vegetale",
+        "quantity": 1.2,
+        "quantityMax": 1.2,
+        "unit": "litri"
+      },
+      {
+        "name": "fagioli rossi in scatola, scolati e risciacquati",
+        "sourceText": "425 g di fagioli rossi in scatola, scolati e risciacquati",
+        "quantity": 425.0,
+        "quantityMax": 425.0,
+        "unit": "g"
+      },
+      {
+        "name": "fagioli neri in scatola, scolati e risciacquati",
+        "sourceText": "850 g di fagioli neri in scatola, scolati e risciacquati",
+        "quantity": 850.0,
+        "quantityMax": 850.0,
+        "unit": "g"
+      },
+      {
+        "name": "mais surgelato, scongelato",
+        "sourceText": "circa 165 g di mais surgelato, scongelato",
+        "quantity": 165.0,
+        "quantityMax": 165.0,
+        "unit": "g"
+      },
+      {
+        "name": "peperoncini verdi a cubetti",
+        "sourceText": "circa 200 g di peperoncini verdi a cubetti",
+        "quantity": 200.0,
+        "quantityMax": 200.0,
+        "unit": "g"
+      },
+      {
+        "name": "chili in polvere",
+        "sourceText": "30 ml di chili in polvere",
+        "quantity": 30.0,
+        "quantityMax": 30.0,
+        "unit": "ml"
+      },
+      {
+        "name": "cumino macinato",
+        "sourceText": "10 ml di cumino macinato",
+        "quantity": 10.0,
+        "quantityMax": 10.0,
+        "unit": "ml"
+      },
+      {
+        "name": "paprika affumicata",
+        "sourceText": "10 ml di paprika affumicata",
+        "quantity": 10.0,
+        "quantityMax": 10.0,
+        "unit": "ml"
+      },
+      {
+        "name": "cacao amaro in polvere",
+        "sourceText": "15 ml di cacao amaro in polvere",
+        "quantity": 15.0,
+        "quantityMax": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "Sale kosher e pepe q.b.",
+        "sourceText": "Sale kosher e pepe q.b."
+      },
+      {
+        "name": "Formaggio grattugiato",
+        "notes": "CONDIMENTI FACOLTATIVI",
+        "sourceText": "Formaggio grattugiato"
+      },
+      {
+        "name": "Panna acida",
+        "notes": "CONDIMENTI FACOLTATIVI",
+        "sourceText": "Panna acida"
+      },
+      {
+        "name": "Cipollotto",
+        "notes": "CONDIMENTI FACOLTATIVI",
+        "sourceText": "Cipollotto"
+      },
+      {
+        "name": "Avocado",
+        "notes": "CONDIMENTI FACOLTATIVI",
+        "sourceText": "Avocado"
+      },
+      {
+        "name": "Coriandolo",
+        "notes": "CONDIMENTI FACOLTATIVI",
+        "sourceText": "Coriandolo"
+      }
+    ],
+    "instructions": [
+      "Scalda l’olio in una padella o casseruola grande a fuoco medio.",
+      "Aggiungi la cipolla e cuoci finché diventa traslucida.",
+      "Unisci l’aglio e cuoci per circa 1 minuto.",
+      "Aggiungi pomodori a cubetti, pomodori tritati e brodo vegetale. Mescola bene.",
+      "Aggiungi fagioli rossi, fagioli neri, mais, quinoa e peperoncini verdi.",
+      "Condisci con chili in polvere, cumino, paprika affumicata, cacao, sale e pepe.",
+      "Abbassa il fuoco, copri e lascia sobbollire per circa 15-20 minuti, finché la quinoa sarà cotta.",
+      "Mescola di tanto in tanto per evitare che il fondo bruci.",
+      "Servi con i condimenti desiderati."
+    ],
+    "sourceUrl": "https://healthyfitnessmeals.com/easy-vegetarian-chili/",
+    "sourcePage": 23,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nCalorie: 348 kcal\nCarboidrati: 64 g\nProteine: 18 g\nGrassi: 5 g\nGrassi saturi: 1 g\nSodio: 1238 mg\nPotassio: 1248 mg\nFibre: 17 g\nZuccheri: 8 g\nVitamina A: 1459 IU\nVitamina C: 23 mg\nCalcio: 136 mg\nFerro: 8 mg",
+    "sourceNotes": "Si può utilizzare mais surgelato oppure in scatola. È possibile utilizzare anche un solo tipo di fagioli. Se non hai quinoa, puoi aumentare la quantità di fagioli oppure ometterla. Il brodo vegetale dà più sapore, ma può essere sostituito con acqua.",
+    "originalProteinGrams": 18.0
+  },
+  {
+    "id": "healthy-25",
+    "title": "Ceci all’indiana con uova in camicia",
+    "category": "PRANZO / CENA",
+    "kcal": 412.0,
+    "timeMinutes": 15,
+    "timeLabel": "5 minuti + 10 minuti",
+    "difficulty": "facile",
+    "defaultServings": 2,
+    "maxServings": 2,
+    "yieldLabel": "2",
+    "description": "Ceci all’indiana con uova in camicia",
+    "tags": [
+      "LEGUMI E PROTEINE VEGETALI"
+    ],
+    "ingredients": [
+      {
+        "name": "olio di colza",
+        "sourceText": "1 cucchiaio di olio di colza",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "cucchiaio"
+      },
+      {
+        "name": "aglio, tritati",
+        "sourceText": "2 spicchi d’aglio, tritati",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "spicchi"
+      },
+      {
+        "name": "peperone giallo, a dadini",
+        "sourceText": "1 peperone giallo, a dadini",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "peperoncino rosso, tritato",
+        "sourceText": "½-1 peperoncino rosso, tritato",
+        "quantity": 0.5,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "cipollotti (circa 5), affettati separando parte bianca e verde",
+        "sourceText": "½ mazzetto di cipollotti (circa 5), affettati separando parte bianca e verde",
+        "quantity": 0.5,
+        "quantityMax": 0.5,
+        "unit": "mazzetto"
+      },
+      {
+        "name": "cumino, più altro per servire (facoltativo)",
+        "sourceText": "1 cucchiaino di cumino, più altro per servire (facoltativo)",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "cucchiaino"
+      },
+      {
+        "name": "coriandolo macinato",
+        "sourceText": "1 cucchiaino di coriandolo macinato",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "cucchiaino"
+      },
+      {
+        "name": "curcuma",
+        "sourceText": "½ cucchiaino di curcuma",
+        "quantity": 0.5,
+        "quantityMax": 0.5,
+        "unit": "cucchiaino"
+      },
+      {
+        "name": "pomodori, a spicchi",
+        "sourceText": "3 pomodori, a spicchi",
+        "quantity": 3.0,
+        "quantityMax": 3.0,
+        "unit": "pz"
+      },
+      {
+        "name": "confezione di coriandolo fresco, tritato",
+        "sourceText": "⅓ di confezione di coriandolo fresco, tritato",
+        "quantity": 0.3333333333333333,
+        "quantityMax": 0.3333333333333333,
+        "unit": "pz"
+      },
+      {
+        "name": "ceci, scolati conservando il liquido",
+        "sourceText": "1 lattina da 400 g di ceci, scolati conservando il liquido",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "lattina da 400 g"
+      },
+      {
+        "name": "brodo granulare a ridotto contenuto di sale",
+        "sourceText": "½ cucchiaino di brodo granulare a ridotto contenuto di sale",
+        "quantity": 0.5,
+        "quantityMax": 0.5,
+        "unit": "cucchiaino"
+      },
+      {
+        "name": "uova grandi",
+        "sourceText": "4 uova grandi",
+        "quantity": 4.0,
+        "quantityMax": 4.0,
+        "unit": "pz"
+      }
+    ],
+    "instructions": [
+      "Scalda l’olio in una padella antiaderente. Aggiungi aglio, peperone, peperoncino e la parte bianca dei cipollotti e cuoci per 5 minuti. Nel frattempo porta a ebollizione una pentola d’acqua.",
+      "Unisci alla padella spezie, pomodori, quasi tutto il coriandolo e i ceci. Cuoci per 1-2 minuti, quindi aggiungi il brodo granulare e un po’ del liquido dei ceci, quanto basta per mantenere il composto umido. Lascia sobbollire.",
+      "Cuoci le uova in camicia nell’acqua bollente per circa 2 minuti. Aggiungi ai ceci la parte verde dei cipollotti e schiaccia leggermente alcuni ceci. Distribuisci nei piatti, completa con coriandolo fresco e uova in camicia. Se desideri, aggiungi altro cumino."
+    ],
+    "sourceUrl": "https://www.bbcgoodfood.com/recipes/indian-chickpeas-poached-eggs",
+    "sourcePage": 25,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nEnergia: 412 kcal\nGrassi: 20 g\ndi cui saturi: 4 g\nCarboidrati: 27 g\ndi cui zuccheri: 8 g\nFibre: 10 g\nProteine: 24 g\nSale: 0,3 g",
+    "sourceNotes": "",
+    "originalProteinGrams": 24.0
+  },
+  {
+    "id": "healthy-27",
+    "title": "Fagioli al forno salutari",
+    "category": "PRANZO / CENA",
+    "kcal": 392.0,
+    "timeMinutes": 30,
+    "timeLabel": "10 minuti + 15-20 minuti",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 4,
+    "yieldLabel": "4",
+    "description": "Fagioli al forno salutari",
+    "tags": [
+      "LEGUMI E PROTEINE VEGETALI"
+    ],
+    "ingredients": [
+      {
+        "name": "olio di colza",
+        "sourceText": "1 cucchiaino di olio di colza",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "cucchiaino"
+      },
+      {
+        "name": "cipolla grande (circa 185 g), tritata finemente",
+        "sourceText": "1 cipolla grande (circa 185 g), tritata finemente",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "aglio, grattugiati finemente",
+        "sourceText": "2 spicchi d’aglio, grattugiati finemente",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "spicchi"
+      },
+      {
+        "name": "passata di pomodoro",
+        "sourceText": "500 g di passata di pomodoro",
+        "quantity": 500.0,
+        "quantityMax": 500.0,
+        "unit": "g"
+      },
+      {
+        "name": "datteri denocciolati (circa 15 g), tritati grossolanamente",
+        "sourceText": "3 datteri denocciolati (circa 15 g), tritati grossolanamente",
+        "quantity": 3.0,
+        "quantityMax": 3.0,
+        "unit": "pz"
+      },
+      {
+        "name": "aceto balsamico",
+        "sourceText": "1 cucchiaio di aceto balsamico",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "cucchiaio"
+      },
+      {
+        "name": "brodo granulare",
+        "sourceText": "2 cucchiaini di brodo granulare",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "cucchiaini"
+      },
+      {
+        "name": "alloro",
+        "sourceText": "1 foglia di alloro",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "foglia"
+      },
+      {
+        "name": "fagioli cannellini bianchi tipo haricot, scolati",
+        "sourceText": "3 lattine da 400 g di fagioli cannellini bianchi tipo haricot, scolati",
+        "quantity": 3.0,
+        "quantityMax": 3.0,
+        "unit": "lattine da 400 g"
+      },
+      {
+        "name": "patate medie al forno già cotte",
+        "sourceText": "4 patate medie al forno già cotte",
+        "quantity": 4.0,
+        "quantityMax": 4.0,
+        "unit": "pz"
+      },
+      {
+        "name": "Pepe nero q.b.",
+        "sourceText": "Pepe nero q.b."
+      }
+    ],
+    "instructions": [
+      "Scalda l’olio in una casseruola antiaderente a fuoco basso. Aggiungi la cipolla e falla cuocere per circa 5 minuti, finché diventa dorata. Se tende ad attaccarsi o a bruciare, aggiungi un goccio d’acqua.",
+      "Unisci l’aglio, quindi aggiungi la passata di pomodoro, i datteri, l’aceto balsamico, il brodo granulare e la foglia di alloro. Insaporisci con abbondante pepe nero e lascia sobbollire per 5 minuti.",
+      "Aggiungi i fagioli e 400 ml d’acqua. Lascia sobbollire per altri 10 minuti, mescolando di tanto in tanto, finché la salsa si sarà addensata.",
+      "Servi i fagioli ben caldi sopra le patate al forno.",
+      "Per congelare: lascia raffreddare completamente i fagioli, dividili in sacchetti o contenitori adatti e congelali fino a 3 mesi. Scongelali completamente in frigorifero durante la notte e riscaldali in pentola fino a quando saranno ben caldi."
+    ],
+    "sourceUrl": "https://www.bbcgoodfood.com/recipes/healthy-baked-beans",
+    "sourcePage": 27,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nEnergia: 392 kcal\nGrassi: 4 g\ndi cui saturi: 0 g\nCarboidrati: 58 g\ndi cui zuccheri: 13 g\nFibre: 21 g\nProteine: 21 g\nSale: 1,7 g",
+    "sourceNotes": "",
+    "originalProteinGrams": 21.0
+  },
+  {
+    "id": "healthy-29",
+    "title": "Polpette di lenticchie, ras el hanout e datteri con salsa alle olive",
+    "category": "PRANZO / CENA",
+    "kcal": 361.0,
+    "timeMinutes": 42,
+    "timeLabel": "30 minuti + 12 minuti",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 4,
+    "yieldLabel": "4",
+    "description": "Polpette di lenticchie",
+    "tags": [
+      "LEGUMI E PROTEINE VEGETALI"
+    ],
+    "ingredients": [
+      {
+        "name": "limone, scorza grattugiata e succo",
+        "sourceText": "1 limone, scorza grattugiata e succo",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "olive verdi, denocciolate e tritate grossolanamente",
+        "sourceText": "50 g di olive verdi, denocciolate e tritate grossolanamente",
+        "quantity": 50.0,
+        "quantityMax": 50.0,
+        "unit": "g"
+      },
+      {
+        "name": "pomodoro grande a grappolo, tritato grossolanamente",
+        "sourceText": "1 pomodoro grande a grappolo, tritato grossolanamente",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "prezzemolo, tritato finemente",
+        "sourceText": "25 g di prezzemolo, tritato finemente",
+        "quantity": 25.0,
+        "quantityMax": 25.0,
+        "unit": "g"
+      },
+      {
+        "name": "olio d’oliva",
+        "sourceText": "3 cucchiai di olio d’oliva",
+        "quantity": 3.0,
+        "quantityMax": 3.0,
+        "unit": "cucchiai"
+      },
+      {
+        "name": "aglio, schiacciati",
+        "sourceText": "2 spicchi d’aglio, schiacciati",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "spicchi"
+      },
+      {
+        "name": "fiocchi d’avena",
+        "sourceText": "90 g di fiocchi d’avena",
+        "quantity": 90.0,
+        "quantityMax": 90.0,
+        "unit": "g"
+      },
+      {
+        "name": "datteri Medjool, privati del nocciolo e tritati grossolanamente",
+        "sourceText": "3 datteri Medjool, privati del nocciolo e tritati grossolanamente",
+        "quantity": 3.0,
+        "quantityMax": 3.0,
+        "unit": "pz"
+      },
+      {
+        "name": "ras el hanout",
+        "sourceText": "1 cucchiaio di ras el hanout",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "cucchiaio"
+      },
+      {
+        "name": "lenticchie verdi cotte, sciacquate e scolate",
+        "sourceText": "2 lattine da 400 g di lenticchie verdi cotte, sciacquate e scolate",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "lattine da 400 g"
+      },
+      {
+        "name": "feta, sbriciolata",
+        "sourceText": "50 g di feta, sbriciolata",
+        "quantity": 50.0,
+        "quantityMax": 50.0,
+        "unit": "g"
+      },
+      {
+        "name": "Cous cous “jewelled”, per servire",
+        "sourceText": "Cous cous “jewelled”, per servire"
+      },
+      {
+        "name": "Sale e pepe q.b.",
+        "sourceText": "Sale e pepe q.b."
+      }
+    ],
+    "instructions": [
+      "In una piccola ciotola, mescola 1 cucchiaio di succo di limone con le olive, il pomodoro, metà del prezzemolo e 1 cucchiaio di olio d’oliva. Regola di sale e pepe e metti da parte: questa sarà la salsa alle olive.",
+      "Per preparare le polpette, metti in un robot da cucina l’aglio, i fiocchi d’avena, i datteri, il ras el hanout, la scorza di limone e il prezzemolo restante. Frulla fino a ottenere un composto ben amalgamato.",
+      "Aggiungi le lenticchie e aziona il robot a impulsi alcune volte, finché gli ingredienti saranno ben combinati. Non è necessario che le lenticchie siano completamente frullate.",
+      "Insaporisci con un pizzico abbondante di sale e pepe, quindi incorpora la feta sbriciolata.",
+      "Inumidisci le mani e forma circa 25 piccole polpette, delle dimensioni di una pallina da ping-pong. Sistematele su un piatto.",
+      "Scalda l’olio rimanente in una padella a fuoco medio-alto. Aggiungi le polpette e falle dorare su tutti i lati per circa 10-12 minuti. Girale delicatamente con un cucchiaio invece di scuotere la padella, perché sono piuttosto fragili.",
+      "Servi le polpette sul cous cous e completa con la salsa alle olive."
+    ],
+    "sourceUrl": "https://www.bbcgoodfood.com/recipes/lentil-ras-el-hanout-date-meatballs-with-olive-salsa",
+    "sourcePage": 29,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nEnergia: 361 kcal\nGrassi: 15 g\ndi cui saturi: 4 g\nCarboidrati: 37 g\ndi cui zuccheri: 7 g\nFibre: 11 g\nProteine: 14 g\nSale: 1 g",
+    "sourceNotes": "",
+    "originalProteinGrams": 14.0
+  },
+  {
+    "id": "healthy-31",
+    "title": "Stufato speziato di ortaggi a radice e lenticchie",
+    "category": "PRANZO / CENA",
+    "kcal": 378.0,
+    "timeMinutes": 45,
+    "timeLabel": "10 minuti + 35 minuti",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 4,
+    "yieldLabel": "4",
+    "description": "Stufato di ortaggi e lenticchie",
+    "tags": [
+      "LEGUMI E PROTEINE VEGETALI"
+    ],
+    "ingredients": [
+      {
+        "name": "olio di semi di girasole o olio vegetale",
+        "sourceText": "2 cucchiai di olio di semi di girasole o olio vegetale",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "cucchiai"
+      },
+      {
+        "name": "cipolla, tritata",
+        "sourceText": "1 cipolla, tritata",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "aglio, schiacciati",
+        "sourceText": "2 spicchi d’aglio, schiacciati",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "spicchi"
+      },
+      {
+        "name": "patate, sbucciate e tagliate a pezzi",
+        "sourceText": "700 g di patate, sbucciate e tagliate a pezzi",
+        "quantity": 700.0,
+        "quantityMax": 700.0,
+        "unit": "g"
+      },
+      {
+        "name": "carote, tagliate a fette spesse",
+        "sourceText": "4 carote, tagliate a fette spesse",
+        "quantity": 4.0,
+        "quantityMax": 4.0,
+        "unit": "pz"
+      },
+      {
+        "name": "pastinache, tagliate a fette spesse",
+        "sourceText": "2 pastinache, tagliate a fette spesse",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "pz"
+      },
+      {
+        "name": "pasta di curry oppure curry in polvere",
+        "sourceText": "2 cucchiai di pasta di curry oppure curry in polvere",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "cucchiai"
+      },
+      {
+        "name": "brodo vegetale",
+        "sourceText": "1 litro di brodo vegetale",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "litro"
+      },
+      {
+        "name": "lenticchie rosse",
+        "sourceText": "100 g di lenticchie rosse",
+        "quantity": 100.0,
+        "quantityMax": 100.0,
+        "unit": "g"
+      },
+      {
+        "name": "piccolo mazzetto di coriandolo fresco, tritato grossolanamente",
+        "sourceText": "1 piccolo mazzetto di coriandolo fresco, tritato grossolanamente",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "Yogurt magro, per servire",
+        "sourceText": "Yogurt magro, per servire"
+      },
+      {
+        "name": "Pane naan, per servire",
+        "sourceText": "Pane naan, per servire"
+      },
+      {
+        "name": "Sale e pepe q.b.",
+        "sourceText": "Sale e pepe q.b."
+      }
+    ],
+    "instructions": [
+      "Scalda l’olio in una pentola capiente. Aggiungi la cipolla e l’aglio e cuoci a fuoco medio per 3-4 minuti, mescolando di tanto in tanto, finché si saranno ammorbiditi.",
+      "Aggiungi le patate, le carote e le pastinache. Alza la fiamma e cuoci per 6-7 minuti, mescolando, finché le verdure iniziano a dorarsi.",
+      "Unisci la pasta di curry o il curry in polvere, versa il brodo e porta a ebollizione. Abbassa la fiamma, aggiungi le lenticchie, copri e lascia sobbollire per 15-20 minuti, finché le lenticchie e le verdure saranno tenere e il sugo si sarà addensato.",
+      "Aggiungi quasi tutto il coriandolo, regola di sale e pepe e lascia sul fuoco ancora per circa un minuto.",
+      "Servi completando ogni porzione con lo yogurt e il coriandolo rimasto. Accompagna con pane naan."
+    ],
+    "sourceUrl": "https://www.bbcgoodfood.com/recipes/spicy-root-lentil-casserole",
+    "sourcePage": 31,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nEnergia: 378 kcal\nGrassi: 9 g\ndi cui saturi: 1 g\nCarboidrati: 64 g\ndi cui zuccheri: 0 g\nFibre: 10 g\nProteine: 14 g\nSale: 1,24 g",
+    "sourceNotes": "",
+    "originalProteinGrams": 14.0
+  },
+  {
+    "id": "healthy-33",
+    "title": "Shepherd’s Pie vegetariana",
+    "category": "PRANZO / CENA",
+    "kcal": 389.0,
+    "timeMinutes": 60,
+    "timeLabel": "1 ora",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 5,
+    "yieldLabel": "4-5",
+    "description": "Shepherd’s Pie vegetariana",
+    "tags": [
+      "LEGUMI E PROTEINE VEGETALI"
+    ],
+    "ingredients": [
+      {
+        "name": "patate Yukon Gold, sbucciate e tagliate a pezzi",
+        "notes": "PURÈ",
+        "sourceText": "4-5 patate Yukon Gold, sbucciate e tagliate a pezzi",
+        "quantity": 4.0,
+        "quantityMax": 5.0,
+        "unit": "pz"
+      },
+      {
+        "name": "yogurt greco intero",
+        "notes": "PURÈ",
+        "sourceText": "circa 160 g di yogurt greco intero",
+        "quantity": 160.0,
+        "quantityMax": 160.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sale kosher e pepe macinato q.b.",
+        "notes": "PURÈ",
+        "sourceText": "Sale kosher e pepe macinato q.b."
+      },
+      {
+        "name": "olio d’oliva",
+        "notes": "RIPIENO",
+        "sourceText": "30 ml di olio d’oliva",
+        "quantity": 30.0,
+        "quantityMax": 30.0,
+        "unit": "ml"
+      },
+      {
+        "name": "cipolle, tritate",
+        "notes": "RIPIENO",
+        "sourceText": "3 cipolle, tritate",
+        "quantity": 3.0,
+        "quantityMax": 3.0,
+        "unit": "pz"
+      },
+      {
+        "name": "aglio, tritati",
+        "notes": "RIPIENO",
+        "sourceText": "3-4 spicchi d’aglio, tritati",
+        "quantity": 3.0,
+        "quantityMax": 4.0,
+        "unit": "spicchi"
+      },
+      {
+        "name": "carote medie, sbucciate e tagliate a piccoli cubetti",
+        "notes": "RIPIENO",
+        "sourceText": "4 carote medie, sbucciate e tagliate a piccoli cubetti",
+        "quantity": 4.0,
+        "quantityMax": 4.0,
+        "unit": "pz"
+      },
+      {
+        "name": "Rosmarino e timo freschi, q.b.",
+        "notes": "RIPIENO",
+        "sourceText": "Rosmarino e timo freschi, q.b."
+      },
+      {
+        "name": "funghi freschi, affettati",
+        "notes": "RIPIENO",
+        "sourceText": "454 g di funghi freschi, affettati",
+        "quantity": 454.0,
+        "quantityMax": 454.0,
+        "unit": "g"
+      },
+      {
+        "name": "concentrato di pomodoro",
+        "notes": "RIPIENO",
+        "sourceText": "30 ml di concentrato di pomodoro",
+        "quantity": 30.0,
+        "quantityMax": 30.0,
+        "unit": "ml"
+      },
+      {
+        "name": "farina senza glutine oppure altra farina",
+        "notes": "RIPIENO",
+        "sourceText": "circa 16 g di farina senza glutine oppure altra farina",
+        "quantity": 16.0,
+        "quantityMax": 16.0,
+        "unit": "g"
+      },
+      {
+        "name": "brodo vegetale",
+        "notes": "RIPIENO",
+        "sourceText": "475 ml di brodo vegetale",
+        "quantity": 475.0,
+        "quantityMax": 475.0,
+        "unit": "ml"
+      },
+      {
+        "name": "piselli surgelati",
+        "notes": "RIPIENO",
+        "sourceText": "circa 280 g di piselli surgelati",
+        "quantity": 280.0,
+        "quantityMax": 280.0,
+        "unit": "g"
+      },
+      {
+        "name": "aceto balsamico",
+        "notes": "RIPIENO",
+        "sourceText": "30 ml di aceto balsamico",
+        "quantity": 30.0,
+        "quantityMax": 30.0,
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "Metti le patate in una pentola capiente e coprile appena con acqua.",
+      "Porta a ebollizione e cuoci finché saranno tenere.",
+      "Scola, aggiungi lo yogurt greco, sale e pepe e schiaccia fino alla consistenza desiderata.",
+      "Scalda l’olio in una padella antiaderente grande.",
+      "Aggiungi cipolle, aglio e carote e cuoci a fuoco medio per 3-4 minuti.",
+      "Aggiungi funghi ed erbe fresche.",
+      "Cuoci, mescolando di tanto in tanto, finché i funghi iniziano a dorarsi.",
+      "Incorpora il concentrato di pomodoro e la farina.",
+      "Versa gradualmente il brodo vegetale, mescolando continuamente, fino a formare una salsa.",
+      "Regola di sale e pepe e lascia sobbollire per circa 10 minuti, finché la salsa si addensa.",
+      "Preriscalda il forno a 175°C.",
+      "Aggiungi piselli e aceto balsamico.",
+      "Trasferisci il composto in una pirofila e distribuisci il purè di patate nella preparazione.",
+      "Cuoci per 18-20 minuti, finché sarà ben caldo, leggermente dorato e farà delle bolle ai bordi.",
+      "Lascia intiepidire leggermente prima di servire."
+    ],
+    "sourceUrl": "https://healthyfitnessmeals.com/vegetarian-shepherds-pie/",
+    "sourcePage": 33,
+    "nutritionLabel": "Per una porzione indicata dalla fonte di circa 475 ml:",
+    "nutritionDetails": "Per una porzione indicata dalla fonte di circa 475 ml:\nCalorie: 389 kcal\nCarboidrati: 66 g\nProteine: 17 g\nGrassi: 8 g\nGrassi saturi: 1 g\nGrassi polinsaturi: 1 g\nGrassi monoinsaturi: 5 g\nGrassi trans: 0,003 g\nColesterolo: 2 mg\nSodio: 685 mg\nPotassio: 1715 mg\nFibre: 13 g\nZuccheri: 18 g\nVitamina A: 11124 IU\nVitamina C: 77 mg\nCalcio: 130 mg\nFerro: 4 mg",
+    "sourceNotes": "La fonte consiglia patate Yukon Gold, ma si possono utilizzare anche patate Russet, patate rosse o patate dolci. Per una versione a contenuto ridotto di carboidrati, si può utilizzare purè di cavolfiore. Si possono aggiungere altre verdure. Le erbe fresche danno il risultato migliore, ma possono essere usate anche essiccate. Per una versione vegana, sostituisci lo yogurt greco con un’alternativa vegetale indicata dalla fonte. Per aumentare le proteine, si possono aggiungere lenticchie. Conserva in frigorifero per 3-4 giorni. Può essere congelata per massimo 1 mese, sia dopo la cottura sia assemblata prima della cottura. Per riscaldare da scongelata, cuoci a circa 175°C per 20-30 minuti.",
+    "originalProteinGrams": 17.0
+  },
+  {
+    "id": "healthy-35",
+    "title": "Tofu croccante all'arancia",
+    "category": "PRANZO / CENA",
+    "kcal": 256.0,
+    "timeMinutes": 50,
+    "timeLabel": "50 minuti",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 4,
+    "yieldLabel": "4",
+    "description": "Tofu croccante all'arancia e cavolfiore",
+    "tags": [
+      "LEGUMI E PROTEINE VEGETALI"
+    ],
+    "ingredients": [
+      {
+        "name": "cavolfiore medio, diviso in cimette",
+        "notes": "TOFU E CAVOLFIORE",
+        "sourceText": "1 cavolfiore medio, diviso in cimette",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "Sale kosher e pepe q.b.",
+        "notes": "TOFU E CAVOLFIORE",
+        "sourceText": "Sale kosher e pepe q.b."
+      },
+      {
+        "name": "paprika affumicata",
+        "notes": "TOFU E CAVOLFIORE",
+        "sourceText": "circa 7 g di paprika affumicata",
+        "quantity": 7.0,
+        "quantityMax": 7.0,
+        "unit": "g"
+      },
+      {
+        "name": "olio d'oliva o vegetale, diviso",
+        "notes": "TOFU E CAVOLFIORE",
+        "sourceText": "30 ml di olio d'oliva o vegetale, diviso",
+        "quantity": 30.0,
+        "quantityMax": 30.0,
+        "unit": "ml"
+      },
+      {
+        "name": "tofu extra-firm, pressato e tagliato a cubetti",
+        "notes": "TOFU E CAVOLFIORE",
+        "sourceText": "400 g di tofu extra-firm, pressato e tagliato a cubetti",
+        "quantity": 400.0,
+        "quantityMax": 400.0,
+        "unit": "g"
+      },
+      {
+        "name": "salsa di soia",
+        "notes": "TOFU E CAVOLFIORE",
+        "sourceText": "30 ml di salsa di soia",
+        "quantity": 30.0,
+        "quantityMax": 30.0,
+        "unit": "ml"
+      },
+      {
+        "name": "aglio in polvere",
+        "notes": "TOFU E CAVOLFIORE",
+        "sourceText": "1,5 g di aglio in polvere",
+        "quantity": 1.5,
+        "quantityMax": 1.5,
+        "unit": "g"
+      },
+      {
+        "name": "amido di mais",
+        "notes": "TOFU E CAVOLFIORE",
+        "sourceText": "circa 24 g di amido di mais",
+        "quantity": 24.0,
+        "quantityMax": 24.0,
+        "unit": "g"
+      },
+      {
+        "name": "succo d'arancia fresco, circa 2 arance grandi",
+        "notes": "SALSA ALL'ARANCIA",
+        "sourceText": "240 ml di succo d'arancia fresco, circa 2 arance grandi",
+        "quantity": 240.0,
+        "quantityMax": 240.0,
+        "unit": "ml"
+      },
+      {
+        "name": "scorza d'arancia",
+        "notes": "SALSA ALL'ARANCIA",
+        "sourceText": "circa 2 g di scorza d'arancia",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "g"
+      },
+      {
+        "name": "salsa di soia",
+        "notes": "SALSA ALL'ARANCIA",
+        "sourceText": "15 ml di salsa di soia",
+        "quantity": 15.0,
+        "quantityMax": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "aceto di riso",
+        "notes": "SALSA ALL'ARANCIA",
+        "sourceText": "15 ml di aceto di riso",
+        "quantity": 15.0,
+        "quantityMax": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "sciroppo d'acero oppure miele",
+        "notes": "SALSA ALL'ARANCIA",
+        "sourceText": "15 ml di sciroppo d'acero oppure miele",
+        "quantity": 15.0,
+        "quantityMax": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "pasta di zenzero",
+        "notes": "SALSA ALL'ARANCIA",
+        "sourceText": "circa 15 g di pasta di zenzero",
+        "quantity": 15.0,
+        "quantityMax": 15.0,
+        "unit": "g"
+      },
+      {
+        "name": "aglio in polvere oppure 1 spicchio d'aglio finemente grattugiato",
+        "notes": "SALSA ALL'ARANCIA",
+        "sourceText": "1,5 g di aglio in polvere oppure 1 spicchio d'aglio finemente grattugiato",
+        "quantity": 1.5,
+        "quantityMax": 1.5,
+        "unit": "g"
+      },
+      {
+        "name": "olio di sesamo",
+        "notes": "SALSA ALL'ARANCIA",
+        "sourceText": "5 ml di olio di sesamo",
+        "quantity": 5.0,
+        "quantityMax": 5.0,
+        "unit": "ml"
+      },
+      {
+        "name": "amido di mais",
+        "notes": "SALSA ALL'ARANCIA",
+        "sourceText": "circa 12 g di amido di mais",
+        "quantity": 12.0,
+        "quantityMax": 12.0,
+        "unit": "g"
+      },
+      {
+        "name": "acqua",
+        "notes": "SALSA ALL'ARANCIA",
+        "sourceText": "30 ml d'acqua",
+        "quantity": 30.0,
+        "quantityMax": 30.0,
+        "unit": "ml"
+      },
+      {
+        "name": "Fiocchi di peperoncino o semi di sesamo, facoltativi",
+        "notes": "SALSA ALL'ARANCIA",
+        "sourceText": "Fiocchi di peperoncino o semi di sesamo, facoltativi"
+      }
+    ],
+    "instructions": [
+      "Preriscalda il forno a 220°C e rivesti due teglie con carta da forno.",
+      "Mescola il cavolfiore con 15 ml di olio, la paprika affumicata, sale e pepe.",
+      "Distribuiscilo sulla prima teglia.",
+      "In una ciotola mescola il tofu con 30 ml di salsa di soia e i restanti 15 ml di olio.",
+      "Aggiungi l'amido di mais e l'aglio in polvere e mescola fino a ricoprire uniformemente il tofu.",
+      "Distribuiscilo in un unico strato sulla seconda teglia.",
+      "Cuoci entrambe le teglie per 25-30 minuti, girando tofu e cavolfiore a metà cottura.",
+      "Nel frattempo prepara la salsa: in una padella unisci succo d'arancia, scorza, salsa di soia, aceto di riso, sciroppo d'acero o miele, zenzero, aglio, olio di sesamo e, se desideri, peperoncino.",
+      "Porta a leggero bollore.",
+      "In una ciotolina mescola 12 g di amido di mais con 30 ml d'acqua.",
+      "Versa il composto nella salsa e cuoci per 1-2 minuti, mescolando continuamente, finché sarà densa e lucida.",
+      "Aggiungi il tofu cotto alla salsa e mescola.",
+      "Cuoci per un altro minuto per farlo leggermente caramellare.",
+      "Servi tofu e cavolfiore con riso cotto e completa, se desideri, con peperoncino o semi di sesamo."
+    ],
+    "sourceUrl": "https://healthyfitnessmeals.com/orange-tofu-recipe/",
+    "sourcePage": 35,
+    "nutritionLabel": "Per porzione, senza riso:",
+    "nutritionDetails": "Per porzione, senza riso:\nCalorie: 256 kcal\nCarboidrati: 30 g\nProteine: 12 g\nGrassi: 11 g\nGrassi saturi: 2 g\nGrassi polinsaturi: 2 g\nGrassi monoinsaturi: 6 g\nSodio: 865 mg\nPotassio: 797 mg\nFibre: 4 g\nZuccheri: 12 g\nVitamina A: 988 IU\nVitamina C: 101 mg\nCalcio: 83 mg\nFerro: 3 mg",
+    "sourceNotes": "I valori nutrizionali non comprendono il riso. Conserva gli avanzi in frigorifero in un contenitore ermetico per massimo 5 giorni. Possono essere congelati per massimo 3 mesi. Per riscaldare, aggiungi un goccio d'acqua e scalda in pentola a fuoco medio-basso oppure nel microonde.",
+    "originalProteinGrams": 12.0
+  },
+  {
+    "id": "healthy-37",
+    "title": "Burrito vegetariani con fagioli neri",
+    "category": "PRANZO / CENA",
+    "kcal": 518.0,
+    "timeMinutes": 80,
+    "timeLabel": "20 minuti + 1 ora",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 4,
+    "yieldLabel": "4",
+    "description": "Burrito vegetariani con fagioli neri",
+    "tags": [
+      "LEGUMI E PROTEINE VEGETALI"
+    ],
+    "ingredients": [
+      {
+        "name": "riso integrale",
+        "notes": "Riso",
+        "sourceText": "300 g riso integrale",
+        "quantity": 300.0,
+        "quantityMax": 300.0,
+        "unit": "g"
+      },
+      {
+        "name": "piccola di coriandolo, tritato",
+        "notes": "Riso",
+        "sourceText": "½ confezione piccola di coriandolo, tritato",
+        "quantity": 0.5,
+        "quantityMax": 0.5,
+        "unit": "confezione"
+      },
+      {
+        "name": "lime (succo)",
+        "notes": "Riso",
+        "sourceText": "Succo di 1 lime",
+        "quantity": 1,
+        "quantityMax": 1,
+        "unit": "pz"
+      },
+      {
+        "name": "olio d’oliva",
+        "notes": "Fagioli",
+        "sourceText": "1 cucchiaino olio d’oliva",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "cucchiaino"
+      },
+      {
+        "name": "aglio",
+        "notes": "Fagioli",
+        "sourceText": "2 spicchi d’aglio",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "spicchi"
+      },
+      {
+        "name": "pasta di chipotle",
+        "notes": "Fagioli",
+        "sourceText": "1 cucchiaio pasta di chipotle",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "cucchiaio"
+      },
+      {
+        "name": "cumino macinato",
+        "notes": "Fagioli",
+        "sourceText": "2 cucchiai cumino macinato",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "cucchiai"
+      },
+      {
+        "name": "zucchero di canna",
+        "notes": "Fagioli",
+        "sourceText": "1 cucchiaio zucchero di canna",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "cucchiaio"
+      },
+      {
+        "name": "aceto di sidro",
+        "notes": "Fagioli",
+        "sourceText": "1 cucchiaio aceto di sidro",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "cucchiaio"
+      },
+      {
+        "name": "fagioli neri, scolati",
+        "notes": "Fagioli",
+        "sourceText": "2 lattine da 400 g di fagioli neri, scolati",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "lattine da 400 g"
+      },
+      {
+        "name": "pomodori a pezzi",
+        "notes": "Fagioli",
+        "sourceText": "400 g pomodori a pezzi",
+        "quantity": 400.0,
+        "quantityMax": 400.0,
+        "unit": "g"
+      },
+      {
+        "name": "pomodori grandi",
+        "notes": "Salsa e guacamole",
+        "sourceText": "2 pomodori grandi",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "pz"
+      },
+      {
+        "name": "cipolla rossa",
+        "notes": "Salsa e guacamole",
+        "sourceText": "1 cipolla rossa",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "piccola di coriandolo",
+        "notes": "Salsa e guacamole",
+        "sourceText": "½ confezione piccola di coriandolo",
+        "quantity": 0.5,
+        "quantityMax": 0.5,
+        "unit": "confezione"
+      },
+      {
+        "name": "lime (succo)",
+        "notes": "Salsa e guacamole",
+        "sourceText": "Succo di 2 lime",
+        "quantity": 2,
+        "quantityMax": 2,
+        "unit": "pz"
+      },
+      {
+        "name": "avocado",
+        "notes": "Salsa e guacamole",
+        "sourceText": "2 avocado",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "pz"
+      },
+      {
+        "name": "Per servire: tortillas integrali grandi, yogurt naturale, lime e cheddar grattugiato facoltativo.",
+        "notes": "Salsa e guacamole",
+        "sourceText": "Per servire: tortillas integrali grandi, yogurt naturale, lime e cheddar grattugiato facoltativo."
+      }
+    ],
+    "instructions": [
+      "Cuoci il riso con 600 ml d’acqua per circa 20 minuti; spegni e lascia riposare 10 minuti. Unisci coriandolo e lime.",
+      "Scalda l’olio e cuoci per 1 minuto aglio, chipotle, cumino, zucchero e aceto. Aggiungi fagioli e pomodori e fai sobbollire scoperto per 20 minuti.",
+      "Mescola pomodori, cipolla, coriandolo e lime. Dividi la salsa a metà e schiaccia gli avocado in una metà per ottenere il guacamole. Farcisci le tortillas calde con riso, fagioli, salsa e guacamole; completa con yogurt, lime e, se desideri, cheddar."
+    ],
+    "sourceUrl": "https://www.bbcgoodfood.com/recipes/marathon-burritos",
+    "sourcePage": 37,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nEnergia: 518 kcal\nGrassi: 14 g\ndi cui saturi: 3 g\nCarboidrati: 85 g\ndi cui zuccheri: 13 g\nFibre: 13 g\nProteine: 16 g\nSale: 0,8 g",
+    "sourceNotes": "",
+    "originalProteinGrams": 16.0
+  },
+  {
+    "id": "healthy-39",
+    "title": "Pasta al forno con verdure",
+    "category": "PRANZO / CENA",
+    "kcal": 409.0,
+    "timeMinutes": 115,
+    "timeLabel": "25 minuti + 1 ora e 30 minuti",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 6,
+    "yieldLabel": "4-6",
+    "description": "Pasta al forno con verdure",
+    "tags": [
+      "LEGUMI E PROTEINE VEGETALI"
+    ],
+    "ingredients": [
+      {
+        "name": "penne secche",
+        "sourceText": "300 g di penne secche",
+        "quantity": 300.0,
+        "quantityMax": 300.0,
+        "unit": "g"
+      },
+      {
+        "name": "olio d’oliva",
+        "sourceText": "3 cucchiai di olio d’oliva",
+        "quantity": 3.0,
+        "quantityMax": 3.0,
+        "unit": "cucchiai"
+      },
+      {
+        "name": "melanzana grande, a pezzi",
+        "sourceText": "1 melanzana grande, a pezzi",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "cipolla rossa, tritata finemente",
+        "sourceText": "1 cipolla rossa, tritata finemente",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "peperoni, privati dei semi e affettati",
+        "sourceText": "2 peperoni, privati dei semi e affettati",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "pz"
+      },
+      {
+        "name": "zucchine, a pezzi",
+        "sourceText": "2 zucchine, a pezzi",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "pz"
+      },
+      {
+        "name": "aglio, schiacciati",
+        "sourceText": "3 spicchi d’aglio, schiacciati",
+        "quantity": 3.0,
+        "quantityMax": 3.0,
+        "unit": "spicchi"
+      },
+      {
+        "name": "concentrato di pomodoro",
+        "sourceText": "2 cucchiai di concentrato di pomodoro",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "cucchiai"
+      },
+      {
+        "name": "pomodorini in scatola",
+        "sourceText": "400 g di pomodorini in scatola",
+        "quantity": 400.0,
+        "quantityMax": 400.0,
+        "unit": "g"
+      },
+      {
+        "name": "piccolo mazzetto di basilico",
+        "sourceText": "1 piccolo mazzetto di basilico",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "formaggio stagionato vegetariano, grattugiato",
+        "sourceText": "25 g di formaggio stagionato vegetariano, grattugiato",
+        "quantity": 25.0,
+        "quantityMax": 25.0,
+        "unit": "g"
+      },
+      {
+        "name": "mozzarella grattugiata",
+        "sourceText": "25 g di mozzarella grattugiata",
+        "quantity": 25.0,
+        "quantityMax": 25.0,
+        "unit": "g"
+      },
+      {
+        "name": "cheddar stagionato, grattugiato",
+        "sourceText": "75 g di cheddar stagionato, grattugiato",
+        "quantity": 75.0,
+        "quantityMax": 75.0,
+        "unit": "g"
+      },
+      {
+        "name": "pangrattato panko",
+        "sourceText": "20 g di pangrattato panko",
+        "quantity": 20.0,
+        "quantityMax": 20.0,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "Cuoci la pasta scolandola 2 minuti prima del tempo indicato e conserva un po’ d’acqua di cottura.",
+      "Scalda 2 cucchiai d’olio e cuoci la melanzana per 10-15 minuti. Toglila dalla padella, aggiungi l’olio restante e cuoci la cipolla per 5-7 minuti. Unisci peperoni e zucchine e cuoci per altri 15-17 minuti. Aggiungi aglio e concentrato di pomodoro, quindi melanzana, pomodori e basilico. Lascia sobbollire per 20-25 minuti.",
+      "Scalda il forno a 200°C (180°C ventilato). Unisci la pasta e un po’ della sua acqua di cottura. Trasferisci in una pirofila.",
+      "Mescola i formaggi con il panko e pepe nero e distribuisci sulla pasta. Cuoci per 15-20 minuti, finché la superficie sarà dorata e il sugo ben caldo. Completa con il basilico rimasto."
+    ],
+    "sourceUrl": "https://www.bbcgoodfood.com/recipes/vegetable-pasta-bake",
+    "sourcePage": 39,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nEnergia: 409 kcal\nGrassi: 14 g\ndi cui saturi: 5 g\nCarboidrati: 52 g\ndi cui zuccheri: 10 g\nFibre: 8 g\nProteine: 16 g\nSale: 0,41 g",
+    "sourceNotes": "",
+    "originalProteinGrams": 16.0
+  },
+  {
+    "id": "healthy-41",
+    "title": "Pasta cremosa alle melanzane",
+    "category": "PRANZO / CENA",
+    "kcal": 519.0,
+    "timeMinutes": 30,
+    "timeLabel": "30 minuti",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 4,
+    "yieldLabel": "4",
+    "description": "Pasta cremosa alle melanzane",
+    "tags": [
+      "LEGUMI E PROTEINE VEGETALI"
+    ],
+    "ingredients": [
+      {
+        "name": "pasta corta",
+        "sourceText": "285 g di pasta corta",
+        "quantity": 285.0,
+        "quantityMax": 285.0,
+        "unit": "g"
+      },
+      {
+        "name": "olio d’oliva oppure olio di avocado",
+        "sourceText": "30 ml di olio d’oliva oppure olio di avocado",
+        "quantity": 30.0,
+        "quantityMax": 30.0,
+        "unit": "ml"
+      },
+      {
+        "name": "melanzane piccole, tagliate a cubetti",
+        "sourceText": "2 melanzane piccole, tagliate a cubetti",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "pz"
+      },
+      {
+        "name": "scalogno grande, tritato",
+        "sourceText": "1 scalogno grande, tritato",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "aglio, tritati",
+        "sourceText": "3-4 spicchi d’aglio, tritati",
+        "quantity": 3.0,
+        "quantityMax": 4.0,
+        "unit": "spicchi"
+      },
+      {
+        "name": "pomodori secchi sott’olio, tritati, con un po’ del loro olio",
+        "sourceText": "120 ml di pomodori secchi sott’olio, tritati, con un po’ del loro olio",
+        "quantity": 120.0,
+        "quantityMax": 120.0,
+        "unit": "ml"
+      },
+      {
+        "name": "concentrato di pomodoro",
+        "sourceText": "60 ml di concentrato di pomodoro",
+        "quantity": 60.0,
+        "quantityMax": 60.0,
+        "unit": "ml"
+      },
+      {
+        "name": "salsa di pomodoro",
+        "sourceText": "240 ml di salsa di pomodoro",
+        "quantity": 240.0,
+        "quantityMax": 240.0,
+        "unit": "ml"
+      },
+      {
+        "name": "ricotta",
+        "sourceText": "circa 165 g di ricotta",
+        "quantity": 165.0,
+        "quantityMax": 165.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sale kosher e pepe nero q.b.",
+        "sourceText": "Sale kosher e pepe nero q.b."
+      },
+      {
+        "name": "Timo fresco o altre erbe aromatiche, facoltative",
+        "sourceText": "Timo fresco o altre erbe aromatiche, facoltative"
+      },
+      {
+        "name": "acqua di cottura della pasta da tenere da parte",
+        "sourceText": "240 ml di acqua di cottura della pasta da tenere da parte",
+        "quantity": 240.0,
+        "quantityMax": 240.0,
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "Cuoci la pasta in acqua salata seguendo le indicazioni sulla confezione. Conserva 240 ml di acqua di cottura, quindi scola.",
+      "Nel frattempo scalda una padella grande a fuoco medio e aggiungi l’olio.",
+      "Aggiungi le melanzane e cuoci per circa 5 minuti.",
+      "Unisci scalogno, aglio e pomodori secchi con il loro olio. Cuoci per altri 3-4 minuti, mescolando spesso.",
+      "Aggiungi il concentrato di pomodoro, la salsa di pomodoro e l’acqua di cottura.",
+      "Porta a leggero bollore a fuoco basso.",
+      "Aggiungi la ricotta e mescola fino a ottenere una salsa ricca e cremosa.",
+      "Unisci la pasta cotta e mescola bene.",
+      "Regola di sale e pepe e completa, se desideri, con timo fresco o altre erbe aromatiche."
+    ],
+    "sourceUrl": "https://healthyfitnessmeals.com/creamy-eggplant-pasta/",
+    "sourcePage": 41,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nCalorie: 519 kcal\nCarboidrati: 79 g\nProteine: 19 g\nGrassi: 16 g\nGrassi saturi: 5 g\nGrassi polinsaturi: 2 g\nGrassi monoinsaturi: 8 g\nColesterolo: 21 mg\nSodio: 511 mg\nPotassio: 1319 mg\nFibre: 12 g\nZuccheri: 15 g\nVitamina A: 929 IU\nVitamina C: 28 mg\nCalcio: 148 mg\nFerro: 3 mg",
+    "sourceNotes": "Conserva gli avanzi in frigorifero in un contenitore ermetico per massimo 3 giorni. Se vuoi congelarla, è preferibile congelare solo la salsa prima di aggiungere la pasta. Si conserva nel congelatore per massimo 3 mesi. Per riscaldare, aggiungi un goccio d’acqua e scalda in pentola a fuoco medio-basso oppure nel microonde. Per una nota piccante, aggiungi fiocchi di peperoncino. Si possono aggiungere capperi o olive denocciolate tritate. Per aggiungere verdure a foglia, incorpora qualche manciata di spinacini alla salsa insieme alla pasta. La fonte consiglia di cuocere la pasta al dente e terminarne la cottura nella salsa per un paio di minuti. Per una versione con carne, la fonte suggerisce polpette di tacchino. Parmigiano appena grattugiato può essere aggiunto al momento di servire.",
+    "originalProteinGrams": 19.0
+  },
+  {
+    "id": "healthy-43",
+    "title": "Curry di zucca e ceci",
+    "category": "PRANZO / CENA",
+    "kcal": 293.0,
+    "timeMinutes": 40,
+    "timeLabel": "20 minuti + 20 minuti",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 4,
+    "yieldLabel": "4",
+    "description": "Curry di zucca e ceci",
+    "tags": [
+      "LEGUMI E PROTEINE VEGETALI"
+    ],
+    "ingredients": [
+      {
+        "name": "olio di semi di girasole",
+        "sourceText": "1 cucchiaio di olio di semi di girasole",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "cucchiaio"
+      },
+      {
+        "name": "pasta di curry giallo thailandese, o alternativa vegetariana",
+        "sourceText": "3 cucchiai di pasta di curry giallo thailandese, o alternativa vegetariana",
+        "quantity": 3.0,
+        "quantityMax": 3.0,
+        "unit": "cucchiai"
+      },
+      {
+        "name": "cipolle, tritate finemente",
+        "sourceText": "2 cipolle, tritate finemente",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "pz"
+      },
+      {
+        "name": "grandi gambi di lemongrass, schiacciati",
+        "sourceText": "3 grandi gambi di lemongrass, schiacciati",
+        "quantity": 3.0,
+        "quantityMax": 3.0,
+        "unit": "pz"
+      },
+      {
+        "name": "baccelli di cardamomo",
+        "sourceText": "6 baccelli di cardamomo",
+        "quantity": 6.0,
+        "quantityMax": 6.0,
+        "unit": "pz"
+      },
+      {
+        "name": "semi di senape",
+        "sourceText": "1 cucchiaio di semi di senape",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "cucchiaio"
+      },
+      {
+        "name": "zucca",
+        "sourceText": "Circa 1 kg di zucca",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "kg"
+      },
+      {
+        "name": "brodo vegetale",
+        "sourceText": "250 ml di brodo vegetale",
+        "quantity": 250.0,
+        "quantityMax": 250.0,
+        "unit": "ml"
+      },
+      {
+        "name": "latte di cocco a ridotto contenuto di grassi",
+        "sourceText": "400 ml di latte di cocco a ridotto contenuto di grassi",
+        "quantity": 400.0,
+        "quantityMax": 400.0,
+        "unit": "ml"
+      },
+      {
+        "name": "ceci in scatola, scolati e sciacquati",
+        "sourceText": "400 g di ceci in scatola, scolati e sciacquati",
+        "quantity": 400.0,
+        "quantityMax": 400.0,
+        "unit": "g"
+      },
+      {
+        "name": "lime",
+        "sourceText": "2 lime",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "pz"
+      },
+      {
+        "name": "Una manciata abbondante di foglie di menta",
+        "sourceText": "Una manciata abbondante di foglie di menta"
+      },
+      {
+        "name": "Pane naan, per servire",
+        "sourceText": "Pane naan, per servire"
+      }
+    ],
+    "instructions": [
+      "Scalda l’olio in una padella capiente. Fai soffriggere delicatamente la pasta di curry con cipolle, lemongrass, cardamomo e semi di senape per 2-3 minuti. Aggiungi la zucca e mescola bene, poi versa il brodo e il latte di cocco. Porta a leggero bollore, unisci i ceci e cuoci per circa 10 minuti, finché la zucca è tenera.",
+      "Spremi nel curry il succo di un lime. Taglia l’altro a spicchi. Prima di servire, aggiungi le foglie di menta e accompagna con gli spicchi di lime e pane naan caldo."
+    ],
+    "sourceUrl": "https://www.bbcgoodfood.com/recipes/pumpkin-curry-chickpeas",
+    "sourcePage": 43,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nEnergia: 293 kcal\nGrassi: 18 g\ndi cui saturi: 10 g\nCarboidrati: 26 g\ndi cui zuccheri: 10 g\nFibre: 0 g\nProteine: 9 g\nSale: 1,32 g",
+    "sourceNotes": "",
+    "originalProteinGrams": 9.0
+  },
+  {
+    "id": "healthy-45",
+    "title": "Salmone al limone e aglio",
+    "category": "PRANZO / CENA",
+    "kcal": 291.0,
+    "timeMinutes": 28,
+    "timeLabel": "28 minuti",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 4,
+    "yieldLabel": "4",
+    "description": "Salmone al limone e aglio",
+    "tags": [
+      "PESCE E CROSTACEI"
+    ],
+    "ingredients": [
+      {
+        "name": "filetti di salmone",
+        "sourceText": "circa 570 g di filetti di salmone",
+        "quantity": 570.0,
+        "quantityMax": 570.0,
+        "unit": "g"
+      },
+      {
+        "name": "limoni medi: 2 spremuti e 1 affettato",
+        "sourceText": "3 limoni medi: 2 spremuti e 1 affettato",
+        "quantity": 3.0,
+        "quantityMax": 3.0,
+        "unit": "pz"
+      },
+      {
+        "name": "scorza di limone grattugiata",
+        "sourceText": "circa 4 g di scorza di limone grattugiata",
+        "quantity": 4.0,
+        "quantityMax": 4.0,
+        "unit": "g"
+      },
+      {
+        "name": "aglio tritati",
+        "sourceText": "3-4 spicchi d'aglio tritati",
+        "quantity": 3.0,
+        "quantityMax": 4.0,
+        "unit": "spicchi"
+      },
+      {
+        "name": "olio extravergine d'oliva",
+        "sourceText": "30 ml di olio extravergine d'oliva",
+        "quantity": 30.0,
+        "quantityMax": 30.0,
+        "unit": "ml"
+      },
+      {
+        "name": "sale kosher",
+        "sourceText": "circa 6 g di sale kosher",
+        "quantity": 6.0,
+        "quantityMax": 6.0,
+        "unit": "g"
+      },
+      {
+        "name": "pepe nero macinato fresco, più altro a piacere",
+        "sourceText": "circa 1 g di pepe nero macinato fresco, più altro a piacere",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "g"
+      },
+      {
+        "name": "Prezzemolo fresco tritato finemente",
+        "sourceText": "Prezzemolo fresco tritato finemente"
+      }
+    ],
+    "instructions": [
+      "Preriscalda il forno a 205°C e ungi una pirofila abbastanza grande da contenere tutti i filetti.",
+      "In una ciotola mescola il succo di 2 limoni, l'aglio, la scorza di limone, l'olio, il sale e il pepe.",
+      "Metti il salmone in un sacchetto richiudibile e versa sopra la marinatura.",
+      "Chiudi il sacchetto e gira i filetti in modo da ricoprirli uniformemente.",
+      "Lascia marinare per almeno 30 minuti.",
+      "Disponi le fette di limone sul fondo della pirofila e appoggia sopra il salmone.",
+      "Cuoci in forno per circa 12-15 minuti, a seconda dello spessore dei filetti.",
+      "Aggiungi alcune fette di limone sopra il salmone.",
+      "Passa alla funzione grill del forno e gratina per circa 3 minuti, finché la superficie sarà dorata e leggermente croccante.",
+      "Completa con prezzemolo fresco e servi."
+    ],
+    "sourceUrl": "https://healthyfitnessmeals.com/lemon-garlic-salmon/",
+    "sourcePage": 45,
+    "nutritionLabel": "Per 1 filetto di salmone:",
+    "nutritionDetails": "Per 1 filetto di salmone:\nCalorie: 291 kcal\nCarboidrati: 9 g\nProteine: 29 g\nGrassi: 16 g\nGrassi saturi: 2 g\nGrassi polinsaturi: 4 g\nGrassi monoinsaturi: 8 g\nColesterolo: 78 mg\nSodio: 646 mg\nPotassio: 820 mg\nFibre: 2 g\nZuccheri: 2 g\nVitamina A: 77 IU\nVitamina C: 45 mg\nCalcio: 45 mg\nFerro: 2 mg",
+    "sourceNotes": "Utilizza filetti di spessore simile per ottenere una cottura uniforme. Il succo di limone fresco dà il risultato migliore. Non lasciare marinare il salmone per più di 1 ora. La gratinatura finale è facoltativa ma dona un colore più dorato. Gli avanzi possono essere sbriciolati e aggiunti a insalate o bowl di cereali.",
+    "originalProteinGrams": 29.0
+  },
+  {
+    "id": "healthy-47",
+    "title": "Salmone Bang Bang",
+    "category": "PRANZO / CENA",
+    "kcal": 360.0,
+    "timeMinutes": 20,
+    "timeLabel": "20 minuti",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 4,
+    "yieldLabel": "4",
+    "description": "Salmone Bang Bang",
+    "tags": [
+      "PESCE E CROSTACEI"
+    ],
+    "ingredients": [
+      {
+        "name": "filetto di salmone senza pelle, tagliato a cubetti di circa 4 cm",
+        "notes": "SALMONE",
+        "sourceText": "680 g di filetto di salmone senza pelle, tagliato a cubetti di circa 4 cm",
+        "quantity": 680.0,
+        "quantityMax": 680.0,
+        "unit": "g"
+      },
+      {
+        "name": "paprika affumicata",
+        "notes": "SALMONE",
+        "sourceText": "2,5 g di paprika affumicata",
+        "quantity": 2.5,
+        "quantityMax": 2.5,
+        "unit": "g"
+      },
+      {
+        "name": "cipolla in polvere",
+        "notes": "SALMONE",
+        "sourceText": "2,5 g di cipolla in polvere",
+        "quantity": 2.5,
+        "quantityMax": 2.5,
+        "unit": "g"
+      },
+      {
+        "name": "aglio in polvere",
+        "notes": "SALMONE",
+        "sourceText": "3 g di aglio in polvere",
+        "quantity": 3.0,
+        "quantityMax": 3.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sale kosher e pepe q.b.",
+        "notes": "SALMONE",
+        "sourceText": "Sale kosher e pepe q.b."
+      },
+      {
+        "name": "maionese",
+        "notes": "SALSA BANG BANG",
+        "sourceText": "circa 60 g di maionese",
+        "quantity": 60.0,
+        "quantityMax": 60.0,
+        "unit": "g"
+      },
+      {
+        "name": "salsa sweet chili",
+        "notes": "SALSA BANG BANG",
+        "sourceText": "30 ml di salsa sweet chili",
+        "quantity": 30.0,
+        "quantityMax": 30.0,
+        "unit": "ml"
+      },
+      {
+        "name": "sriracha",
+        "notes": "SALSA BANG BANG",
+        "sourceText": "15 ml di sriracha",
+        "quantity": 15.0,
+        "quantityMax": 15.0,
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "Preriscalda il forno a 205°C e rivesti una teglia con carta da forno.",
+      "Mescola in una ciotola la maionese, la salsa sweet chili e la sriracha.",
+      "Metti il salmone in una ciotola e condisci con paprika, cipolla in polvere, aglio in polvere, sale e pepe.",
+      "Mescola bene.",
+      "Aggiungi una cucchiaiata abbondante di salsa Bang Bang e mescola per ricoprire il salmone.",
+      "Distribuisci i cubetti in un unico strato sulla teglia.",
+      "Cuoci per circa 8 minuti.",
+      "Passa alla funzione grill per 1-2 minuti, in modo da ottenere una superficie leggermente caramellata.",
+      "Mescola il salmone cotto con la salsa Bang Bang rimanente.",
+      "Servi, se desideri, con riso cotto."
+    ],
+    "sourceUrl": "https://healthyfitnessmeals.com/bang-bang-salmon/",
+    "sourcePage": 47,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nCalorie: 360 kcal\nCarboidrati: 6 g\nProteine: 34 g\nGrassi: 21 g\nGrassi saturi: 3 g\nGrassi polinsaturi: 11 g\nGrassi monoinsaturi: 6 g\nGrassi trans: 0,03 g\nColesterolo: 99 mg\nSodio: 336 mg\nPotassio: 866 mg\nFibre: 0,4 g\nZuccheri: 4 g\nVitamina A: 329 IU\nVitamina C: 3 mg\nCalcio: 25 mg\nFerro: 2 mg",
+    "sourceNotes": "Conserva il salmone cotto in frigorifero in un contenitore ermetico per massimo 3 giorni. In alternativa può essere congelato per massimo 3 mesi. Se congelato, lascialo scongelare in frigorifero durante la notte. Per riscaldarlo, utilizza il microonde oppure una padella antiaderente a fuoco medio-basso con un goccio d'acqua.",
+    "originalProteinGrams": 34.0
+  },
+  {
+    "id": "healthy-49",
+    "title": "Gamberi Cajun",
+    "category": "PRANZO / CENA",
+    "kcal": 305.0,
+    "timeMinutes": 15,
+    "timeLabel": "15 minuti",
+    "difficulty": "facile",
+    "defaultServings": 2,
+    "maxServings": 2,
+    "yieldLabel": "2",
+    "description": "Gamberi Cajun",
+    "tags": [
+      "PESCE E CROSTACEI"
+    ],
+    "ingredients": [
+      {
+        "name": "olio d'oliva",
+        "sourceText": "30 ml di olio d'oliva",
+        "quantity": 30.0,
+        "quantityMax": 30.0,
+        "unit": "ml"
+      },
+      {
+        "name": "gamberi grandi crudi, sgusciati e privati dell'intestino",
+        "sourceText": "454 g di gamberi grandi crudi, sgusciati e privati dell'intestino",
+        "quantity": 454.0,
+        "quantityMax": 454.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sale kosher e pepe macinato q.b.",
+        "sourceText": "Sale kosher e pepe macinato q.b."
+      },
+      {
+        "name": "condimento Cajun",
+        "sourceText": "circa 15 g di condimento Cajun",
+        "quantity": 15.0,
+        "quantityMax": 15.0,
+        "unit": "g"
+      },
+      {
+        "name": "Spicchi di lime, per servire",
+        "sourceText": "Spicchi di lime, per servire"
+      },
+      {
+        "name": "Prezzemolo fresco tritato finemente, per guarnire",
+        "sourceText": "Prezzemolo fresco tritato finemente, per guarnire"
+      },
+      {
+        "name": "Riso jasmine cotto, facoltativo",
+        "sourceText": "Riso jasmine cotto, facoltativo"
+      }
+    ],
+    "instructions": [
+      "Scalda l'olio in una padella grande a fuoco medio-alto.",
+      "Metti i gamberi in una ciotola e aggiungi sale, pepe e condimento Cajun.",
+      "Mescola bene per ricoprire uniformemente i gamberi.",
+      "Trasferiscili nella padella.",
+      "Cuoci per 2-3 minuti per lato, finché saranno rosa e opachi.",
+      "Completa con prezzemolo fresco.",
+      "Servi con spicchi di lime e, se desideri, con riso jasmine."
+    ],
+    "sourceUrl": "https://healthyfitnessmeals.com/cajun-shrimp-recipe/",
+    "sourcePage": 49,
+    "nutritionLabel": "Per porzione, senza riso:",
+    "nutritionDetails": "Per porzione, senza riso:\nCalorie: 305 kcal\nCarboidrati: 6 g\nProteine: 32 g\nGrassi: 17 g\nGrassi saturi: 2 g\nGrassi polinsaturi: 2 g\nGrassi monoinsaturi: 11 g\nGrassi trans: 1 g\nColesterolo: 286 mg\nSodio: 1434 mg\nPotassio: 416 mg\nFibre: 2 g\nZuccheri: 1 g\nVitamina A: 3856 IU\nVitamina C: 1 mg\nCalcio: 139 mg\nFerro: 2 mg",
+    "sourceNotes": "La porzione indicata corrisponde a metà dei gamberi, circa 225 g. La ricetta può essere facilmente raddoppiata per 4 persone. I valori nutrizionali non comprendono il riso. Si può utilizzare un altro olio a scelta. Il lime può essere sostituito con limone. Sono consigliati gamberi crudi invece di quelli precotti. Si possono servire con riso, riso di cavolfiore oppure quinoa.",
+    "originalProteinGrams": 32.0
+  },
+  {
+    "id": "healthy-51",
+    "title": "Gamberi e broccoli saltati con salsa teriyaki",
+    "category": "PRANZO / CENA",
+    "kcal": 240.0,
+    "timeMinutes": 21,
+    "timeLabel": "21 minuti",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 4,
+    "yieldLabel": "4",
+    "description": "Gamberi e broccoli teriyaki",
+    "tags": [
+      "PESCE E CROSTACEI"
+    ],
+    "ingredients": [
+      {
+        "name": "coconut aminos",
+        "notes": "SALSA TERIYAKI",
+        "sourceText": "60 ml di coconut aminos",
+        "quantity": 60.0,
+        "quantityMax": 60.0,
+        "unit": "ml"
+      },
+      {
+        "name": "aceto di riso",
+        "notes": "SALSA TERIYAKI",
+        "sourceText": "15 ml di aceto di riso",
+        "quantity": 15.0,
+        "quantityMax": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "miele",
+        "notes": "SALSA TERIYAKI",
+        "sourceText": "60 ml di miele",
+        "quantity": 60.0,
+        "quantityMax": 60.0,
+        "unit": "ml"
+      },
+      {
+        "name": "zenzero fresco grattugiato",
+        "notes": "SALSA TERIYAKI",
+        "sourceText": "circa 10 ml di zenzero fresco grattugiato",
+        "quantity": 10.0,
+        "quantityMax": 10.0,
+        "unit": "ml"
+      },
+      {
+        "name": "aglio, tritati",
+        "notes": "SALSA TERIYAKI",
+        "sourceText": "2 spicchi d’aglio, tritati",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "spicchi"
+      },
+      {
+        "name": "sriracha oppure salsa piccante",
+        "notes": "SALSA TERIYAKI",
+        "sourceText": "10 ml di sriracha oppure salsa piccante",
+        "quantity": 10.0,
+        "quantityMax": 10.0,
+        "unit": "ml"
+      },
+      {
+        "name": "amido di mais",
+        "notes": "SALSA TERIYAKI",
+        "sourceText": "circa 3 g di amido di mais",
+        "quantity": 3.0,
+        "quantityMax": 3.0,
+        "unit": "g"
+      },
+      {
+        "name": "olio d’oliva",
+        "notes": "GAMBERI E BROCCOLI",
+        "sourceText": "7,5 ml di olio d’oliva",
+        "quantity": 7.5,
+        "quantityMax": 7.5,
+        "unit": "ml"
+      },
+      {
+        "name": "broccolo medio, diviso in cimette",
+        "notes": "GAMBERI E BROCCOLI",
+        "sourceText": "1 broccolo medio, diviso in cimette",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "gamberi grandi o medi, sgusciati e privati dell’intestino",
+        "notes": "GAMBERI E BROCCOLI",
+        "sourceText": "454 g di gamberi grandi o medi, sgusciati e privati dell’intestino",
+        "quantity": 454.0,
+        "quantityMax": 454.0,
+        "unit": "g"
+      },
+      {
+        "name": "acqua",
+        "notes": "GAMBERI E BROCCOLI",
+        "sourceText": "60 ml d’acqua",
+        "quantity": 60.0,
+        "quantityMax": 60.0,
+        "unit": "ml"
+      },
+      {
+        "name": "cipollotti, affettati diagonalmente",
+        "notes": "GAMBERI E BROCCOLI",
+        "sourceText": "2 cipollotti, affettati diagonalmente",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "pz"
+      },
+      {
+        "name": "semi di sesamo tostati",
+        "notes": "GAMBERI E BROCCOLI",
+        "sourceText": "circa 6 g di semi di sesamo tostati",
+        "quantity": 6.0,
+        "quantityMax": 6.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sale kosher e pepe q.b.",
+        "notes": "GAMBERI E BROCCOLI",
+        "sourceText": "Sale kosher e pepe q.b."
+      }
+    ],
+    "instructions": [
+      "In una ciotolina mescola bene coconut aminos, aceto di riso, miele, zenzero, aglio, sriracha e amido di mais.",
+      "Scalda l’olio in una padella grande o wok a fuoco medio-alto.",
+      "Aggiungi i broccoli e saltali per 2-3 minuti, mescolando spesso.",
+      "Versa 60 ml d’acqua, abbassa il fuoco a medio-basso e copri.",
+      "Cuoci per altri 2-3 minuti, finché il broccolo sarà tenero ma ancora croccante.",
+      "Toglilo dalla padella e mettilo da parte.",
+      "Nella stessa padella aggiungi i gamberi.",
+      "Cuoci per 2 minuti a fuoco medio.",
+      "Gira i gamberi e versa la salsa teriyaki.",
+      "Cuoci mescolando continuamente per altri 2-3 minuti, finché i gamberi saranno rosa e opachi e la salsa si sarà addensata.",
+      "Rimetti i broccoli nella padella.",
+      "Completa con cipollotti e semi di sesamo."
+    ],
+    "sourceUrl": "https://healthyfitnessmeals.com/shrimp-and-broccoli-stir-fry/",
+    "sourcePage": 51,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nCalorie: 240 kcal\nCarboidrati: 33 g\nProteine: 20 g\nGrassi: 4 g\nGrassi saturi: 1 g\nGrassi polinsaturi: 1 g\nGrassi monoinsaturi: 2 g\nGrassi trans: 1 g\nColesterolo: 143 mg\nSodio: 1086 mg\nPotassio: 654 mg\nFibre: 4 g\nZuccheri: 20 g\nVitamina A: 1214 IU\nVitamina C: 139 mg\nCalcio: 151 mg\nFerro: 2 mg",
+    "sourceNotes": "I gamberi possono essere sostituiti con pollo o manzo a cubetti. Per una versione vegetariana, utilizza tofu pressato. Per una versione vegana, utilizza tofu al posto dei gamberi e sciroppo d’acero al posto del miele. Si può utilizzare qualsiasi olio adatto alle alte temperature. Il miele può essere sostituito con sciroppo d’acero o altro dolcificante liquido. Non cuocere eccessivamente i gamberi. Gli avanzi si conservano in frigorifero per massimo 3 giorni. Per riscaldare, la fonte consiglia preferibilmente una padella sul fornello oppure il microonde.",
+    "originalProteinGrams": 20.0
+  },
+  {
+    "id": "healthy-53",
+    "title": "Insalata Niçoise con vinaigrette ai capperi",
+    "category": "PRANZO / CENA",
+    "kcal": 528.0,
+    "timeMinutes": 70,
+    "timeLabel": "1 ora e 10 minuti",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 4,
+    "yieldLabel": "4",
+    "description": "Insalata Niçoise",
+    "tags": [
+      "PESCE E CROSTACEI"
+    ],
+    "ingredients": [
+      {
+        "name": "patate novelle",
+        "notes": "INSALATA",
+        "sourceText": "454 g di patate novelle",
+        "quantity": 454.0,
+        "quantityMax": 454.0,
+        "unit": "g"
+      },
+      {
+        "name": "uova grandi",
+        "notes": "INSALATA",
+        "sourceText": "4 uova grandi",
+        "quantity": 4.0,
+        "quantityMax": 4.0,
+        "unit": "pz"
+      },
+      {
+        "name": "tonno sott'olio d'oliva, scolato",
+        "notes": "INSALATA",
+        "sourceText": "285 g di tonno sott'olio d'oliva, scolato",
+        "quantity": 285.0,
+        "quantityMax": 285.0,
+        "unit": "g"
+      },
+      {
+        "name": "fagiolini, puliti",
+        "notes": "INSALATA",
+        "sourceText": "170 g di fagiolini, puliti",
+        "quantity": 170.0,
+        "quantityMax": 170.0,
+        "unit": "g"
+      },
+      {
+        "name": "pomodorini, tagliati a metà",
+        "notes": "INSALATA",
+        "sourceText": "circa 150 g di pomodorini, tagliati a metà",
+        "quantity": 150.0,
+        "quantityMax": 150.0,
+        "unit": "g"
+      },
+      {
+        "name": "olive denocciolate",
+        "notes": "INSALATA",
+        "sourceText": "circa 135 g di olive denocciolate",
+        "quantity": 135.0,
+        "quantityMax": 135.0,
+        "unit": "g"
+      },
+      {
+        "name": "spinacini, tritati grossolanamente",
+        "notes": "INSALATA",
+        "sourceText": "circa 60 g di spinacini, tritati grossolanamente",
+        "quantity": 60.0,
+        "quantityMax": 60.0,
+        "unit": "g"
+      },
+      {
+        "name": "piccola cipolla rossa, affettata finemente",
+        "notes": "CIPOLLA ROSSA SOTTACETO VELOCE",
+        "sourceText": "1 piccola cipolla rossa, affettata finemente",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "aceto",
+        "notes": "CIPOLLA ROSSA SOTTACETO VELOCE",
+        "sourceText": "45 ml di aceto",
+        "quantity": 45.0,
+        "quantityMax": 45.0,
+        "unit": "ml"
+      },
+      {
+        "name": "acqua tiepida",
+        "notes": "CIPOLLA ROSSA SOTTACETO VELOCE",
+        "sourceText": "45 ml di acqua tiepida",
+        "quantity": 45.0,
+        "quantityMax": 45.0,
+        "unit": "ml"
+      },
+      {
+        "name": "miele",
+        "notes": "CIPOLLA ROSSA SOTTACETO VELOCE",
+        "sourceText": "circa 7 g di miele",
+        "quantity": 7.0,
+        "quantityMax": 7.0,
+        "unit": "g"
+      },
+      {
+        "name": "sale kosher",
+        "notes": "CIPOLLA ROSSA SOTTACETO VELOCE",
+        "sourceText": "circa 4,5 g di sale kosher",
+        "quantity": 4.5,
+        "quantityMax": 4.5,
+        "unit": "g"
+      },
+      {
+        "name": "capperi, tritati finemente o schiacciati",
+        "notes": "VINAIGRETTE AI CAPPERI",
+        "sourceText": "circa 18 g di capperi, tritati finemente o schiacciati",
+        "quantity": 18.0,
+        "quantityMax": 18.0,
+        "unit": "g"
+      },
+      {
+        "name": "senape di Digione",
+        "notes": "VINAIGRETTE AI CAPPERI",
+        "sourceText": "5 g di senape di Digione",
+        "quantity": 5.0,
+        "quantityMax": 5.0,
+        "unit": "g"
+      },
+      {
+        "name": "aceto",
+        "notes": "VINAIGRETTE AI CAPPERI",
+        "sourceText": "30 ml di aceto",
+        "quantity": 30.0,
+        "quantityMax": 30.0,
+        "unit": "ml"
+      },
+      {
+        "name": "succo di limone",
+        "notes": "VINAIGRETTE AI CAPPERI",
+        "sourceText": "15 ml di succo di limone",
+        "quantity": 15.0,
+        "quantityMax": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "olio d'oliva",
+        "notes": "VINAIGRETTE AI CAPPERI",
+        "sourceText": "60 ml di olio d'oliva",
+        "quantity": 60.0,
+        "quantityMax": 60.0,
+        "unit": "ml"
+      },
+      {
+        "name": "miele",
+        "notes": "VINAIGRETTE AI CAPPERI",
+        "sourceText": "circa 14 g di miele",
+        "quantity": 14.0,
+        "quantityMax": 14.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sale e pepe q.b.",
+        "notes": "VINAIGRETTE AI CAPPERI",
+        "sourceText": "Sale e pepe q.b."
+      }
+    ],
+    "instructions": [
+      "Per prima cosa prepara le cipolle sottaceto.",
+      "In una ciotola mescola aceto, acqua tiepida, miele e sale.",
+      "Aggiungi la cipolla rossa affettata e lascia riposare per 20-30 minuti.",
+      "Cuoci le patate in acqua salata per circa 12-15 minuti, finché saranno tenere.",
+      "Scolale e tagliale a metà.",
+      "Metti le uova in una pentola con acqua fredda.",
+      "Porta a ebollizione e poi lascia sobbollire per 7-8 minuti.",
+      "Trasferiscile in acqua ghiacciata, sgusciale e tagliale a metà.",
+      "Cuoci i fagiolini in acqua bollente per 2-3 minuti.",
+      "Trasferiscili immediatamente in acqua ghiacciata, quindi scolali.",
+      "Per preparare la vinaigrette, metti nel frullatore capperi, senape, aceto, succo di limone, olio d'oliva, miele, sale e pepe.",
+      "Frulla fino a ottenere una salsa liscia e cremosa.",
+      "In un grande piatto da portata disponi fagiolini, patate e spinacini.",
+      "Condisci con metà della vinaigrette.",
+      "Aggiungi pomodorini, tonno lasciato in pezzi abbastanza grandi, uova, olive e cipolle sottaceto.",
+      "Completa con la vinaigrette restante e servi."
+    ],
+    "sourceUrl": "https://healthyfitnessmeals.com/nicoise-salad/",
+    "sourcePage": 53,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nCalorie: 528 kcal\nCarboidrati: 34 g\nProteine: 32 g\nGrassi: 30 g\nGrassi saturi: 5 g\nGrassi polinsaturi: 5 g\nGrassi monoinsaturi: 18 g\nGrassi trans: 0,02 g\nColesterolo: 199 mg\nSodio: 1480 mg\nPotassio: 1013 mg\nFibre: 6 g\nZuccheri: 9 g\nVitamina A: 2349 IU\nVitamina C: 44 mg\nCalcio: 114 mg\nFerro: 4 mg",
+    "sourceNotes": "Prepara per prime le cipolle sottaceto, così avranno il tempo di marinare mentre prepari gli altri ingredienti. Quando aggiungi il tonno, lascialo in pezzi grandi per ottenere una consistenza migliore. Raffredda subito i fagiolini in acqua ghiacciata per mantenerli verdi e croccanti. La vinaigrette si conserva in frigorifero per massimo 1 settimana. Agitala prima dell'uso. Per il meal prep, conserva gli ingredienti separatamente e assembla l'insalata al momento di servirla. Il tonno può essere sostituito con salmone grigliato o pollo.",
+    "originalProteinGrams": 32.0
+  },
+  {
+    "id": "healthy-55",
+    "title": "Pasta cremosa toscana con pollo",
+    "category": "PRANZO / CENA",
+    "kcal": 368.0,
+    "timeMinutes": 30,
+    "timeLabel": "30 minuti",
+    "difficulty": "facile",
+    "defaultServings": 8,
+    "maxServings": 8,
+    "yieldLabel": "8",
+    "description": "Pasta cremosa toscana con pollo",
+    "tags": [
+      "POLLO"
+    ],
+    "ingredients": [
+      {
+        "name": "pasta corta",
+        "sourceText": "285 g di pasta corta",
+        "quantity": 285.0,
+        "quantityMax": 285.0,
+        "unit": "g"
+      },
+      {
+        "name": "petto di pollo disossato e senza pelle, tagliato a bocconcini",
+        "sourceText": "680 g di petto di pollo disossato e senza pelle, tagliato a bocconcini",
+        "quantity": 680.0,
+        "quantityMax": 680.0,
+        "unit": "g"
+      },
+      {
+        "name": "olio d'oliva, oppure olio dei pomodori secchi",
+        "sourceText": "30 ml di olio d'oliva, oppure olio dei pomodori secchi",
+        "quantity": 30.0,
+        "quantityMax": 30.0,
+        "unit": "ml"
+      },
+      {
+        "name": "aglio, tritati",
+        "sourceText": "3-4 spicchi d'aglio, tritati",
+        "quantity": 3.0,
+        "quantityMax": 4.0,
+        "unit": "spicchi"
+      },
+      {
+        "name": "mix di erbe italiane",
+        "sourceText": "10 ml di mix di erbe italiane",
+        "quantity": 10.0,
+        "quantityMax": 10.0,
+        "unit": "ml"
+      },
+      {
+        "name": "Sale e pepe q.b.",
+        "sourceText": "Sale e pepe q.b."
+      },
+      {
+        "name": "pomodori secchi sott'olio, scolati e tritati",
+        "sourceText": "225 g di pomodori secchi sott'olio, scolati e tritati",
+        "quantity": 225.0,
+        "quantityMax": 225.0,
+        "unit": "g"
+      },
+      {
+        "name": "latte al 2% di grassi",
+        "sourceText": "710 ml di latte al 2% di grassi",
+        "quantity": 710.0,
+        "quantityMax": 710.0,
+        "unit": "ml"
+      },
+      {
+        "name": "farina senza glutine oppure amido di mais",
+        "sourceText": "16 g di farina senza glutine oppure amido di mais",
+        "quantity": 16.0,
+        "quantityMax": 16.0,
+        "unit": "g"
+      },
+      {
+        "name": "spinacini freschi",
+        "sourceText": "90 g di spinacini freschi",
+        "quantity": 90.0,
+        "quantityMax": 90.0,
+        "unit": "g"
+      },
+      {
+        "name": "Parmigiano grattugiato",
+        "sourceText": "50 g di Parmigiano grattugiato",
+        "quantity": 50.0,
+        "quantityMax": 50.0,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "Porta a ebollizione una pentola capiente con acqua salata e cuoci la pasta seguendo le indicazioni sulla confezione, lasciandola al dente.",
+      "Taglia il pollo in pezzi di circa 2,5 cm e mettilo in una ciotola. Aggiungi l'olio, l'aglio tritato, le erbe italiane, sale e pepe. Mescola bene.",
+      "Scalda una padella grande a fuoco medio-alto. Aggiungi il pollo in un unico strato e lascialo cuocere senza muoverlo per 2-3 minuti, finché sarà dorato.",
+      "Aggiungi i pomodori secchi tritati e continua la cottura per circa 5-7 minuti, finché il pollo sarà completamente cotto.",
+      "Nel frattempo, mescola in una ciotola il latte e la farina fino a ottenere un composto senza grumi.",
+      "Versa il composto di latte nella padella con il pollo e mescola bene. Lascia sobbollire per 3-4 minuti, finché la salsa si sarà addensata.",
+      "Abbassa il fuoco, aggiungi gli spinaci e mescola finché saranno appassiti.",
+      "Spegni il fuoco, aggiungi la pasta cotta e il Parmigiano. Mescola bene e servi."
+    ],
+    "sourceUrl": "https://healthyfitnessmeals.com/tuscan-chicken-pasta/",
+    "sourcePage": 55,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nCalorie: 368 kcal\nCarboidrati: 36 g\nProteine: 27 g\nGrassi: 13 g\nGrassi saturi: 3 g\nGrassi trans: 1 g\nColesterolo: 59 mg\nSodio: 444 mg\nPotassio: 914 mg\nFibre: 4 g\nZuccheri: 1 g\nVitamina A: 1498 IU\nVitamina C: 33 mg\nCalcio: 230 mg\nFerro: 2 mg",
+    "sourceNotes": "Per una versione più leggera si può utilizzare latte di mandorla non zuccherato. È possibile anche usare latte intero, panna o crema di cocco leggera. Per una salsa più cremosa si possono aggiungere circa 60 g di formaggio spalmabile. La farina può essere sostituita con amido di mais. Si può utilizzare pasta senza glutine, integrale, di lenticchie o di ceci. Al posto del petto di pollo si possono utilizzare sovracosce di pollo disossate oppure gamberi. Se si utilizzano spinaci surgelati, scongelarli e strizzarli bene prima di aggiungerli alla salsa. Gli avanzi possono essere conservati in frigorifero in un contenitore chiuso per massimo 3 giorni.",
+    "originalProteinGrams": 27.0
+  },
+  {
+    "id": "healthy-57",
+    "title": "Gnocchi alla carbonara con pollo",
+    "category": "PRANZO / CENA",
+    "kcal": 460.0,
+    "timeMinutes": 25,
+    "timeLabel": "25 minuti",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 4,
+    "yieldLabel": "4",
+    "description": "Gnocchi carbonara con pollo",
+    "tags": [
+      "POLLO"
+    ],
+    "ingredients": [
+      {
+        "name": "olio d'oliva",
+        "sourceText": "15 ml di olio d'oliva",
+        "quantity": 15.0,
+        "quantityMax": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "petto di pollo, tagliato a bocconcini",
+        "sourceText": "454 g di petto di pollo, tagliato a bocconcini",
+        "quantity": 454.0,
+        "quantityMax": 454.0,
+        "unit": "g"
+      },
+      {
+        "name": "aglio in polvere",
+        "sourceText": "1,5 g di aglio in polvere",
+        "quantity": 1.5,
+        "quantityMax": 1.5,
+        "unit": "g"
+      },
+      {
+        "name": "Sale kosher e pepe q.b.",
+        "sourceText": "Sale kosher e pepe q.b."
+      },
+      {
+        "name": "brodo di pollo",
+        "sourceText": "355 ml di brodo di pollo",
+        "quantity": 355.0,
+        "quantityMax": 355.0,
+        "unit": "ml"
+      },
+      {
+        "name": "brodo da tenere a disposizione",
+        "sourceText": "altri 60-80 ml di brodo da tenere a disposizione",
+        "quantity": 60.0,
+        "quantityMax": 80.0,
+        "unit": "ml"
+      },
+      {
+        "name": "gnocchi freschi",
+        "sourceText": "454 g di gnocchi freschi",
+        "quantity": 454.0,
+        "quantityMax": 454.0,
+        "unit": "g"
+      },
+      {
+        "name": "uova grandi, a temperatura ambiente",
+        "sourceText": "2 uova grandi, a temperatura ambiente",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "pz"
+      },
+      {
+        "name": "Parmigiano finemente grattugiato",
+        "sourceText": "circa 75 g di Parmigiano finemente grattugiato",
+        "quantity": 75.0,
+        "quantityMax": 75.0,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "Scalda l'olio in una padella profonda a fuoco medio-alto.",
+      "Aggiungi il pollo in un unico strato e condisci con sale, pepe e aglio in polvere.",
+      "Cuoci finché il pollo sarà completamente cotto e dorato.",
+      "Versa i 355 ml di brodo e deglassa il fondo della padella.",
+      "Aggiungi gli gnocchi e cuoci per 3-4 minuti, mescolando frequentemente.",
+      "Abbassa il fuoco al minimo. Gli gnocchi aumenteranno di volume e assorbiranno gran parte del liquido.",
+      "Se il composto diventa troppo asciutto, aggiungi gradualmente altri 60-80 ml di brodo.",
+      "In una ciotola sbatti velocemente le uova con il Parmigiano, sale e pepe.",
+      "Versa lentamente il composto sugli gnocchi, continuando a mescolare a fuoco molto basso.",
+      "Cuoci mescolando finché si forma una salsa cremosa.",
+      "Togli immediatamente dal fuoco.",
+      "Completa con altro Parmigiano e servi subito."
+    ],
+    "sourceUrl": "https://healthyfitnessmeals.com/gnocchi-carbonara/",
+    "sourcePage": 57,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nCalorie: 460 kcal\nCarboidrati: 42 g\nProteine: 39 g\nGrassi: 15 g\nGrassi saturi: 5 g\nGrassi polinsaturi: 1 g\nGrassi monoinsaturi: 6 g\nGrassi trans: 0,02 g\nColesterolo: 180 mg\nSodio: 1179 mg\nPotassio: 492 mg\nFibre: 3 g\nZuccheri: 1 g\nVitamina A: 317 IU\nVitamina C: 1 mg\nCalcio: 268 mg\nFerro: 5 mg",
+    "sourceNotes": "Lascia raffreddare completamente gli avanzi e conservali in frigorifero in un contenitore ermetico per massimo 3 giorni. Il congelamento non è consigliato perché gli gnocchi diventerebbero molli. Per riscaldare, metti gli gnocchi in padella con un goccio d'acqua e scalda a fuoco medio-basso.",
+    "originalProteinGrams": 39.0
+  },
+  {
+    "id": "healthy-59",
+    "title": "Pollo croccante al forno con salsa hot honey",
+    "category": "PRANZO / CENA",
+    "kcal": 456.0,
+    "timeMinutes": 40,
+    "timeLabel": "40 minuti",
+    "difficulty": "facile",
+    "defaultServings": 6,
+    "maxServings": 6,
+    "yieldLabel": "6",
+    "description": "Pollo croccante hot honey",
+    "tags": [
+      "POLLO"
+    ],
+    "ingredients": [
+      {
+        "name": "petto di pollo disossato e senza pelle, tagliato in cotolette",
+        "notes": "POLLO",
+        "sourceText": "circa 900 g di petto di pollo disossato e senza pelle, tagliato in cotolette",
+        "quantity": 900.0,
+        "quantityMax": 900.0,
+        "unit": "g"
+      },
+      {
+        "name": "Sale kosher e pepe q.b.",
+        "notes": "POLLO",
+        "sourceText": "Sale kosher e pepe q.b."
+      },
+      {
+        "name": "paprika affumicata",
+        "notes": "POLLO",
+        "sourceText": "circa 7 g di paprika affumicata",
+        "quantity": 7.0,
+        "quantityMax": 7.0,
+        "unit": "g"
+      },
+      {
+        "name": "cipolla in polvere",
+        "notes": "POLLO",
+        "sourceText": "circa 2,5 g di cipolla in polvere",
+        "quantity": 2.5,
+        "quantityMax": 2.5,
+        "unit": "g"
+      },
+      {
+        "name": "aglio in polvere",
+        "notes": "POLLO",
+        "sourceText": "circa 3 g di aglio in polvere",
+        "quantity": 3.0,
+        "quantityMax": 3.0,
+        "unit": "g"
+      },
+      {
+        "name": "farina 00 oppure senza glutine",
+        "notes": "POLLO",
+        "sourceText": "circa 40 g di farina 00 oppure senza glutine",
+        "quantity": 40.0,
+        "quantityMax": 40.0,
+        "unit": "g"
+      },
+      {
+        "name": "pangrattato panko",
+        "notes": "POLLO",
+        "sourceText": "circa 120 g di pangrattato panko",
+        "quantity": 120.0,
+        "quantityMax": 120.0,
+        "unit": "g"
+      },
+      {
+        "name": "uova grandi",
+        "notes": "POLLO",
+        "sourceText": "2 uova grandi",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "pz"
+      },
+      {
+        "name": "olio d'oliva",
+        "notes": "POLLO",
+        "sourceText": "45 ml di olio d'oliva",
+        "quantity": 45.0,
+        "quantityMax": 45.0,
+        "unit": "ml"
+      },
+      {
+        "name": "miele",
+        "notes": "SALSA HOT HONEY",
+        "sourceText": "circa 170 g di miele",
+        "quantity": 170.0,
+        "quantityMax": 170.0,
+        "unit": "g"
+      },
+      {
+        "name": "salsa piccante",
+        "notes": "SALSA HOT HONEY",
+        "sourceText": "30-60 ml di salsa piccante",
+        "quantity": 30.0,
+        "quantityMax": 60.0,
+        "unit": "ml"
+      },
+      {
+        "name": "fiocchi di peperoncino tritato",
+        "notes": "SALSA HOT HONEY",
+        "sourceText": "circa 2 g di fiocchi di peperoncino tritato",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "Preriscalda il forno a 220°C e rivesti una teglia grande con carta da forno.",
+      "Condisci le cotolette di pollo su entrambi i lati con sale, pepe, paprika affumicata, cipolla e aglio in polvere.",
+      "Metti la farina in un piatto.",
+      "Metti il panko in un secondo piatto.",
+      "In un terzo recipiente sbatti le uova con l'olio d'oliva e un pizzico di sale.",
+      "Passa ogni cotoletta prima nella farina, poi nelle uova e infine nel panko.",
+      "Disponi il pollo sulla teglia.",
+      "Cuoci per 15 minuti.",
+      "Nel frattempo mescola miele, salsa piccante e peperoncino.",
+      "Togli il pollo dal forno e distribuisci sopra la salsa hot honey.",
+      "Rimetti in forno e cuoci per altri 10 minuti circa, finché il pollo sarà completamente cotto e dorato."
+    ],
+    "sourceUrl": "https://healthyfitnessmeals.com/crispy-baked-honey-chicken/",
+    "sourcePage": 59,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nCalorie: 456 kcal\nCarboidrati: 45 g\nProteine: 38 g\nGrassi: 14 g\nGrassi saturi: 3 g\nGrassi polinsaturi: 2 g\nGrassi monoinsaturi: 7 g\nGrassi trans: 0,02 g\nColesterolo: 159 mg\nSodio: 468 mg\nPotassio: 692 mg\nFibre: 2 g\nZuccheri: 25 g\nVitamina A: 816 IU\nVitamina C: 5 mg\nCalcio: 62 mg\nFerro: 3 mg",
+    "sourceNotes": "Taglia il pollo in cotolette di dimensioni uniformi per ottenere una cottura omogenea. Non omettere l'olio nel composto di uova: aiuta il panko a diventare croccante. Assicurati che il forno abbia raggiunto completamente i 220°C prima di infornare. Aggiungi la salsa al miele a metà cottura per permetterle di caramellare senza bruciare. Inizia con 30 ml di salsa piccante e aumentala secondo il gusto. Si possono utilizzare farina e panko senza glutine. Per mantenere croccanti gli avanzi, riscaldali in forno o friggitrice ad aria a circa 190°C per 5-7 minuti.",
+    "originalProteinGrams": 38.0
+  },
+  {
+    "id": "healthy-61",
+    "title": "Chicken Tetrazzini",
+    "category": "PRANZO / CENA",
+    "kcal": 702.0,
+    "timeMinutes": 75,
+    "timeLabel": "1 ora e 15 minuti",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 4,
+    "yieldLabel": "4",
+    "description": "Chicken Tetrazzini",
+    "tags": [
+      "POLLO"
+    ],
+    "ingredients": [
+      {
+        "name": "linguine",
+        "notes": "PASTA E POLLO",
+        "sourceText": "340 g di linguine",
+        "quantity": 340.0,
+        "quantityMax": 340.0,
+        "unit": "g"
+      },
+      {
+        "name": "petto di pollo disossato e senza pelle, tagliato a cubetti",
+        "notes": "PASTA E POLLO",
+        "sourceText": "454 g di petto di pollo disossato e senza pelle, tagliato a cubetti",
+        "quantity": 454.0,
+        "quantityMax": 454.0,
+        "unit": "g"
+      },
+      {
+        "name": "sale",
+        "notes": "PASTA E POLLO",
+        "sourceText": "circa 6 g di sale",
+        "quantity": 6.0,
+        "quantityMax": 6.0,
+        "unit": "g"
+      },
+      {
+        "name": "pepe nero macinato",
+        "notes": "PASTA E POLLO",
+        "sourceText": "circa 1 g di pepe nero macinato",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "g"
+      },
+      {
+        "name": "aglio in polvere",
+        "notes": "PASTA E POLLO",
+        "sourceText": "circa 3 g di aglio in polvere",
+        "quantity": 3.0,
+        "quantityMax": 3.0,
+        "unit": "g"
+      },
+      {
+        "name": "cipolla in polvere",
+        "notes": "PASTA E POLLO",
+        "sourceText": "circa 2,5 g di cipolla in polvere",
+        "quantity": 2.5,
+        "quantityMax": 2.5,
+        "unit": "g"
+      },
+      {
+        "name": "olio d'oliva",
+        "notes": "PASTA E POLLO",
+        "sourceText": "15 ml di olio d'oliva",
+        "quantity": 15.0,
+        "quantityMax": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "piccole cimette di broccoli, tritate finemente",
+        "notes": "PASTA E POLLO",
+        "sourceText": "circa 90 g di piccole cimette di broccoli, tritate finemente",
+        "quantity": 90.0,
+        "quantityMax": 90.0,
+        "unit": "g"
+      },
+      {
+        "name": "piselli surgelati",
+        "notes": "PASTA E POLLO",
+        "sourceText": "circa 140 g di piselli surgelati",
+        "quantity": 140.0,
+        "quantityMax": 140.0,
+        "unit": "g"
+      },
+      {
+        "name": "olio d'oliva",
+        "notes": "SALSA CREMOSA",
+        "sourceText": "15 ml di olio d'oliva",
+        "quantity": 15.0,
+        "quantityMax": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "cipolla dolce piccola, tritata finemente",
+        "notes": "SALSA CREMOSA",
+        "sourceText": "1/2 cipolla dolce piccola, tritata finemente",
+        "quantity": 0.5,
+        "quantityMax": 0.5,
+        "unit": "pz"
+      },
+      {
+        "name": "aglio, tritati",
+        "notes": "SALSA CREMOSA",
+        "sourceText": "2-4 spicchi d'aglio, tritati",
+        "quantity": 2.0,
+        "quantityMax": 4.0,
+        "unit": "spicchi"
+      },
+      {
+        "name": "farina senza glutine",
+        "notes": "SALSA CREMOSA",
+        "sourceText": "circa 16 g di farina senza glutine",
+        "quantity": 16.0,
+        "quantityMax": 16.0,
+        "unit": "g"
+      },
+      {
+        "name": "latte intero",
+        "notes": "SALSA CREMOSA",
+        "sourceText": "240 ml di latte intero",
+        "quantity": 240.0,
+        "quantityMax": 240.0,
+        "unit": "ml"
+      },
+      {
+        "name": "brodo di pollo a basso contenuto di sodio",
+        "notes": "SALSA CREMOSA",
+        "sourceText": "475 ml di brodo di pollo a basso contenuto di sodio",
+        "quantity": 475.0,
+        "quantityMax": 475.0,
+        "unit": "ml"
+      },
+      {
+        "name": "formaggio spalmabile",
+        "notes": "SALSA CREMOSA",
+        "sourceText": "circa 60 g di formaggio spalmabile",
+        "quantity": 60.0,
+        "quantityMax": 60.0,
+        "unit": "g"
+      },
+      {
+        "name": "Parmigiano appena grattugiato",
+        "notes": "SALSA CREMOSA",
+        "sourceText": "circa 50 g di Parmigiano appena grattugiato",
+        "quantity": 50.0,
+        "quantityMax": 50.0,
+        "unit": "g"
+      },
+      {
+        "name": "timo essiccato",
+        "notes": "SALSA CREMOSA",
+        "sourceText": "circa 0,5 g di timo essiccato",
+        "quantity": 0.5,
+        "quantityMax": 0.5,
+        "unit": "g"
+      },
+      {
+        "name": "Sale kosher e pepe q.b.",
+        "notes": "SALSA CREMOSA",
+        "sourceText": "Sale kosher e pepe q.b."
+      },
+      {
+        "name": "acqua di cottura della pasta da tenere da parte",
+        "notes": "SALSA CREMOSA",
+        "sourceText": "Circa 120 ml di acqua di cottura della pasta da tenere da parte",
+        "quantity": 120.0,
+        "quantityMax": 120.0,
+        "unit": "ml"
+      }
+    ],
+    "instructions": [
+      "Cuoci le linguine in acqua salata fino a circa 1-2 minuti prima della cottura al dente indicata sulla confezione.",
+      "Conserva circa 120 ml dell'acqua di cottura, quindi scola la pasta e trasferiscila in una pirofila.",
+      "Condisci il pollo con sale, pepe, aglio in polvere, cipolla in polvere e 15 ml di olio.",
+      "Scalda una padella antiaderente a fuoco medio-alto.",
+      "Cuoci il pollo per 8-10 minuti, finché sarà dorato e completamente cotto.",
+      "Preriscalda il forno a 190°C.",
+      "Nella stessa padella scalda altri 15 ml di olio a fuoco medio.",
+      "Aggiungi cipolla e aglio e cuoci per 3-4 minuti.",
+      "Nel frattempo mescola la farina con circa 80 ml del latte fino a eliminare i grumi.",
+      "Versa nella padella il brodo.",
+      "Aggiungi lentamente il composto di latte e farina, il latte restante e il formaggio spalmabile.",
+      "Lascia sobbollire la salsa per 3-5 minuti, finché si addensa.",
+      "Aggiungi Parmigiano e timo e regola di sale e pepe.",
+      "La salsa dovrebbe velare il dorso di un cucchiaio. Se è troppo densa, aggiungi poco alla volta l'acqua di cottura conservata.",
+      "Aggiungi broccoli e piselli e cuoci per 1-2 minuti.",
+      "Versa la salsa sulla pasta nella pirofila.",
+      "Aggiungi il pollo cotto e mescola.",
+      "Se desideri, completa con altro Parmigiano.",
+      "Cuoci in forno per 15 minuti, finché la superficie sarà leggermente dorata."
+    ],
+    "sourceUrl": "https://healthyfitnessmeals.com/chicken-tetrazzini/",
+    "sourcePage": 61,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nCalorie: 702 kcal\nCarboidrati: 68 g\nProteine: 58 g\nGrassi: 27 g\nGrassi saturi: 8 g\nGrassi polinsaturi: 2 g\nGrassi monoinsaturi: 9 g\nGrassi trans: 0,01 g\nColesterolo: 105 mg\nSodio: 1138 mg\nPotassio: 888 mg\nFibre: 16 g\nZuccheri: 16 g\nVitamina A: 857 IU\nVitamina C: 39 mg\nCalcio: 309 mg\nFerro: 10 mg",
+    "sourceNotes": "Gli avanzi si conservano in frigorifero per massimo 3 giorni. La preparazione assemblata ma non cotta può essere congelata per massimo 3 mesi. Scongela in frigorifero durante la notte prima della cottura. Per riscaldare gli avanzi, copri la pirofila con alluminio e cuoci a circa 205°C per 20-30 minuti.",
+    "originalProteinGrams": 58.0
+  },
+  {
+    "id": "healthy-63",
+    "title": "Uova alla turca",
+    "category": "PRANZO / CENA",
+    "kcal": 385.0,
+    "timeMinutes": 15,
+    "timeLabel": "15 minuti",
+    "difficulty": "facile",
+    "defaultServings": 2,
+    "maxServings": 2,
+    "yieldLabel": "2",
+    "description": "Uova alla turca",
+    "tags": [
+      "UOVA E LATTICINI/FORMAGGI"
+    ],
+    "ingredients": [
+      {
+        "name": "yogurt greco intero bianco, a temperatura ambiente",
+        "notes": "BASE ALLO YOGURT",
+        "sourceText": "circa 490 g di yogurt greco intero bianco, a temperatura ambiente",
+        "quantity": 490.0,
+        "quantityMax": 490.0,
+        "unit": "g"
+      },
+      {
+        "name": "piccolo spicchio d'aglio, finemente grattugiato",
+        "notes": "BASE ALLO YOGURT",
+        "sourceText": "1 piccolo spicchio d'aglio, finemente grattugiato",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "sale kosher",
+        "notes": "BASE ALLO YOGURT",
+        "sourceText": "circa 3 g di sale kosher",
+        "quantity": 3.0,
+        "quantityMax": 3.0,
+        "unit": "g"
+      },
+      {
+        "name": "uova grandi",
+        "notes": "UOVA",
+        "sourceText": "4 uova grandi",
+        "quantity": 4.0,
+        "quantityMax": 4.0,
+        "unit": "pz"
+      },
+      {
+        "name": "aceto",
+        "notes": "UOVA",
+        "sourceText": "15 ml di aceto",
+        "quantity": 15.0,
+        "quantityMax": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "olio d'oliva",
+        "notes": "BURRO AL PEPERONCINO",
+        "sourceText": "15 ml di olio d'oliva",
+        "quantity": 15.0,
+        "quantityMax": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "burro non salato",
+        "notes": "BURRO AL PEPERONCINO",
+        "sourceText": "14 g di burro non salato",
+        "quantity": 14.0,
+        "quantityMax": 14.0,
+        "unit": "g"
+      },
+      {
+        "name": "peperoncino rosso turco in fiocchi oppure peperoncino tritato",
+        "notes": "BURRO AL PEPERONCINO",
+        "sourceText": "circa 2 g di peperoncino rosso turco in fiocchi oppure peperoncino tritato",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "g"
+      },
+      {
+        "name": "paprika affumicata",
+        "notes": "BURRO AL PEPERONCINO",
+        "sourceText": "circa 1,2 g di paprika affumicata",
+        "quantity": 1.2,
+        "quantityMax": 1.2,
+        "unit": "g"
+      },
+      {
+        "name": "Prezzemolo fresco o aneto, tritato finemente",
+        "notes": "PER SERVIRE",
+        "sourceText": "Prezzemolo fresco o aneto, tritato finemente"
+      },
+      {
+        "name": "Naan caldo oppure pane tostato, facoltativo",
+        "notes": "PER SERVIRE",
+        "sourceText": "Naan caldo oppure pane tostato, facoltativo"
+      }
+    ],
+    "instructions": [
+      "Mescola lo yogurt con l'aglio e il sale.",
+      "Dividilo tra due piatti fondi o ciotole e lascialo a temperatura ambiente mentre prepari le uova.",
+      "Riempi un pentolino con circa 7-8 cm d'acqua e portala a leggero fremito, senza farla bollire vigorosamente.",
+      "Aggiungi l'aceto.",
+      "Rompi ogni uovo in una piccola tazza separata.",
+      "Fai scivolare delicatamente le uova nell'acqua, una alla volta.",
+      "Cuoci per 2 minuti e 30 secondi - 3 minuti per ottenere il tuorlo morbido.",
+      "Togli le uova con una schiumarola e tamponale delicatamente con carta da cucina.",
+      "In una piccola padella sciogli il burro insieme all'olio.",
+      "Quando inizia a diventare leggermente spumoso, aggiungi il peperoncino e la paprika.",
+      "Cuoci per circa 15 secondi e togli dal fuoco.",
+      "Disponi 2 uova in camicia sopra lo yogurt in ogni piatto.",
+      "Versa sopra il burro speziato caldo.",
+      "Completa con prezzemolo o aneto e servi con naan o pane tostato."
+    ],
+    "sourceUrl": "https://healthyfitnessmeals.com/turkish-eggs/",
+    "sourcePage": 63,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nCalorie: 385 kcal\nCarboidrati: 9 g\nProteine: 34 g\nGrassi: 23 g\nGrassi saturi: 8 g\nGrassi polinsaturi: 3 g\nGrassi monoinsaturi: 10 g\nGrassi trans: 0,3 g\nColesterolo: 397 mg\nSodio: 232 mg\nPotassio: 459 mg\nFibre: 1 g\nZuccheri: 7 g\nVitamina A: 1266 IU\nVitamina C: 0,5 mg\nCalcio: 287 mg\nFerro: 2 mg",
+    "sourceNotes": "Il piatto assemblato è migliore appena preparato. La base allo yogurt può essere conservata separatamente in frigorifero per massimo 3 giorni. Il burro al peperoncino può essere conservato per massimo 1 settimana. Le uova in camicia possono essere conservate immerse in acqua fredda in frigorifero per massimo 2 giorni. Per riscaldarle, immergile in acqua sobbollente per 30-60 secondi.",
+    "originalProteinGrams": 34.0
+  },
+  {
+    "id": "healthy-65",
+    "title": "Base per pizza ai fiocchi di latte",
+    "category": "PRANZO / CENA",
+    "kcal": 421.0,
+    "timeMinutes": 50,
+    "timeLabel": "50 minuti",
+    "difficulty": "facile",
+    "defaultServings": 2,
+    "maxServings": 2,
+    "yieldLabel": "2",
+    "description": "Pizza ai fiocchi di latte",
+    "tags": [
+      "UOVA E LATTICINI/FORMAGGI"
+    ],
+    "ingredients": [
+      {
+        "name": "fiocchi di latte, preferibilmente a piccoli fiocchi",
+        "sourceText": "225 g di fiocchi di latte, preferibilmente a piccoli fiocchi",
+        "quantity": 225.0,
+        "quantityMax": 225.0,
+        "unit": "g"
+      },
+      {
+        "name": "uova grandi",
+        "sourceText": "2 uova grandi",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "pz"
+      },
+      {
+        "name": "farina a scelta",
+        "sourceText": "30 g di farina a scelta",
+        "quantity": 30.0,
+        "quantityMax": 30.0,
+        "unit": "g"
+      },
+      {
+        "name": "cipolla in polvere",
+        "sourceText": "2,5 g di cipolla in polvere",
+        "quantity": 2.5,
+        "quantityMax": 2.5,
+        "unit": "g"
+      },
+      {
+        "name": "aglio in polvere",
+        "sourceText": "3 g di aglio in polvere",
+        "quantity": 3.0,
+        "quantityMax": 3.0,
+        "unit": "g"
+      },
+      {
+        "name": "origano essiccato",
+        "sourceText": "0,5 g di origano essiccato",
+        "quantity": 0.5,
+        "quantityMax": 0.5,
+        "unit": "g"
+      },
+      {
+        "name": "salsa per pizza o marinara",
+        "sourceText": "120 ml di salsa per pizza o marinara",
+        "quantity": 120.0,
+        "quantityMax": 120.0,
+        "unit": "ml"
+      },
+      {
+        "name": "mix di formaggi per pizza a basso contenuto di grassi oppure mozzarella grattugiata",
+        "sourceText": "circa 85 g di mix di formaggi per pizza a basso contenuto di grassi oppure mozzarella grattugiata",
+        "quantity": 85.0,
+        "quantityMax": 85.0,
+        "unit": "g"
+      },
+      {
+        "name": "pepperoni di tacchino",
+        "sourceText": "57 g di pepperoni di tacchino",
+        "quantity": 57.0,
+        "quantityMax": 57.0,
+        "unit": "g"
+      },
+      {
+        "name": "Parmigiano grattugiato, facoltativo",
+        "sourceText": "circa 5 g di Parmigiano grattugiato, facoltativo",
+        "quantity": 5.0,
+        "quantityMax": 5.0,
+        "unit": "g"
+      },
+      {
+        "name": "Pepe nero, facoltativo",
+        "sourceText": "Pepe nero, facoltativo"
+      }
+    ],
+    "instructions": [
+      "Preriscalda il forno a 175°C e rivesti una teglia con carta da forno.",
+      "In una ciotola capiente unisci i fiocchi di latte, le uova, la farina, la cipolla in polvere, l'aglio in polvere e l'origano. Se desideri, aggiungi anche un po' di pepe nero.",
+      "Mescola con una spatola fino a ottenere un composto uniforme. Non è necessario frullarlo.",
+      "Trasferisci il composto sulla teglia e, con un cucchiaio o una spatola, forma un disco. Non stenderlo troppo sottile.",
+      "Cuoci per 25-30 minuti, finché la base sarà leggermente dorata.",
+      "Togli dal forno e lascia riposare per 1-2 minuti.",
+      "Distribuisci la salsa sulla base e aggiungi il formaggio grattugiato.",
+      "Completa con il pepperoni di tacchino.",
+      "Rimetti in forno per altri 5-7 minuti, finché il formaggio sarà completamente sciolto.",
+      "Completa, se desideri, con Parmigiano o fiocchi di peperoncino."
+    ],
+    "sourceUrl": "https://healthyfitnessmeals.com/cottage-cheese-pizza-crust/",
+    "sourcePage": 65,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nCalorie: 421 kcal\nCarboidrati: 28 g\nProteine: 40 g\nGrassi: 16 g\nGrassi saturi: 8 g\nGrassi polinsaturi: 2 g\nGrassi monoinsaturi: 5 g\nGrassi trans: 0,02 g\nColesterolo: 258 mg\nSodio: 1617 mg\nPotassio: 624 mg\nFibre: 2 g\nZuccheri: 5 g\nVitamina A: 792 IU\nVitamina C: 5 mg\nCalcio: 510 mg\nFerro: 4 mg",
+    "sourceNotes": "Sono consigliati fiocchi di latte a piccoli fiocchi, sia interi sia a ridotto contenuto di grassi. Si può utilizzare farina 00, farina d'avena, integrale, di farro oppure una farina senza glutine. È possibile utilizzare mozzarella o un altro formaggio grattugiato a basso contenuto di grassi. Come condimenti si possono aggiungere funghi, cipolle, verdure o altri ingredienti a scelta. Dopo la prima cottura è consigliabile lasciare riposare la base per 1-2 minuti prima di aggiungere la salsa. Si può preparare anche senza farina per una versione a contenuto di carboidrati molto ridotto, ma la base sarà più morbida, umida e meno resistente.",
+    "originalProteinGrams": 40.0
+  },
+  {
+    "id": "healthy-67",
+    "title": "Crema montata di fiocchi di latte",
+    "category": "SNACK",
+    "kcal": 57.0,
+    "timeMinutes": 5,
+    "timeLabel": "5 minuti",
+    "difficulty": "facile",
+    "defaultServings": 8,
+    "maxServings": 8,
+    "yieldLabel": "8",
+    "description": "Crema montata di fiocchi di latte",
+    "tags": [
+      "UOVA E LATTICINI/FORMAGGI"
+    ],
+    "ingredients": [
+      {
+        "name": "fiocchi di latte",
+        "sourceText": "circa 225 g di fiocchi di latte",
+        "quantity": 225.0,
+        "quantityMax": 225.0,
+        "unit": "g"
+      },
+      {
+        "name": "olio d'oliva",
+        "sourceText": "30 ml di olio d'oliva",
+        "quantity": 30.0,
+        "quantityMax": 30.0,
+        "unit": "ml"
+      },
+      {
+        "name": "aglio, schiacciato",
+        "sourceText": "1 spicchio d'aglio, schiacciato",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "spicchio"
+      },
+      {
+        "name": "aneto fresco",
+        "sourceText": "circa 4 g di aneto fresco",
+        "quantity": 4.0,
+        "quantityMax": 4.0,
+        "unit": "g"
+      },
+      {
+        "name": "erba cipollina fresca",
+        "sourceText": "circa 3 g di erba cipollina fresca",
+        "quantity": 3.0,
+        "quantityMax": 3.0,
+        "unit": "g"
+      },
+      {
+        "name": "succo di limone",
+        "sourceText": "5 ml di succo di limone",
+        "quantity": 5.0,
+        "quantityMax": 5.0,
+        "unit": "ml"
+      },
+      {
+        "name": "sale",
+        "sourceText": "circa 1,5 g di sale",
+        "quantity": 1.5,
+        "quantityMax": 1.5,
+        "unit": "g"
+      },
+      {
+        "name": "Verdure fresche, per servire",
+        "sourceText": "Verdure fresche, per servire"
+      }
+    ],
+    "instructions": [
+      "Metti nel robot da cucina i fiocchi di latte, l'olio, l'aglio, l'aneto, l'erba cipollina, il succo di limone e il sale.",
+      "Frulla per circa 2 minuti, fino a ottenere una crema liscia e omogenea.",
+      "Trasferisci in una ciotola e servi con verdure fresche tagliate."
+    ],
+    "sourceUrl": "https://feelgoodfoodie.net/wprm_print/whipped-cottage-cheese-recipe",
+    "sourcePage": 67,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nCalorie: 57 kcal\nCarboidrati: 1 g\nProteine: 3 g\nGrassi: 5 g\nGrassi saturi: 1 g\nGrassi polinsaturi: 0,4 g\nGrassi monoinsaturi: 3 g\nColesterolo: 4 mg\nSodio: 156 mg\nPotassio: 31 mg\nFibre: 0,02 g\nZuccheri: 1 g\nVitamina A: 57 IU\nVitamina C: 1 mg\nCalcio: 23 mg\nFerro: 0,1 mg\nLink indicato nel PDF:\nhttps://feelgoodfoodie.net/wprm_print/whipped-cottage-cheese-recipe",
+    "sourceNotes": "Non esagerare con l'aglio crudo perché può risultare dominante. Il PDF suggerisce anche di tagliare lo spicchio a metà e rimuovere il germoglio centrale per attenuarne il sapore. Conserva il dip in un contenitore ermetico in frigorifero per massimo 1 settimana.",
+    "originalProteinGrams": 3.0
+  },
+  {
+    "id": "healthy-69",
+    "title": "Queso cremoso con fiocchi di latte",
+    "category": "SNACK",
+    "kcal": 86.0,
+    "timeMinutes": 9,
+    "timeLabel": "9 minuti",
+    "difficulty": "facile",
+    "defaultServings": 8,
+    "maxServings": 8,
+    "yieldLabel": "8",
+    "description": "Queso ai fiocchi di latte",
+    "tags": [
+      "UOVA E LATTICINI/FORMAGGI"
+    ],
+    "ingredients": [
+      {
+        "name": "fiocchi di latte",
+        "sourceText": "circa 225 g di fiocchi di latte",
+        "quantity": 225.0,
+        "quantityMax": 225.0,
+        "unit": "g"
+      },
+      {
+        "name": "cheddar appena grattugiato, più altro per servire",
+        "sourceText": "circa 115 g di cheddar appena grattugiato, più altro per servire",
+        "quantity": 115.0,
+        "quantityMax": 115.0,
+        "unit": "g"
+      },
+      {
+        "name": "mix di spezie per tacos",
+        "sourceText": "circa 8 g di mix di spezie per tacos",
+        "quantity": 8.0,
+        "quantityMax": 8.0,
+        "unit": "g"
+      },
+      {
+        "name": "Pomodori tritati, per servire",
+        "sourceText": "Pomodori tritati, per servire"
+      },
+      {
+        "name": "Coriandolo tritato, per servire",
+        "sourceText": "Coriandolo tritato, per servire"
+      }
+    ],
+    "instructions": [
+      "Metti i fiocchi di latte nel frullatore o robot da cucina e frulla fino a ottenere una crema completamente liscia.",
+      "Versa la crema in un piccolo pentolino.",
+      "Aggiungi il cheddar e il condimento per tacos.",
+      "Scalda a fuoco medio-basso mescolando continuamente con una frusta per circa 5 minuti, finché il formaggio sarà sciolto e il composto cremoso.",
+      "Spegni il fuoco non appena tutto il formaggio è fuso.",
+      "Se la salsa non è abbastanza liscia, lasciala intiepidire quanto basta e frullala nuovamente.",
+      "Servi con pomodori, coriandolo e altro cheddar, se desideri."
+    ],
+    "sourceUrl": "https://feelgoodfoodie.net/wprm_print/cottage-cheese-queso-recipe",
+    "sourcePage": 69,
+    "nutritionLabel": "Per circa 60 ml:",
+    "nutritionDetails": "Per circa 60 ml:\nCalorie: 86 kcal\nCarboidrati: 1 g\nProteine: 7 g\nGrassi: 6 g\nGrassi saturi: 3 g\nGrassi polinsaturi: 0,2 g\nGrassi monoinsaturi: 1 g\nColesterolo: 19 mg\nSodio: 215 mg\nPotassio: 11 mg\nFibre: 0,1 g\nZuccheri: 1 g\nVitamina A: 171 IU\nVitamina C: 0,1 mg\nCalcio: 120 mg\nFerro: 0,04 mg\nLink indicato nel PDF:\nhttps://feelgoodfoodie.net/wprm_print/cottage-cheese-queso-recipe",
+    "sourceNotes": "Il consiglio principale del PDF è frullare nuovamente la salsa dopo averla scaldata per ottenere una consistenza ancora più liscia. Assicurati che non sia eccessivamente calda prima di rimetterla nel frullatore. Conserva in frigorifero in un contenitore ermetico per massimo 5 giorni. Riscalda nel microonde a intervalli di 30 secondi, mescolando tra un intervallo e l'altro.",
+    "originalProteinGrams": 7.0
+  },
+  {
+    "id": "healthy-71",
+    "title": "Dip al burro di arachidi",
+    "category": "SNACK",
+    "kcal": 141.0,
+    "timeMinutes": 5,
+    "timeLabel": "5 minuti",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 4,
+    "yieldLabel": "4",
+    "description": "Dip al burro di arachidi",
+    "tags": [
+      "SNACK E CONTORNI"
+    ],
+    "ingredients": [
+      {
+        "name": "yogurt greco intero",
+        "sourceText": "circa 245 g di yogurt greco intero",
+        "quantity": 245.0,
+        "quantityMax": 245.0,
+        "unit": "g"
+      },
+      {
+        "name": "burro di arachidi cremoso",
+        "sourceText": "circa 64 g di burro di arachidi cremoso",
+        "quantity": 64.0,
+        "quantityMax": 64.0,
+        "unit": "g"
+      },
+      {
+        "name": "miele",
+        "sourceText": "circa 21 g di miele",
+        "quantity": 21.0,
+        "quantityMax": 21.0,
+        "unit": "g"
+      },
+      {
+        "name": "cannella, facoltativa",
+        "sourceText": "circa 0,7 g di cannella, facoltativa",
+        "quantity": 0.7,
+        "quantityMax": 0.7,
+        "unit": "g"
+      },
+      {
+        "name": "Mele rosse e verdi affettate, per servire",
+        "sourceText": "Mele rosse e verdi affettate, per servire"
+      }
+    ],
+    "instructions": [
+      "In una piccola ciotola mescola yogurt greco, burro di arachidi, miele e cannella.",
+      "Continua a mescolare finché non rimangono grumi.",
+      "Trasferisci in una ciotola da portata e servi con mele o altra frutta."
+    ],
+    "sourceUrl": "https://feelgoodfoodie.net/wprm_print/peanut-butter-dip-2",
+    "sourcePage": 71,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nCalorie: 141 kcal\nCarboidrati: 9 g\nProteine: 9 g\nGrassi: 8 g\nGrassi saturi: 2 g\nColesterolo: 3 mg\nSodio: 92 mg\nPotassio: 175 mg\nFibre: 1 g\nZuccheri: 7 g\nCalcio: 62 mg\nFerro: 1 mg\nLink indicato nel PDF:\nhttps://feelgoodfoodie.net/wprm_print/peanut-butter-dip-2",
+    "sourceNotes": "La ricetta produce circa 80 ml di dip per persona. Il PDF consiglia di lasciare lo yogurt greco a temperatura ambiente per 10-15 minuti prima di mescolarlo, perché appena tolto dal frigorifero può rendere il dip più difficile da lavorare. Conserva coperto in frigorifero per massimo 5 giorni.",
+    "originalProteinGrams": 9.0
+  },
+  {
+    "id": "healthy-73",
+    "title": "Bastoncini di zucchine croccanti al forno",
+    "category": "SNACK",
+    "kcal": 184.0,
+    "timeMinutes": 40,
+    "timeLabel": "40 minuti",
+    "difficulty": "facile",
+    "defaultServings": 4,
+    "maxServings": 4,
+    "yieldLabel": "4",
+    "description": "Bastoncini di zucchine croccanti",
+    "tags": [
+      "SNACK E CONTORNI"
+    ],
+    "ingredients": [
+      {
+        "name": "Spray da cucina",
+        "notes": "ZUCCHINE",
+        "sourceText": "Spray da cucina"
+      },
+      {
+        "name": "farina 00",
+        "notes": "ZUCCHINE",
+        "sourceText": "30 g di farina 00",
+        "quantity": 30.0,
+        "quantityMax": 30.0,
+        "unit": "g"
+      },
+      {
+        "name": "zucchine, tagliate in bastoncini lunghi circa 7,5 cm",
+        "notes": "ZUCCHINE",
+        "sourceText": "2 zucchine, tagliate in bastoncini lunghi circa 7,5 cm",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "pz"
+      },
+      {
+        "name": "pangrattato panko",
+        "notes": "ZUCCHINE",
+        "sourceText": "circa 60 g di pangrattato panko",
+        "quantity": 60.0,
+        "quantityMax": 60.0,
+        "unit": "g"
+      },
+      {
+        "name": "Parmigiano grattugiato",
+        "notes": "ZUCCHINE",
+        "sourceText": "circa 25 g di Parmigiano grattugiato",
+        "quantity": 25.0,
+        "quantityMax": 25.0,
+        "unit": "g"
+      },
+      {
+        "name": "erbe italiane",
+        "notes": "ZUCCHINE",
+        "sourceText": "circa 1 g di erbe italiane",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "g"
+      },
+      {
+        "name": "paprika",
+        "notes": "ZUCCHINE",
+        "sourceText": "circa 1,2 g di paprika",
+        "quantity": 1.2,
+        "quantityMax": 1.2,
+        "unit": "g"
+      },
+      {
+        "name": "sale",
+        "notes": "ZUCCHINE",
+        "sourceText": "circa 1,5 g di sale",
+        "quantity": 1.5,
+        "quantityMax": 1.5,
+        "unit": "g"
+      },
+      {
+        "name": "pepe nero",
+        "notes": "ZUCCHINE",
+        "sourceText": "circa 0,5 g di pepe nero",
+        "quantity": 0.5,
+        "quantityMax": 0.5,
+        "unit": "g"
+      },
+      {
+        "name": "uova",
+        "notes": "ZUCCHINE",
+        "sourceText": "2 uova",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "pz"
+      },
+      {
+        "name": "yogurt greco intero",
+        "notes": "SALSA ALLO YOGURT",
+        "sourceText": "circa 120 g di yogurt greco intero",
+        "quantity": 120.0,
+        "quantityMax": 120.0,
+        "unit": "g"
+      },
+      {
+        "name": "aceto di mele",
+        "notes": "SALSA ALLO YOGURT",
+        "sourceText": "5 ml di aceto di mele",
+        "quantity": 5.0,
+        "quantityMax": 5.0,
+        "unit": "ml"
+      },
+      {
+        "name": "cipolla in polvere",
+        "notes": "SALSA ALLO YOGURT",
+        "sourceText": "circa 1,2 g di cipolla in polvere",
+        "quantity": 1.2,
+        "quantityMax": 1.2,
+        "unit": "g"
+      },
+      {
+        "name": "aglio in polvere",
+        "notes": "SALSA ALLO YOGURT",
+        "sourceText": "circa 1,5 g di aglio in polvere",
+        "quantity": 1.5,
+        "quantityMax": 1.5,
+        "unit": "g"
+      },
+      {
+        "name": "erba cipollina essiccata",
+        "notes": "SALSA ALLO YOGURT",
+        "sourceText": "circa 0,5 g di erba cipollina essiccata",
+        "quantity": 0.5,
+        "quantityMax": 0.5,
+        "unit": "g"
+      },
+      {
+        "name": "aneto essiccato",
+        "notes": "SALSA ALLO YOGURT",
+        "sourceText": "circa 0,25 g di aneto essiccato",
+        "quantity": 0.25,
+        "quantityMax": 0.25,
+        "unit": "g"
+      },
+      {
+        "name": "prezzemolo essiccato",
+        "notes": "SALSA ALLO YOGURT",
+        "sourceText": "circa 0,25 g di prezzemolo essiccato",
+        "quantity": 0.25,
+        "quantityMax": 0.25,
+        "unit": "g"
+      },
+      {
+        "name": "sale",
+        "notes": "SALSA ALLO YOGURT",
+        "sourceText": "circa 1,5 g di sale",
+        "quantity": 1.5,
+        "quantityMax": 1.5,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "Preriscalda il forno a 220°C.",
+      "Posiziona una griglia da raffreddamento sopra una teglia e spruzzala con spray da cucina.",
+      "Metti la farina in una ciotola grande. Aggiungi tutti i bastoncini di zucchina e mescola finché saranno ricoperti.",
+      "In una seconda ciotola mescola panko, Parmigiano, erbe italiane, paprika, sale e pepe.",
+      "Sbatti le due uova in un'altra ciotola.",
+      "Passa le zucchine infarinate prima nell'uovo e poi nel composto di panko, premendo bene l'impanatura.",
+      "Disponile sulla griglia preparata.",
+      "Cuoci per circa 20-25 minuti, finché saranno dorate e croccanti.",
+      "Durante la cottura, mescola tutti gli ingredienti della salsa allo yogurt.",
+      "Servi le zucchine calde con la salsa."
+    ],
+    "sourceUrl": "https://feelgoodfoodie.net/wprm_print/baked-zucchini-fries-2",
+    "sourcePage": 73,
+    "nutritionLabel": "Per mezza zucchina:",
+    "nutritionDetails": "Per mezza zucchina:\nCalorie: 184 kcal\nCarboidrati: 23 g\nProteine: 11 g\nGrassi: 5 g\nGrassi saturi: 2 g\nGrassi polinsaturi: 1 g\nGrassi monoinsaturi: 1 g\nGrassi trans: 0,01 g\nColesterolo: 89 mg\nSodio: 559 mg\nPotassio: 410 mg\nFibre: 2 g\nZuccheri: 4 g\nVitamina A: 923 IU\nVitamina C: 22 mg\nCalcio: 152 mg\nFerro: 2 mg\nLink indicato nel PDF:\nhttps://feelgoodfoodie.net/wprm_print/baked-zucchini-fries-2",
+    "sourceNotes": "Conserva gli avanzi in frigorifero in un contenitore ermetico per 3-4 giorni. Per riscaldarli, mettili nel forno o nel fornetto a circa 175°C per 2-4 minuti. Il PDF sconsiglia di congelarli perché l'elevato contenuto d'acqua delle zucchine li renderebbe molli. Puoi tagliare le zucchine in anticipo e conservarle in frigorifero in un contenitore con carta assorbente. Il panko può essere sostituito con pangrattato normale. La farina 00 può essere sostituita con farina di mandorle o altra farina senza glutine. SALSA ORIGINALE AGLI ANACARDI INDICATA NEL PDF circa 140 g di anacardi, lasciati in ammollo per tutta la notte 60 ml di latte di mandorla 1 spicchio d'aglio 15 ml di succo di limone 10 ml di senape di Digione Frulla tutto fino a ottenere una salsa liscia.",
+    "originalProteinGrams": 11.0
+  },
+  {
+    "id": "healthy-75",
+    "title": "Bistecche di cavolfiore alla griglia",
+    "category": "SNACK",
+    "kcal": 231.0,
+    "timeMinutes": 25,
+    "timeLabel": "25 minuti",
+    "difficulty": "facile",
+    "defaultServings": 2,
+    "maxServings": 2,
+    "yieldLabel": "2",
+    "description": "Bistecca di cavolfiore",
+    "tags": [
+      "SNACK E CONTORNI"
+    ],
+    "ingredients": [
+      {
+        "name": "cavolfiore grande",
+        "sourceText": "1 cavolfiore grande",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "pz"
+      },
+      {
+        "name": "olio d'oliva",
+        "sourceText": "30 ml di olio d'oliva",
+        "quantity": 30.0,
+        "quantityMax": 30.0,
+        "unit": "ml"
+      },
+      {
+        "name": "limone (succo)",
+        "sourceText": "Succo di 1 limone, più altro per servire",
+        "quantity": 1,
+        "quantityMax": 1,
+        "unit": "pz"
+      },
+      {
+        "name": "aglio tritati",
+        "sourceText": "2 spicchi d'aglio tritati",
+        "quantity": 2.0,
+        "quantityMax": 2.0,
+        "unit": "spicchi"
+      },
+      {
+        "name": "cipolla in polvere",
+        "sourceText": "circa 2,5 g di cipolla in polvere",
+        "quantity": 2.5,
+        "quantityMax": 2.5,
+        "unit": "g"
+      },
+      {
+        "name": "origano",
+        "sourceText": "circa 1 g di origano",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "g"
+      },
+      {
+        "name": "paprika",
+        "sourceText": "circa 1,2 g di paprika",
+        "quantity": 1.2,
+        "quantityMax": 1.2,
+        "unit": "g"
+      },
+      {
+        "name": "sale",
+        "sourceText": "circa 1,5 g di sale",
+        "quantity": 1.5,
+        "quantityMax": 1.5,
+        "unit": "g"
+      },
+      {
+        "name": "pepe nero",
+        "sourceText": "circa 0,5 g di pepe nero",
+        "quantity": 0.5,
+        "quantityMax": 0.5,
+        "unit": "g"
+      },
+      {
+        "name": "Prezzemolo tritato, per servire",
+        "sourceText": "Prezzemolo tritato, per servire"
+      }
+    ],
+    "instructions": [
+      "Appoggia il cavolfiore su un tagliere e taglialo in “bistecche” spesse circa 2-2,5 cm.",
+      "Dovresti ottenere 2-3 fette grandi. Conserva le cimette rimanenti per un'altra preparazione.",
+      "In una ciotola mescola olio, succo di limone, aglio, cipolla in polvere, origano, paprika, sale e pepe.",
+      "Spennella entrambi i lati delle fette di cavolfiore con la marinatura.",
+      "Porta una griglia a gas a temperatura medio-alta, circa 205°C.",
+      "Assicurati che la griglia sia pulita e leggermente oliata.",
+      "Cuoci le bistecche direttamente sulla griglia per 5-7 minuti per lato, finché saranno tenere e ben segnate senza bruciarsi.",
+      "Togli dalla griglia, aggiungi altro succo di limone e completa con prezzemolo."
+    ],
+    "sourceUrl": "https://feelgoodfoodie.net/wprm_print/grilled-cauliflower-steak-recipe",
+    "sourcePage": 75,
+    "nutritionLabel": "Per 1 bistecca di cavolfiore:",
+    "nutritionDetails": "Per 1 bistecca di cavolfiore:\nCalorie: 231 kcal\nCarboidrati: 24 g\nProteine: 7 g\nGrassi: 15 g\nGrassi saturi: 2 g\nGrassi polinsaturi: 2 g\nGrassi monoinsaturi: 10 g\nSodio: 388 mg\nPotassio: 1066 mg\nFibre: 9 g\nZuccheri: 8 g\nVitamina A: 277 IU\nVitamina C: 182 mg\nCalcio: 111 mg\nFerro: 2 mg\nLink indicato nel PDF:\nhttps://feelgoodfoodie.net/wprm_print/grilled-cauliflower-steak-recipe",
+    "sourceNotes": "Non avere fretta di girare il cavolfiore. Se rimane attaccato alla griglia, attendi un altro minuto. Conserva in frigorifero in un contenitore ermetico per massimo 3 giorni. Riscalda nel microonde per 1-2 minuti.",
+    "originalProteinGrams": 7.0
+  },
+  {
+    "id": "healthy-77",
+    "title": "Chips di cavolo riccio al forno",
+    "category": "SNACK",
+    "kcal": 85.0,
+    "timeMinutes": 17,
+    "timeLabel": "17 minuti",
+    "difficulty": "facile",
+    "defaultServings": 2,
+    "maxServings": 2,
+    "yieldLabel": "2",
+    "description": "Chips di cavolo riccio",
+    "tags": [
+      "SNACK E CONTORNI"
+    ],
+    "ingredients": [
+      {
+        "name": "cavolo riccio",
+        "sourceText": "1 mazzo di cavolo riccio",
+        "quantity": 1.0,
+        "quantityMax": 1.0,
+        "unit": "mazzo"
+      },
+      {
+        "name": "olio d'oliva",
+        "sourceText": "15 ml di olio d'oliva",
+        "quantity": 15.0,
+        "quantityMax": 15.0,
+        "unit": "ml"
+      },
+      {
+        "name": "sale marino",
+        "sourceText": "circa 3 g di sale marino",
+        "quantity": 3.0,
+        "quantityMax": 3.0,
+        "unit": "g"
+      }
+    ],
+    "instructions": [
+      "Preriscalda il forno a 165°C e rivesti una grande teglia con carta da forno.",
+      "Rimuovi con attenzione le coste dure del cavolo e taglia le foglie in pezzi da boccone.",
+      "Lava il cavolo e asciugalo molto bene.",
+      "Distribuiscilo sulla teglia e condiscilo con l'olio.",
+      "Cuoci per 10-12 minuti, finché diventa croccante, girando le foglie a metà cottura.",
+      "Appena estratto dal forno, cospargi con il sale."
+    ],
+    "sourceUrl": "https://feelgoodfoodie.net/wprm_print/baked-kale-chips-recipe",
+    "sourcePage": 77,
+    "nutritionLabel": "Per porzione:",
+    "nutritionDetails": "Per porzione:\nCalorie: 85 kcal\nCarboidrati: 3 g\nProteine: 2 g\nGrassi: 8 g\nGrassi saturi: 1 g\nGrassi polinsaturi: 1 g\nGrassi monoinsaturi: 5 g\nSodio: 616 mg\nPotassio: 226 mg\nFibre: 3 g\nZuccheri: 1 g\nVitamina A: 6494 IU\nVitamina C: 61 mg\nCalcio: 166 mg\nFerro: 1 mg\nLink indicato nel PDF:\nhttps://feelgoodfoodie.net/wprm_print/baked-kale-chips-recipe",
+    "sourceNotes": "Non utilizzare troppo olio: un eccesso di umidità impedisce alle foglie di diventare croccanti. Gli avanzi si conservano in un contenitore ermetico a temperatura ambiente per 1 giorno oppure in frigorifero per 3-4 giorni. In frigorifero perderanno croccantezza. Per renderli nuovamente croccanti, scaldali in forno a circa 120°C.",
+    "originalProteinGrams": 2.0
+  }
+]

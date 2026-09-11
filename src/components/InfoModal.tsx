@@ -106,41 +106,15 @@ export const InfoModal: React.FC<InfoModalProps> = ({ onClose }) => {
             </ol>
           </div>
 
-          {/* Calorie & Protein Philosophy */}
           <div className="space-y-2 bg-[#F0F4F3] p-4.5 rounded-3xl border border-slate-200/80">
-            <h3 className="font-extrabold text-[#1F2937] flex items-center gap-1.5 text-xs uppercase tracking-wider">
-              <Flame className="w-4 h-4 text-amber-500" />
-              Struttura Nutrizionale
-            </h3>
-            <p className="font-medium">
-              • <strong>Calorie:</strong> Media di <strong>~1.816 kcal/giorno</strong> (fluttuazioni naturali tra 1.750 e 1.850 kcal in base ai giorni).
-            </p>
-            <p className="font-medium">
-              • <strong>Proteine:</strong> Quota media di <strong>~142 g/giorno</strong>, con picchi fino a 165 g nei giorni di carne/nuggets.
-            </p>
-            <p className="font-medium">
-              • <strong>Strategia:</strong> Nessun'aggiunta calorica incontrollata. Abbiamo semplicemente ridotto la quota di oli di cottura, zuccheri e porzioni giganti di riso/pasta, sostituendoli con fonti proteiche nobili (Skyr, Whey, Pollo, Tofu, Uova).
-            </p>
+            <h3 className="font-extrabold">Piano alimentare · 21 settembre – 1° novembre 2026</h3>
+            <p>Sei settimane dai PDF forniti, con cinque pasti al giorno. Calorie e proteine giornaliere sono le stime del piano originale. Ingredienti e valori delle ricette sono quelli del ricettario; le aggiunte sono indicate nei singoli pasti.</p>
+            <p>Seleziona una data per vedere i pasti, le ricette e la spesa del relativo periodo. Il programma precedente al 21 settembre rimane consultabile nell’archivio.</p>
+            <p>La spesa settimanale è calcolata per una persona: una porzione di ricetta per pasto, salvo i pancake indicati. Le rese variabili e le quantità mancanti del PDF sono segnalate.</p>
           </div>
-
-          {/* Training Overview */}
           <div className="space-y-2 bg-[#F0F4F3] p-4.5 rounded-3xl border border-slate-200/80">
-            <h3 className="font-extrabold text-[#1F2937] flex items-center gap-1.5 text-xs uppercase tracking-wider">
-              <Dumbbell className="w-4 h-4 text-emerald-600" />
-              Programma Palestra (Settembre – Marzo)
-            </h3>
-            <p className="font-medium">
-              • <strong>Settembre-Ottobre:</strong> 3 giorni/settimana (Full body / Upper-Lower ibrido).
-            </p>
-            <p className="font-medium">
-              • <strong>Da Novembre:</strong> 4 giorni/settimana (Upper / Lower dedicato).
-            </p>
-            <p className="font-medium">
-              • <strong>Gomito del Tennista:</strong> Prese neutre guidate per non stressare gli estensori del polso.
-            </p>
-            <p className="font-medium">
-              • <strong>Walking Pad & Passi:</strong> Da 6.000 a 10.000 passi al giorno per stimolare il deficit senza affaticamento.
-            </p>
+            <h3 className="font-extrabold">Allenamento · 14 settembre – 8 novembre 2026</h3>
+            <p>Workout A il lunedì, B il mercoledì e C il venerdì; recupero negli altri giorni. Registra carichi, ripetizioni, cardio e note per ogni data.</p>
           </div>
         </div>
 

@@ -1,6 +1,7 @@
+import healthyRecipes from './healthyRecipes.json';
 import { Recipe } from '../types';
 
-export const RECIPES: Recipe[] = [
+export const PREVIOUS_RECIPES: Recipe[] = [
   {
     id: 'muesli-croccante-low-carb',
     title: 'Muesli croccante low-carb al cioccolato',
@@ -902,3 +903,6 @@ export const RECIPES: Recipe[] = [
     }
   }
 ];
+
+export const HEALTHY_RECIPES: Recipe[] = healthyRecipes as Recipe[];
+export const RECIPES: Recipe[] = [...PREVIOUS_RECIPES, ...HEALTHY_RECIPES];

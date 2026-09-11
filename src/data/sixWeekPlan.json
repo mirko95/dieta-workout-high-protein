@@ -1,0 +1,3675 @@
+[
+  {
+    "dayNumber": 21,
+    "totalKcal": 1800,
+    "totalProtein": 140,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Overnight oats proteici + 100 g skyr + 100 g frutti di bosco",
+        "isHp": false,
+        "recipeId": "healthy-03",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 100
+          },
+          {
+            "name": "frutti di bosco",
+            "grams": 100
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g yogurt greco + 150 g mela",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "mela",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Chili vegetariano + 200 g insalata + 100 g skyr + 5 g olio EVO",
+        "isHp": false,
+        "recipeId": "healthy-23",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "insalata",
+            "grams": 200
+          },
+          {
+            "name": "skyr",
+            "grams": 100
+          },
+          {
+            "name": "olio EVO",
+            "grams": 5
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "30 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 30
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Salmone limone-aglio + 150 g riso integrale + 250 g verdure + 5 g EVO",
+        "isHp": false,
+        "recipeId": "healthy-45",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "riso integrale",
+            "grams": 150
+          },
+          {
+            "name": "verdure",
+            "grams": 250
+          },
+          {
+            "name": "olio EVO",
+            "grams": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 22,
+    "totalKcal": 1846,
+    "totalProtein": 139,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Uova strapazzate pomodori/funghi + 100 g skyr + 150 g arancia",
+        "isHp": false,
+        "recipeId": "healthy-05",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 100
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g skyr + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Pasta toscana pollo + 250 g verdure + 5 g EVO",
+        "isHp": false,
+        "recipeId": "healthy-55",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "verdure",
+            "grams": 250
+          },
+          {
+            "name": "olio EVO",
+            "grams": 5
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "30 g whey + 150 g mela",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 30
+          },
+          {
+            "name": "mela",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Tofu all'arancia + 100 g riso integrale + 150 g edamame + 200 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-35",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "riso integrale",
+            "grams": 100
+          },
+          {
+            "name": "edamame",
+            "grams": 150
+          },
+          {
+            "name": "verdure",
+            "grams": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 23,
+    "totalKcal": 1861,
+    "totalProtein": 144,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Frullato frutti di bosco + 30 g whey + 30 g avena",
+        "isHp": false,
+        "recipeId": "healthy-07",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 30
+          },
+          {
+            "name": "fiocchi d'avena",
+            "grams": 30
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g skyr + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Gamberi-broccoli teriyaki + 100 g riso + 100 g edamame + 200 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-51",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "riso",
+            "grams": 100
+          },
+          {
+            "name": "edamame",
+            "grams": 100
+          },
+          {
+            "name": "verdure",
+            "grams": 200
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "170 g yogurt greco + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Ceci all'indiana con uova + 60 g pane integrale + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-25",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "pane integrale",
+            "grams": 60
+          },
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 24,
+    "totalKcal": 1889,
+    "totalProtein": 140,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "3 pancake cottage + 150 g skyr + 100 g frutti di bosco",
+        "isHp": false,
+        "recipeId": "healthy-09",
+        "recipeServings": 3,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 150
+          },
+          {
+            "name": "frutti di bosco",
+            "grams": 100
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g skyr + 150 g mela",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 170
+          },
+          {
+            "name": "mela",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Polpette lenticchie + 200 g skyr come salsa + 250 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-29",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 200
+          },
+          {
+            "name": "verdure",
+            "grams": 250
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "25 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 25
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Pasta al forno verdure + 100 g cottage cheese + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-39",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "fiocchi di latte",
+            "grams": 100
+          },
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 25,
+    "totalKcal": 1867,
+    "totalProtein": 141,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Avena al forno mirtilli + 150 g skyr",
+        "isHp": false,
+        "recipeId": "healthy-13",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g yogurt greco + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Fagioli al forno + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-27",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "30 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 30
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Pollo hot honey + 150 g patate + 250 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-59",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "patate",
+            "grams": 150
+          },
+          {
+            "name": "verdure",
+            "grams": 250
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 26,
+    "totalKcal": 1806,
+    "totalProtein": 141,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "French toast + 200 g skyr + 25 g noci",
+        "isHp": false,
+        "recipeId": "healthy-15",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 200
+          },
+          {
+            "name": "noci",
+            "grams": 25
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g skyr + 150 g mela",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 170
+          },
+          {
+            "name": "mela",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Shakshuka verde + 60 g pane integrale + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-21",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "pane integrale",
+            "grams": 60
+          },
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "20 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 20
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Pizza cottage + 200 g insalata + 150 g frutta di stagione",
+        "isHp": false,
+        "recipeId": "healthy-65",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "insalata",
+            "grams": 200
+          },
+          {
+            "name": "frutta di stagione",
+            "grams": 150
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 27,
+    "totalKcal": 1888,
+    "totalProtein": 140,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "3 pancake banana-cottage + 100 g skyr + 100 g frutti di bosco",
+        "isHp": false,
+        "recipeId": "healthy-11",
+        "recipeServings": 3,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 100
+          },
+          {
+            "name": "frutti di bosco",
+            "grams": 100
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g yogurt greco + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Shepherd's Pie + 200 g insalata + 170 g skyr",
+        "isHp": false,
+        "recipeId": "healthy-33",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "insalata",
+            "grams": 200
+          },
+          {
+            "name": "skyr",
+            "grams": 170
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "30 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 30
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Insalata Niçoise, 1 porzione",
+        "isHp": false,
+        "recipeId": "healthy-53",
+        "recipeServings": 1,
+        "extras": []
+      }
+    ]
+  },
+  {
+    "dayNumber": 28,
+    "totalKcal": 1859,
+    "totalProtein": 140,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Overnight oats + 100 g skyr + 100 g frutti di bosco",
+        "isHp": false,
+        "recipeId": "healthy-03",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 100
+          },
+          {
+            "name": "frutti di bosco",
+            "grams": 100
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g skyr + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Stufato lenticchie + 200 g skyr + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-31",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 200
+          },
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "Dip PB + 150 g mela",
+        "isHp": false,
+        "recipeId": "healthy-71",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "mela",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Salmone Bang Bang + 200 g patate + 250 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-47",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "patate",
+            "grams": 200
+          },
+          {
+            "name": "verdure",
+            "grams": 250
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 29,
+    "totalKcal": 1881,
+    "totalProtein": 138,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Uova strapazzate + 100 g skyr + 150 g arancia",
+        "isHp": false,
+        "recipeId": "healthy-05",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 100
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g yogurt greco + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Pasta toscana pollo + 250 g verdure + 5 g EVO",
+        "isHp": false,
+        "recipeId": "healthy-55",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "verdure",
+            "grams": 250
+          },
+          {
+            "name": "olio EVO",
+            "grams": 5
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "30 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 30
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Burrito fagioli neri + 200 g skyr",
+        "isHp": false,
+        "recipeId": "healthy-37",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 30,
+    "totalKcal": 1885,
+    "totalProtein": 141,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "French toast + 200 g skyr + 25 g noci",
+        "isHp": false,
+        "recipeId": "healthy-15",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 200
+          },
+          {
+            "name": "noci",
+            "grams": 25
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "Dip PB + 150 g mela",
+        "isHp": false,
+        "recipeId": "healthy-71",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "mela",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Gamberi Cajun + 120 g riso integrale + 250 g verdure + 5 g EVO",
+        "isHp": false,
+        "recipeId": "healthy-49",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "riso integrale",
+            "grams": 120
+          },
+          {
+            "name": "verdure",
+            "grams": 250
+          },
+          {
+            "name": "olio EVO",
+            "grams": 5
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "25 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 25
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Polpette lenticchie + 200 g skyr + 250 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-29",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 200
+          },
+          {
+            "name": "verdure",
+            "grams": 250
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 31,
+    "totalKcal": 1803,
+    "totalProtein": 140,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "3 pancake cottage + 150 g skyr + 100 g frutti di bosco",
+        "isHp": false,
+        "recipeId": "healthy-09",
+        "recipeServings": 3,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 150
+          },
+          {
+            "name": "frutti di bosco",
+            "grams": 100
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g yogurt greco + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Fagioli al forno + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-27",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "30 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 30
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Uova alla turca + 60 g pane integrale + 200 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-63",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "pane integrale",
+            "grams": 60
+          },
+          {
+            "name": "verdure",
+            "grams": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 32,
+    "totalKcal": 1842,
+    "totalProtein": 142,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Avena al forno + 150 g skyr",
+        "isHp": false,
+        "recipeId": "healthy-13",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g skyr + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Gnocchi carbonara pollo + 250 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-57",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "verdure",
+            "grams": 250
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "170 g yogurt greco + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Pasta al forno verdure + 100 g cottage + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-39",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "fiocchi di latte",
+            "grams": 100
+          },
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 33,
+    "totalKcal": 1854,
+    "totalProtein": 142,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Frullato frutti bosco + 30 g whey + 30 g avena",
+        "isHp": false,
+        "recipeId": "healthy-07",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 30
+          },
+          {
+            "name": "fiocchi d'avena",
+            "grams": 30
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g skyr + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Niçoise, 1 porzione",
+        "isHp": false,
+        "recipeId": "healthy-53",
+        "recipeServings": 1,
+        "extras": []
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "170 g yogurt greco + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Tofu all'arancia + 100 g riso + 150 g edamame + 200 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-35",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "riso",
+            "grams": 100
+          },
+          {
+            "name": "edamame",
+            "grams": 150
+          },
+          {
+            "name": "verdure",
+            "grams": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 34,
+    "totalKcal": 1874,
+    "totalProtein": 144,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Frullato cioccolato-PB + 150 g skyr",
+        "isHp": false,
+        "recipeId": "healthy-17",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g skyr + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Shakshuka + 60 g pane + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-21",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "pane",
+            "grams": 60
+          },
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "30 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 30
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Salmone limone + 150 g riso + 250 g verdure + 5 g EVO",
+        "isHp": false,
+        "recipeId": "healthy-45",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "riso",
+            "grams": 150
+          },
+          {
+            "name": "verdure",
+            "grams": 250
+          },
+          {
+            "name": "olio EVO",
+            "grams": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 35,
+    "totalKcal": 1875,
+    "totalProtein": 138,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "3 pancake banana-cottage + 100 g skyr + 100 g frutti di bosco",
+        "isHp": false,
+        "recipeId": "healthy-11",
+        "recipeServings": 3,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 100
+          },
+          {
+            "name": "frutti di bosco",
+            "grams": 100
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g yogurt greco + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Chili + 200 g insalata + 100 g skyr + 5 g EVO",
+        "isHp": false,
+        "recipeId": "healthy-23",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "insalata",
+            "grams": 200
+          },
+          {
+            "name": "skyr",
+            "grams": 100
+          },
+          {
+            "name": "olio EVO",
+            "grams": 5
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "25 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 25
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Gamberi Cajun + 120 g riso + 250 g verdure + 5 g EVO",
+        "isHp": false,
+        "recipeId": "healthy-49",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "riso",
+            "grams": 120
+          },
+          {
+            "name": "verdure",
+            "grams": 250
+          },
+          {
+            "name": "olio EVO",
+            "grams": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 36,
+    "totalKcal": 1812,
+    "totalProtein": 144,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Overnight oats + 100 g skyr + 100 g frutti di bosco",
+        "isHp": false,
+        "recipeId": "healthy-03",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 100
+          },
+          {
+            "name": "frutti di bosco",
+            "grams": 100
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g skyr + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Ceci con uova + 60 g pane + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-25",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "pane",
+            "grams": 60
+          },
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "170 g yogurt greco + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Gnocchi pollo + 250 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-57",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "verdure",
+            "grams": 250
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 37,
+    "totalKcal": 1838,
+    "totalProtein": 143,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Uova strapazzate + 100 g skyr + 150 g arancia",
+        "isHp": false,
+        "recipeId": "healthy-05",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 100
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g yogurt greco + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Stufato lenticchie + 200 g skyr + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-31",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 200
+          },
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "25 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 25
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Salmone limone + 150 g riso + 250 g verdure + 5 g EVO",
+        "isHp": false,
+        "recipeId": "healthy-45",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "riso",
+            "grams": 150
+          },
+          {
+            "name": "verdure",
+            "grams": 250
+          },
+          {
+            "name": "olio EVO",
+            "grams": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 38,
+    "totalKcal": 1875,
+    "totalProtein": 140,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Frullato bosco + 30 g whey + 30 g avena + 15 g noci",
+        "isHp": false,
+        "recipeId": "healthy-07",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 30
+          },
+          {
+            "name": "fiocchi d'avena",
+            "grams": 30
+          },
+          {
+            "name": "noci",
+            "grams": 15
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "Dip PB + 150 g mela",
+        "isHp": false,
+        "recipeId": "healthy-71",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "mela",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Fagioli al forno + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-27",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "30 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 30
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Pizza cottage + 200 g insalata + 150 g frutta",
+        "isHp": false,
+        "recipeId": "healthy-65",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "insalata",
+            "grams": 200
+          },
+          {
+            "name": "frutta di stagione",
+            "grams": 150
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 39,
+    "totalKcal": 1849,
+    "totalProtein": 137,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "3 pancake cottage + 150 g skyr + 100 g frutti di bosco",
+        "isHp": false,
+        "recipeId": "healthy-09",
+        "recipeServings": 3,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 150
+          },
+          {
+            "name": "frutti di bosco",
+            "grams": 100
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g skyr + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Tofu + 100 g riso + 150 g edamame + 200 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-35",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "riso",
+            "grams": 100
+          },
+          {
+            "name": "edamame",
+            "grams": 150
+          },
+          {
+            "name": "verdure",
+            "grams": 200
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "25 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 25
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Pasta toscana + 250 g verdure + 5 g EVO",
+        "isHp": false,
+        "recipeId": "healthy-55",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "verdure",
+            "grams": 250
+          },
+          {
+            "name": "olio EVO",
+            "grams": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 40,
+    "totalKcal": 1869,
+    "totalProtein": 145,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Avena al forno + 150 g skyr",
+        "isHp": false,
+        "recipeId": "healthy-13",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g yogurt greco + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Polpette lenticchie + 100 g skyr + 250 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-29",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 100
+          },
+          {
+            "name": "verdure",
+            "grams": 250
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "30 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 30
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Salmone Bang Bang + 200 g patate + 250 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-47",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "patate",
+            "grams": 200
+          },
+          {
+            "name": "verdure",
+            "grams": 250
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 41,
+    "totalKcal": 1874,
+    "totalProtein": 138,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "French toast + 200 g skyr + 25 g noci",
+        "isHp": false,
+        "recipeId": "healthy-15",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 200
+          },
+          {
+            "name": "noci",
+            "grams": 25
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g skyr + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Shakshuka + 60 g pane + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-21",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "pane",
+            "grams": 60
+          },
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "30 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 30
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Pasta al forno verdure + 100 g cottage + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-39",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "fiocchi di latte",
+            "grams": 100
+          },
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 42,
+    "totalKcal": 1800,
+    "totalProtein": 139,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Budino chia + 200 g skyr + 20 g whey",
+        "isHp": false,
+        "recipeId": "healthy-19",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 200
+          },
+          {
+            "name": "whey",
+            "grams": 20
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g yogurt greco + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Fagioli al forno + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-27",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "170 g yogurt greco + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Salmone limone + 150 g riso + 250 g verdure + 5 g EVO",
+        "isHp": false,
+        "recipeId": "healthy-45",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "riso",
+            "grams": 150
+          },
+          {
+            "name": "verdure",
+            "grams": 250
+          },
+          {
+            "name": "olio EVO",
+            "grams": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 43,
+    "totalKcal": 1896,
+    "totalProtein": 144,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "3 pancake cottage + 150 g skyr + 100 g frutti di bosco",
+        "isHp": false,
+        "recipeId": "healthy-09",
+        "recipeServings": 3,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 150
+          },
+          {
+            "name": "frutti di bosco",
+            "grams": 100
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g skyr + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Pollo hot honey + 150 g patate + 250 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-59",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "patate",
+            "grams": 150
+          },
+          {
+            "name": "verdure",
+            "grams": 250
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "170 g yogurt greco + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Chili + 200 g insalata + 100 g skyr + 5 g EVO",
+        "isHp": false,
+        "recipeId": "healthy-23",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "insalata",
+            "grams": 200
+          },
+          {
+            "name": "skyr",
+            "grams": 100
+          },
+          {
+            "name": "olio EVO",
+            "grams": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 44,
+    "totalKcal": 1808,
+    "totalProtein": 145,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Uova strapazzate + 100 g skyr + 150 g arancia",
+        "isHp": false,
+        "recipeId": "healthy-05",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 100
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g yogurt greco + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Gamberi teriyaki + 100 g riso + 120 g edamame + 200 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-51",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "riso",
+            "grams": 100
+          },
+          {
+            "name": "edamame",
+            "grams": 120
+          },
+          {
+            "name": "verdure",
+            "grams": 200
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "25 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 25
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Stufato lenticchie + 200 g skyr + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-31",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 200
+          },
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 45,
+    "totalKcal": 1900,
+    "totalProtein": 143,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "French toast + 200 g skyr + 25 g noci",
+        "isHp": false,
+        "recipeId": "healthy-15",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 200
+          },
+          {
+            "name": "noci",
+            "grams": 25
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g skyr + 150 g mela",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 170
+          },
+          {
+            "name": "mela",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Ceci con uova + 60 g pane + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-25",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "pane",
+            "grams": 60
+          },
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "170 g yogurt greco + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Pizza cottage + 200 g insalata + 150 g frutta",
+        "isHp": false,
+        "recipeId": "healthy-65",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "insalata",
+            "grams": 200
+          },
+          {
+            "name": "frutta di stagione",
+            "grams": 150
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 46,
+    "totalKcal": 1819,
+    "totalProtein": 144,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Frullato bosco + 30 g whey + 30 g avena",
+        "isHp": false,
+        "recipeId": "healthy-07",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 30
+          },
+          {
+            "name": "fiocchi d'avena",
+            "grams": 30
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g skyr + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Pasta toscana + 250 g verdure + 5 g EVO",
+        "isHp": false,
+        "recipeId": "healthy-55",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "verdure",
+            "grams": 250
+          },
+          {
+            "name": "olio EVO",
+            "grams": 5
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "25 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 25
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Tofu + 100 g riso + 150 g edamame + 200 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-35",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "riso",
+            "grams": 100
+          },
+          {
+            "name": "edamame",
+            "grams": 150
+          },
+          {
+            "name": "verdure",
+            "grams": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 47,
+    "totalKcal": 1854,
+    "totalProtein": 139,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "3 pancake banana-cottage + 100 g skyr + 100 g frutti di bosco",
+        "isHp": false,
+        "recipeId": "healthy-11",
+        "recipeServings": 3,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 100
+          },
+          {
+            "name": "frutti di bosco",
+            "grams": 100
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g yogurt greco + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Gamberi Cajun + 120 g riso + 250 g verdure + 5 g EVO",
+        "isHp": false,
+        "recipeId": "healthy-49",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "riso",
+            "grams": 120
+          },
+          {
+            "name": "verdure",
+            "grams": 250
+          },
+          {
+            "name": "olio EVO",
+            "grams": 5
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "30 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 30
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Polpette lenticchie + 100 g skyr + 250 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-29",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 100
+          },
+          {
+            "name": "verdure",
+            "grams": 250
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 48,
+    "totalKcal": 1885,
+    "totalProtein": 144,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Frullato cioccolato-PB + 150 g skyr",
+        "isHp": false,
+        "recipeId": "healthy-17",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g skyr + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Uova alla turca + 60 g pane + 200 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-63",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "pane",
+            "grams": 60
+          },
+          {
+            "name": "verdure",
+            "grams": 200
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "170 g yogurt greco + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Pasta al forno + 100 g cottage + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-39",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "fiocchi di latte",
+            "grams": 100
+          },
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 49,
+    "totalKcal": 1829,
+    "totalProtein": 138,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "3 pancake cottage + 150 g skyr + 100 g frutti di bosco",
+        "isHp": false,
+        "recipeId": "healthy-09",
+        "recipeServings": 3,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 150
+          },
+          {
+            "name": "frutti di bosco",
+            "grams": 100
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g yogurt greco + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Polpette lenticchie + 100 g skyr + 250 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-29",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 100
+          },
+          {
+            "name": "verdure",
+            "grams": 250
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "170 g yogurt greco + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Salmone Bang Bang + 200 g patate + 250 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-47",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "patate",
+            "grams": 200
+          },
+          {
+            "name": "verdure",
+            "grams": 250
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 50,
+    "totalKcal": 1793,
+    "totalProtein": 141,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Avena al forno + 150 g skyr",
+        "isHp": false,
+        "recipeId": "healthy-13",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g skyr + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Pasta toscana + 250 g verdure + 5 g EVO",
+        "isHp": false,
+        "recipeId": "healthy-55",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "verdure",
+            "grams": 250
+          },
+          {
+            "name": "olio EVO",
+            "grams": 5
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "25 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 25
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Fagioli al forno + 150 g skyr + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-27",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 150
+          },
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 51,
+    "totalKcal": 1876,
+    "totalProtein": 142,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Frullato bosco + 30 g whey + 30 g avena",
+        "isHp": false,
+        "recipeId": "healthy-07",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 30
+          },
+          {
+            "name": "fiocchi d'avena",
+            "grams": 30
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g skyr + 150 g mela",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 170
+          },
+          {
+            "name": "mela",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Salmone limone + 100 g riso + 250 g verdure + 5 g EVO",
+        "isHp": false,
+        "recipeId": "healthy-45",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "riso",
+            "grams": 100
+          },
+          {
+            "name": "verdure",
+            "grams": 250
+          },
+          {
+            "name": "olio EVO",
+            "grams": 5
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "170 g yogurt greco + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Ceci con uova + 60 g pane + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-25",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "pane",
+            "grams": 60
+          },
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 52,
+    "totalKcal": 1849,
+    "totalProtein": 137,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Uova strapazzate + 100 g skyr + 150 g arancia",
+        "isHp": false,
+        "recipeId": "healthy-05",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 100
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g yogurt greco + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Stufato lenticchie + 200 g skyr + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-31",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 200
+          },
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "Dip PB + 150 g mela",
+        "isHp": false,
+        "recipeId": "healthy-71",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "mela",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Pizza cottage + 200 g insalata + 150 g frutta",
+        "isHp": false,
+        "recipeId": "healthy-65",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "insalata",
+            "grams": 200
+          },
+          {
+            "name": "frutta di stagione",
+            "grams": 150
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 53,
+    "totalKcal": 1882,
+    "totalProtein": 137,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "French toast + 200 g skyr + 25 g noci",
+        "isHp": false,
+        "recipeId": "healthy-15",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 200
+          },
+          {
+            "name": "noci",
+            "grams": 25
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g skyr + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Gnocchi pollo + 250 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-57",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "verdure",
+            "grams": 250
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "Dip PB + 150 g mela",
+        "isHp": false,
+        "recipeId": "healthy-71",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "mela",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Tofu + 100 g riso + 150 g edamame + 200 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-35",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "riso",
+            "grams": 100
+          },
+          {
+            "name": "edamame",
+            "grams": 150
+          },
+          {
+            "name": "verdure",
+            "grams": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 54,
+    "totalKcal": 1882,
+    "totalProtein": 145,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Frullato cioccolato-PB + 150 g skyr",
+        "isHp": false,
+        "recipeId": "healthy-17",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g yogurt greco + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Niçoise, 1 porzione",
+        "isHp": false,
+        "recipeId": "healthy-53",
+        "recipeServings": 1,
+        "extras": []
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "25 g whey + 150 g arancia + 100 g skyr + 10 g noci",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 25
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          },
+          {
+            "name": "skyr",
+            "grams": 100
+          },
+          {
+            "name": "noci",
+            "grams": 10
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Pasta e fagioli + 40 g pane integrale + 200 g insalata",
+        "isHp": false,
+        "notes": "Ricetta non presente nel PDF Ricette healthy: ingredienti e link da integrare.",
+        "extras": [
+          {
+            "name": "pane integrale",
+            "grams": 40
+          },
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 55,
+    "totalKcal": 1817,
+    "totalProtein": 143,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Overnight oats + 100 g skyr + 100 g frutti di bosco",
+        "isHp": false,
+        "recipeId": "healthy-03",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 100
+          },
+          {
+            "name": "frutti di bosco",
+            "grams": 100
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "250 g skyr + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 250
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Shakshuka + 60 g pane + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-21",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "pane",
+            "grams": 60
+          },
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "30 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 30
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Pasta al forno + 100 g cottage + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-39",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "fiocchi di latte",
+            "grams": 100
+          },
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 56,
+    "totalKcal": 1841,
+    "totalProtein": 142,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "French toast + 200 g skyr + 25 g noci",
+        "isHp": false,
+        "recipeId": "healthy-15",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 200
+          },
+          {
+            "name": "noci",
+            "grams": 25
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g yogurt greco + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Stufato lenticchie + 200 g skyr + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-31",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 200
+          },
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "170 g yogurt greco + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Salmone limone + 150 g riso + 250 g verdure + 5 g EVO",
+        "isHp": false,
+        "recipeId": "healthy-45",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "riso",
+            "grams": 150
+          },
+          {
+            "name": "verdure",
+            "grams": 250
+          },
+          {
+            "name": "olio EVO",
+            "grams": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 57,
+    "totalKcal": 1868,
+    "totalProtein": 136,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Uova strapazzate + 100 g skyr + 150 g arancia",
+        "isHp": false,
+        "recipeId": "healthy-05",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 100
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g skyr + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Burrito fagioli neri + 200 g skyr",
+        "isHp": false,
+        "recipeId": "healthy-37",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 200
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "25 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 25
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Pasta toscana + 250 g verdure + 5 g EVO",
+        "isHp": false,
+        "recipeId": "healthy-55",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "verdure",
+            "grams": 250
+          },
+          {
+            "name": "olio EVO",
+            "grams": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 58,
+    "totalKcal": 1803,
+    "totalProtein": 142,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Frullato bosco + 30 g whey + 30 g avena",
+        "isHp": false,
+        "recipeId": "healthy-07",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 30
+          },
+          {
+            "name": "fiocchi d'avena",
+            "grams": 30
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g skyr + 150 g mela",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 170
+          },
+          {
+            "name": "mela",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Polpette lenticchie + 100 g skyr + 250 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-29",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 100
+          },
+          {
+            "name": "verdure",
+            "grams": 250
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "170 g yogurt greco + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Gamberi teriyaki + 100 g riso + 120 g edamame + 200 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-51",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "riso",
+            "grams": 100
+          },
+          {
+            "name": "edamame",
+            "grams": 120
+          },
+          {
+            "name": "verdure",
+            "grams": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 59,
+    "totalKcal": 1811,
+    "totalProtein": 144,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Overnight oats + 100 g skyr + 100 g frutti di bosco",
+        "isHp": false,
+        "recipeId": "healthy-03",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 100
+          },
+          {
+            "name": "frutti di bosco",
+            "grams": 100
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g yogurt greco + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Ceci con uova + 60 g pane + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-25",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "pane",
+            "grams": 60
+          },
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "25 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 25
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Pizza cottage + 200 g insalata + 150 g frutta",
+        "isHp": false,
+        "recipeId": "healthy-65",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "insalata",
+            "grams": 200
+          },
+          {
+            "name": "frutta di stagione",
+            "grams": 150
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 60,
+    "totalKcal": 1832,
+    "totalProtein": 136,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "3 pancake cottage + 150 g skyr + 100 g frutti di bosco",
+        "isHp": false,
+        "recipeId": "healthy-09",
+        "recipeServings": 3,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 150
+          },
+          {
+            "name": "frutti di bosco",
+            "grams": 100
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g skyr + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Fagioli al forno + 200 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-27",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "insalata",
+            "grams": 200
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "170 g yogurt greco + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Pollo hot honey + 150 g patate + 250 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-59",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "patate",
+            "grams": 150
+          },
+          {
+            "name": "verdure",
+            "grams": 250
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 61,
+    "totalKcal": 1891,
+    "totalProtein": 141,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Budino chia + 200 g skyr + 20 g whey",
+        "isHp": false,
+        "recipeId": "healthy-19",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 200
+          },
+          {
+            "name": "whey",
+            "grams": 20
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g yogurt greco + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Niçoise, 1 porzione",
+        "isHp": false,
+        "recipeId": "healthy-53",
+        "recipeServings": 1,
+        "extras": []
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "25 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 25
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Pasta melanzane + 50 g cottage + 150 g insalata",
+        "isHp": false,
+        "recipeId": "healthy-41",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "fiocchi di latte",
+            "grams": 50
+          },
+          {
+            "name": "insalata",
+            "grams": 150
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 62,
+    "totalKcal": 1894,
+    "totalProtein": 138,
+    "meals": [
+      {
+        "type": "COLAZIONE",
+        "name": "Avena al forno + 150 g skyr",
+        "isHp": false,
+        "recipeId": "healthy-13",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "skyr",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 1",
+        "name": "170 g yogurt greco + 80 g kiwi",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "yogurt greco",
+            "grams": 170
+          },
+          {
+            "name": "kiwi",
+            "grams": 80
+          }
+        ]
+      },
+      {
+        "type": "PRANZO",
+        "name": "Uova alla turca + 60 g pane + 200 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-63",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "pane",
+            "grams": 60
+          },
+          {
+            "name": "verdure",
+            "grams": 200
+          }
+        ]
+      },
+      {
+        "type": "SPUNTINO 2",
+        "name": "20 g whey + 150 g arancia",
+        "isHp": false,
+        "extras": [
+          {
+            "name": "whey",
+            "grams": 20
+          },
+          {
+            "name": "arancia",
+            "grams": 150
+          }
+        ]
+      },
+      {
+        "type": "CENA",
+        "name": "Tofu all'arancia + 100 g riso + 100 g edamame + 200 g verdure",
+        "isHp": false,
+        "recipeId": "healthy-35",
+        "recipeServings": 1,
+        "extras": [
+          {
+            "name": "riso",
+            "grams": 100
+          },
+          {
+            "name": "edamame",
+            "grams": 100
+          },
+          {
+            "name": "verdure",
+            "grams": 200
+          }
+        ]
+      }
+    ]
+  }
+]

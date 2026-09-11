@@ -1,405 +1,151 @@
-import React, { useEffect, useState } from 'react';
-import { MONTHLY_PROGRAMS, WORKOUT_GUIDELINES } from '../data/workoutPlan';
-import { MonthProgram, WorkoutExercise, WorkoutSession } from '../types';
-import { Dumbbell, Timer, Flame, Footprints, ShieldAlert, TrendingUp, Info, Check, Play, GalleryHorizontalEnd } from 'lucide-react';
-import { triggerHaptic } from '../utils/haptics';
+import React, { useState } from 'react';
+import { Check, ChevronLeft, ChevronRight, Play } from 'lucide-react';
+import { ELBOW_ROUTINE, elbowLoadGuidance, WORKOUT_DAYS, PROGRESS_KEY, emptyDay, parseProgress, DayProgress, WorkoutProgress } from '../data/workoutPlan';
 
 interface WorkoutViewProps {
   onStartTimer: (seconds: number, label: string) => void;
 }
 
+const formatDate = (date: string, options: Intl.DateTimeFormatOptions) =>
+  new Date(`${date}T12:00:00`).toLocaleDateString('it-IT', options);
+const inputClass = 'min-w-0 w-full rounded-xl border border-slate-300 bg-white px-2 py-2 text-sm focus:outline-emerald-600';
+
 export const WorkoutView: React.FC<WorkoutViewProps> = ({ onStartTimer }) => {
-  const [selectedMonthId, setSelectedMonthId] = useState<string>('settembre');
-  const [activeTab, setActiveTab] = useState<'scheda' | 'gomito' | 'progressione'>('scheda');
-  const [selectedWorkoutId, setSelectedWorkoutId] = useState<string>('');
-  const [openGifKey, setOpenGifKey] = useState<string | null>(null);
-  const [exerciseProgress, setExerciseProgress] = useState<Record<string, { weight: string; reps: string; done: boolean }>>(() => {
-    try {
-      return JSON.parse(localStorage.getItem('diet_exercise_progress') || '{}');
-    } catch {
-      return {};
-    }
+  const [selectedDate, setSelectedDate] = useState(() => {
+    const now = new Date();
+    const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+    return WORKOUT_DAYS.find(day => day.date === today)?.date ?? WORKOUT_DAYS[0].date;
   });
+  const [saved, setSaved] = useState('');
+  const [initial] = useState(() => {
+    try { return { progress: parseProgress(localStorage.getItem(PROGRESS_KEY)), error: '' }; }
+    catch { return { progress: {} as WorkoutProgress, error: 'Impossibile leggere i progressi salvati. Ricarica prima di modificarli.' }; }
+  });
+  const [progress, setProgress] = useState(initial.progress);
+  const [error, setError] = useState(initial.error);
+  const day = WORKOUT_DAYS.find(item => item.date === selectedDate)!;
+  const log = progress[selectedDate] ?? emptyDay();
+  const workout = day.workout;
 
-  useEffect(() => {
-    localStorage.setItem('diet_exercise_progress', JSON.stringify(exerciseProgress));
-  }, [exerciseProgress]);
-
-  const currentProgram: MonthProgram = MONTHLY_PROGRAMS.find((p) => p.id === selectedMonthId) || MONTHLY_PROGRAMS[0];
-
-  // If selected workout doesn't belong to current month, select the first workout of the month
-  const activeWorkout: WorkoutSession =
-    currentProgram.workouts.find((w) => w.id === selectedWorkoutId) || currentProgram.workouts[0];
+  function updateDay(patch: Partial<DayProgress>) {
+    const next = { ...progress, [selectedDate]: { ...log, ...patch } };
+    setProgress(next);
+    try {
+      localStorage.setItem(PROGRESS_KEY, JSON.stringify(next));
+      setSaved('Progressi salvati su questo dispositivo.');
+      setError('');
+    } catch {
+      setSaved('');
+      setError('Salvataggio non riuscito. Mantieni aperta questa pagina e riprova con Salva progressi.');
+    }
+  }
 
   return (
-    <div className="space-y-3.5 pb-4">
-      {/* Top Segmented Controls */}
-      <div className="bg-[#E5EAE8] p-1.5 rounded-full flex items-center gap-1 text-xs font-bold border border-slate-200/60 shadow-xs">
-        <button
-          onClick={() => {
-            triggerHaptic('light');
-            setActiveTab('scheda');
-          }}
-          className={`flex-1 py-2.5 rounded-full transition-all flex items-center justify-center gap-1.5 select-none ${
-            activeTab === 'scheda'
-              ? 'bg-emerald-600 text-white shadow-md shadow-emerald-500/25'
-              : 'text-slate-600 hover:text-slate-900'
-          }`}
-        >
-          <Dumbbell className="w-3.5 h-3.5" />
-          Schede Mese
-        </button>
-        <button
-          onClick={() => {
-            triggerHaptic('light');
-            setActiveTab('progressione');
-          }}
-          className={`flex-1 py-2.5 rounded-full transition-all flex items-center justify-center gap-1.5 select-none ${
-            activeTab === 'progressione'
-              ? 'bg-emerald-600 text-white shadow-md shadow-emerald-500/25'
-              : 'text-slate-600 hover:text-slate-900'
-          }`}
-        >
-          <TrendingUp className="w-3.5 h-3.5" />
-          Progressione Pesi
-        </button>
-        <button
-          onClick={() => {
-            triggerHaptic('light');
-            setActiveTab('gomito');
-          }}
-          className={`flex-1 py-2.5 rounded-full transition-all flex items-center justify-center gap-1.5 select-none ${
-            activeTab === 'gomito'
-              ? 'bg-emerald-600 text-white shadow-md shadow-emerald-500/25'
-              : 'text-slate-600 hover:text-slate-900'
-          }`}
-        >
-          <ShieldAlert className="w-3.5 h-3.5" />
-          Gomito
-        </button>
+    <div className="space-y-4 pb-4">
+      <div className="rounded-3xl bg-slate-900 p-5 text-white space-y-2">
+        <h2 className="text-xl font-extrabold">Il tuo programma · 8 settimane</h2>
+        <p className="text-sm text-emerald-300">14 settembre – 8 novembre 2026</p>
+        <p className="text-xs">Lunedì A · Mercoledì B · Venerdì C. Gli altri giorni: recupero dai pesi. Ogni giorno: 30 minuti di tapis roulant a casa durante l’home office.</p>
+        <p className="text-xs">Mantieni 2–3 ripetizioni in riserva in tutte le serie, soprattutto nelle prime settimane. Preferisci prese neutre e interrompi o cambia i movimenti che aggravano il gomito.</p>
+        <p className="text-xs">Routine gomito: lunedì, martedì, mercoledì, venerdì e sabato. Giovedì e domenica: riposo dalla routine.</p>
+        <p className="text-sm font-bold">{WORKOUT_DAYS.filter(d => d.workout && progress[d.date]?.done).length} / 24 allenamenti completati</p>
       </div>
 
-      {/* TAB 1: SCHEDE MENSILI */}
-      {activeTab === 'scheda' && (
-        <div className="space-y-3.5">
-          {/* Months Carousel */}
-          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
-            {MONTHLY_PROGRAMS.map((prog) => {
-              const isSelected = prog.id === selectedMonthId;
-              return (
-                <button
-                  key={prog.id}
-                  onClick={() => {
-                    triggerHaptic('light');
-                    setSelectedMonthId(prog.id);
-                    setSelectedWorkoutId(prog.workouts[0].id);
-                  }}
-                  className={`shrink-0 px-4 py-2.5 rounded-2xl text-xs font-bold transition-all select-none ${
-                    isSelected
-                      ? 'bg-emerald-600 text-white shadow-md shadow-emerald-500/25 font-bold'
-                      : 'bg-white text-slate-600 border border-slate-200/80 hover:bg-slate-50'
-                  }`}
-                >
-                  {prog.monthName}
-                </button>
-              );
+      <div className="flex items-center justify-between gap-2">
+        <button type="button" aria-label="Settimana precedente" disabled={day.week === 1} onClick={() => setSelectedDate(WORKOUT_DAYS[(day.week - 2) * 7].date)} className="p-2 rounded-full bg-white disabled:opacity-30"><ChevronLeft /></button>
+        <label className="text-sm font-bold">Settimana{' '}
+          <select aria-label="Seleziona settimana" value={day.week} onChange={event => setSelectedDate(WORKOUT_DAYS[(Number(event.target.value) - 1) * 7].date)} className="rounded-lg bg-white p-2">
+            {Array.from({ length: 8 }, (_, i) => <option key={i} value={i + 1}>{i + 1} di 8</option>)}
+          </select>
+        </label>
+        <button type="button" aria-label="Settimana successiva" disabled={day.week === 8} onClick={() => setSelectedDate(WORKOUT_DAYS[day.week * 7].date)} className="p-2 rounded-full bg-white disabled:opacity-30"><ChevronRight /></button>
+      </div>
+      <div className="grid grid-cols-7 gap-1">
+        {WORKOUT_DAYS.filter(item => item.week === day.week).map(item => (
+          <button key={item.date} type="button" aria-pressed={item.date === selectedDate} aria-label={`${formatDate(item.date, { dateStyle: 'full' })}: ${item.workout?.name ?? 'Recupero'}${item.elbowRoutine ? ', routine gomito' : ''}${progress[item.date]?.done ? ', completato' : ''}`} onClick={() => setSelectedDate(item.date)} className={`rounded-xl py-3 text-center text-[10px] ${item.date === selectedDate ? 'bg-emerald-700 text-white' : 'bg-white text-slate-700'}`}>
+            <span className="block capitalize">{formatDate(item.date, { weekday: 'short' })}</span>
+            <strong className="block text-base">{formatDate(item.date, { day: 'numeric' })}</strong>
+            <span className="block">{item.workout ? item.workout.id.toUpperCase() : 'Riposo'}</span>
+            {item.elbowRoutine && <span className="block text-[9px]">+ Gomito</span>}
+            {progress[item.date]?.done && <Check className="mx-auto h-3 w-3" />}
+          </button>
+        ))}
+      </div>
+
+      <h3 className="text-lg font-extrabold capitalize">{formatDate(selectedDate, { weekday: 'long', day: 'numeric', month: 'long' })} · {workout?.name ?? 'Recupero'}</h3>
+      <p className="text-xs text-slate-600">Salvataggio automatico per ogni data, su questo browser. Puoi tornare ai giorni precedenti per vedere o modificare i progressi.</p>
+      {error && <p role="alert" className="text-sm text-red-700">{error}</p>}
+      <fieldset disabled={!!initial.error} className="space-y-4 min-w-0">
+        <section className="rounded-2xl bg-sky-50 border border-sky-200 p-4 space-y-3">
+          <h4 className="text-sm font-bold">Tapis roulant a casa · {day.treadmillMinutes} minuti</h4>
+          <p className="text-xs text-slate-600">Durante l’home office, ogni giorno, inclusi i giorni di recupero.</p>
+          <label className="flex items-center gap-3 text-sm font-semibold">
+            <input type="checkbox" className="h-5 w-5 accent-emerald-600" checked={log.treadmillDone ?? false} onChange={event => updateDay({ treadmillDone: event.target.checked })} />
+            Tapis roulant · 30 minuti completati
+          </label>
+          <button type="button" onClick={() => onStartTimer(day.treadmillMinutes * 60, 'Tapis roulant a casa · home office')} className="flex items-center gap-2 rounded-full border border-sky-200 bg-white px-3 py-2 text-xs font-bold text-sky-800">
+            <Play className="h-3 w-3" /> Avvia timer 30 minuti
+          </button>
+        </section>
+        {workout ? workout.exercises.map((exercise, index) => (
+          <section key={`${selectedDate}:${index}`} className="rounded-2xl border border-slate-200 bg-white p-4 space-y-3">
+            <h4 className="text-sm font-bold">{index + 1}. {exercise.name}</h4>
+            <div className="flex flex-wrap justify-between items-center gap-2 text-xs">
+              <span>{exercise.sets} × {exercise.reps} · Recupero {exercise.restLabel ?? exercise.restSeconds} s</span>
+              <button type="button" onClick={() => onStartTimer(exercise.restSeconds, `Recupero: ${exercise.name}`)} className="flex items-center gap-1 rounded-full border px-3 py-2 text-emerald-800" aria-label={`Avvia recupero per ${exercise.name}`}><Play className="h-3 w-3" />{exercise.restSeconds} s</button>
+            </div>
+            <div className="grid grid-cols-[2rem_1fr_1.4fr_2rem] gap-2 text-[10px] text-slate-500" aria-hidden="true"><span>Serie</span><span>Kg</span><span>{exercise.name === 'Side plank' ? 'Secondi per lato' : exercise.name === 'Supported split squat' ? 'Reps per gamba' : 'Reps'}</span><span>Fatto</span></div>
+            {Array.from({ length: Number(exercise.sets) }, (_, setIndex) => {
+              const key = `${index}:${setIndex}`;
+              const set = log.sets[key] ?? { weight: '', reps: '', done: false };
+              const label = `${exercise.name}, serie ${setIndex + 1}`;
+              const updateSet = (patch: Partial<typeof set>) => updateDay({ sets: { ...log.sets, [key]: { ...set, ...patch } } });
+              return <div key={key} className="grid grid-cols-[2rem_1fr_1.4fr_2rem] items-center gap-2">
+                <span className="text-xs font-bold">{setIndex + 1}</span>
+                <input className={inputClass} type="number" min="0" step="any" inputMode="decimal" aria-label={`Kg: ${label}`} value={set.weight} onChange={event => { if (event.target.validity.valid) updateSet({ weight: event.target.value }); }} />
+                <input className={inputClass} type="text" placeholder={exercise.name === 'Side plank' || exercise.name === 'Supported split squat' ? 'sx / dx' : ''} aria-label={`${exercise.name === 'Side plank' ? 'Secondi per lato' : 'Ripetizioni'}: ${label}`} value={set.reps} onChange={event => updateSet({ reps: event.target.value })} />
+                <input type="checkbox" className="h-5 w-5 accent-emerald-600" aria-label={`Completata: ${label}`} checked={set.done} onChange={event => updateSet({ done: event.target.checked })} />
+              </div>;
             })}
-          </div>
+          </section>
+        )) : <p className="rounded-2xl bg-white p-4 text-sm">Giorno di recupero: nessuna sessione con i pesi prevista.</p>}
 
-          {/* Month Banner */}
-          <div className="bg-gradient-to-br from-[#1F2937] via-slate-900 to-indigo-950 text-white rounded-3xl p-5 shadow-lg relative overflow-hidden border border-slate-800">
-            <div className="flex items-center justify-between gap-2">
-              <div>
-                <span className="text-[10px] font-extrabold uppercase tracking-wider text-emerald-300 bg-emerald-950/90 px-2.5 py-0.5 rounded-full border border-emerald-700/60">
-                  {currentProgram.monthName}
-                </span>
-                <h3 className="text-lg font-extrabold mt-1 text-white tracking-tight">{currentProgram.subtitle}</h3>
+        {workout && <label className="block rounded-2xl bg-emerald-50 border border-emerald-200 p-4 text-sm font-bold">Cardio finale · 15–20 minuti a intensità moderata
+          <span className="block text-xs font-normal my-2">Minuti completati</span>
+          <input type="number" min="0" step="any" inputMode="decimal" className={inputClass} value={log.cardioMinutes} onChange={event => { if (event.target.validity.valid) updateDay({ cardioMinutes: event.target.value }); }} />
+        </label>}
+        {day.elbowRoutine ? <section className="rounded-2xl bg-amber-50 border border-amber-200 p-4 space-y-3">
+          <h4 className="text-base font-bold">Routine gomito · 8–12 minuti</h4>
+          <p className="text-xs text-slate-700">{workout ? `Dopo ${workout.name}. ` : ''}Estensori del polso e rotazione dell’avambraccio. Non cercare il cedimento muscolare.</p>
+          <p className="text-xs font-semibold text-amber-900">{elbowLoadGuidance(day.week)}</p>
+          {ELBOW_ROUTINE.map(exercise => {
+            const entry = log.sets[exercise.id] ?? { weight: '', reps: '', done: false };
+            const updateExercise = (patch: Partial<typeof entry>) => updateDay({ sets: { ...log.sets, [exercise.id]: { ...entry, ...patch } } });
+            return <div key={exercise.id} className="rounded-xl bg-white border border-amber-100 p-3 space-y-2">
+              <h5 className="text-sm font-bold">{exercise.name}</h5>
+              <p className="text-xs font-semibold text-amber-900">{exercise.prescription}</p>
+              <p className="text-xs text-slate-600 leading-relaxed">{exercise.instructions}</p>
+              <div className="grid grid-cols-2 gap-2">
+                {exercise.id !== 'elbow-stretch' && exercise.id !== 'elbow-isometric' && <label className="text-xs">Carico (kg)
+                  <input type="number" min="0" step="any" inputMode="decimal" aria-label={`Carico gomito: ${exercise.name}`} className={inputClass} value={entry.weight} onChange={event => { if (event.target.validity.valid) updateExercise({ weight: event.target.value }); }} />
+                </label>}
+                <label className="text-xs col-span-2">{exercise.id === 'elbow-stretch' ? 'Secondi per serie' : 'Ripetizioni per serie'}
+                  <input type="text" aria-label={`Risultati gomito: ${exercise.name}`} placeholder={exercise.id === 'elbow-stretch' ? 'Es. 20 / 20 sec' : 'Es. 12 / 12'} className={inputClass} value={entry.reps} onChange={event => updateExercise({ reps: event.target.value })} />
+                </label>
               </div>
-              <span className="text-xs text-slate-300 font-bold bg-white/10 px-3 py-1 rounded-full border border-white/10">
-                {currentProgram.frequency.split('(')[0].trim()}
-              </span>
-            </div>
-
-            <div className="mt-3 pt-2.5 border-t border-slate-700/60 flex flex-wrap items-center justify-between gap-2 text-xs">
-              <span className="text-slate-300">
-                Target RIR: <strong className="text-emerald-400">{currentProgram.rirTarget}</strong>
-              </span>
-              {currentProgram.coachTip && (
-                <span className="text-[11px] text-amber-300 italic font-medium">
-                  💡 {currentProgram.coachTip}
-                </span>
-              )}
-            </div>
-          </div>
-
-          {/* Workout Sessions Tabs (A, B, C or Upper A, Lower A, etc.) */}
-          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar">
-            {currentProgram.workouts.map((w) => {
-              const isSelected = w.id === activeWorkout.id;
-              return (
-                <button
-                  key={w.id}
-                  onClick={() => {
-                    triggerHaptic('light');
-                    setSelectedWorkoutId(w.id);
-                  }}
-                  className={`shrink-0 px-4 py-2 rounded-full text-xs font-bold transition-all select-none ${
-                    isSelected
-                      ? 'bg-emerald-600 text-white shadow-md shadow-emerald-500/25'
-                      : 'bg-white text-slate-700 border border-slate-200/80 hover:bg-slate-50'
-                  }`}
-                >
-                  {w.name} {w.schedule ? `(${w.schedule})` : ''}
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Active Workout Details */}
-          <div className="bg-white rounded-3xl p-4.5 border border-slate-200/80 shadow-xs space-y-3.5">
-            <div className="flex items-center justify-between border-b border-slate-100 pb-2.5">
-              <div>
-                <h4 className="text-base font-extrabold text-[#1F2937]">{activeWorkout.name}</h4>
-                <p className="text-xs text-emerald-700 font-semibold">{activeWorkout.targetFocus}</p>
-              </div>
-              <span className="text-xs text-slate-500 font-bold bg-slate-100 px-2.5 py-1 rounded-full">
-                {activeWorkout.exercises.length} Esercizi
-              </span>
-            </div>
-
-            {/* Exercises List */}
-            <div className="space-y-2.5">
-              {activeWorkout.exercises.map((ex: WorkoutExercise, idx: number) => {
-                const key = `${activeWorkout.id}:${idx}`;
-                const progress = exerciseProgress[key] || { weight: '', reps: '', done: false };
-
-                return <div
-                  key={key}
-                  className={`p-3.5 rounded-2xl border transition-all flex items-start justify-between gap-3 ${progress.done ? 'bg-emerald-50 border-emerald-300' : 'bg-[#F0F4F3]/60 border-slate-200/80 hover:border-emerald-400'}`}
-                >
-                  <div className="min-w-0 flex-1">
-                    <div className="flex items-center gap-2">
-                      <span className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-extrabold flex items-center justify-center shrink-0">
-                        {idx + 1}
-                      </span>
-                      <h5 className="text-xs sm:text-sm font-bold text-[#1F2937]">{ex.name}</h5>
-                    </div>
-
-                    <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1.5 text-xs text-slate-600 pl-7">
-                      <span className="font-extrabold text-[#1F2937] bg-white px-2.5 py-0.5 rounded-full border border-slate-200/80 shadow-2xs">
-                        {ex.sets} × {ex.reps}
-                      </span>
-                      <span className="text-slate-500 flex items-center gap-1 font-semibold">
-                        <Timer className="w-3.5 h-3.5 text-slate-400" />
-                        Rip. {ex.restLabel ?? ex.restSeconds} s
-                      </span>
-                    </div>
-
-                    {ex.notes && (
-                      <p className="text-[11px] text-slate-500 mt-1 pl-7 italic font-medium">
-                        {ex.notes}
-                      </p>
-                    )}
-
-                    {ex.gifUrl && (
-                      <div className="mt-2 pl-7">
-                        <button
-                          onClick={() => setOpenGifKey((current) => current === key ? null : key)}
-                          className="inline-flex items-center gap-1.5 rounded-full bg-indigo-50 px-3 py-1.5 text-[11px] font-bold text-indigo-800 border border-indigo-200 hover:bg-indigo-100 active:scale-95"
-                        >
-                          <GalleryHorizontalEnd className="w-3.5 h-3.5" /> {openGifKey === key ? 'Nascondi GIF' : 'Vedi esecuzione'}
-                        </button>
-                        {openGifKey === key && (
-                          <div className="mt-2 overflow-hidden rounded-2xl border border-slate-200 bg-white p-2">
-                            <img src={ex.gifUrl} alt={`Esecuzione di ${ex.name}`} loading="lazy" className="mx-auto max-h-56 rounded-xl object-contain" />
-                          </div>
-                        )}
-                      </div>
-                    )}
-
-                    <div className="flex gap-2 mt-3 pl-7">
-                      <input
-                        type="number"
-                        inputMode="decimal"
-                        min="0"
-                        placeholder="kg"
-                        value={progress.weight}
-                        onChange={(event) => setExerciseProgress((current) => ({ ...current, [key]: { ...progress, weight: event.target.value } }))}
-                        className="w-16 rounded-lg border border-slate-200 bg-white px-2 py-1.5 text-xs font-bold text-slate-700 outline-none focus:border-emerald-500"
-                        aria-label={`Carico per ${ex.name}`}
-                      />
-                      <input
-                        type="text"
-                        inputMode="numeric"
-                        placeholder="reps fatte"
-                        value={progress.reps}
-                        onChange={(event) => setExerciseProgress((current) => ({ ...current, [key]: { ...progress, reps: event.target.value } }))}
-                        className="w-24 rounded-lg border border-slate-200 bg-white px-2 py-1.5 text-xs font-bold text-slate-700 outline-none focus:border-emerald-500"
-                        aria-label={`Ripetizioni eseguite per ${ex.name}`}
-                      />
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col items-end gap-2">
-                    <button
-                      onClick={() => {
-                        triggerHaptic('medium');
-                        onStartTimer(ex.restSeconds, `Recupero: ${ex.name}`);
-                      }}
-                      className="shrink-0 px-3.5 py-2 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-emerald-500 hover:text-emerald-700 active:scale-90 text-xs font-bold flex items-center gap-1.5 shadow-xs transition-all"
-                      title={`Avvia timer recupero (${ex.restSeconds}s)`}
-                    >
-                      <Play className="w-3 h-3 fill-current text-emerald-600" />
-                      {ex.restSeconds}s
-                    </button>
-                    <button
-                      onClick={() => setExerciseProgress((current) => ({ ...current, [key]: { ...progress, done: !progress.done } }))}
-                      className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all ${progress.done ? 'bg-emerald-600 border-emerald-600 text-white' : 'bg-white border-slate-200 text-transparent'}`}
-                      title="Segna esercizio completato"
-                      aria-label={`Segna ${ex.name} come completato`}
-                    >
-                      <Check className="w-4 h-4" />
-                    </button>
-                  </div>
-                </div>;
-              })}
-            </div>
-          </div>
-
-          {/* Cardio & Walking Pad Prescription */}
-          <div className="bg-gradient-to-r from-teal-50 to-emerald-50 rounded-3xl p-4.5 border border-teal-200/80 space-y-2.5 text-xs shadow-xs">
-            <h4 className="font-extrabold text-teal-900 flex items-center gap-1.5 text-sm">
-              <Footprints className="w-4.5 h-4.5 text-teal-700" />
-              Cardio in Palestra & Walking Pad ({currentProgram.monthName})
-            </h4>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1 text-slate-800">
-              <div className="bg-white/90 rounded-2xl p-3 border border-teal-100 shadow-2xs">
-                <p className="text-[10px] uppercase font-bold text-teal-800">Cardio Post-Pesi</p>
-                <p className="font-semibold mt-0.5 text-slate-800">{currentProgram.cardioAndMovement.cardioPostWeights}</p>
-              </div>
-              <div className="bg-white/90 rounded-2xl p-3 border border-teal-100 shadow-2xs">
-                <p className="text-[10px] uppercase font-bold text-teal-800">Walking Pad</p>
-                <p className="font-semibold mt-0.5 text-slate-800">{currentProgram.cardioAndMovement.walkingPad}</p>
-              </div>
-              <div className="bg-white/90 rounded-2xl p-3 border border-teal-100 col-span-1 sm:col-span-2 shadow-2xs">
-                <p className="text-[10px] uppercase font-bold text-teal-800">Obiettivo Passi Medi Giornalieri</p>
-                <p className="font-extrabold text-emerald-700 mt-0.5 text-sm">{currentProgram.cardioAndMovement.dailySteps}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* TAB 2: PROGRESSIONE PESI */}
-      {activeTab === 'progressione' && (
-        <div className="space-y-3.5">
-          <div className="bg-white rounded-3xl p-4.5 border border-slate-200/80 shadow-xs space-y-2">
-            <h3 className="text-base font-extrabold text-[#1F2937]">
-              {WORKOUT_GUIDELINES.progressionMethod.title}
-            </h3>
-            <p className="text-xs text-slate-600 leading-relaxed font-medium">
-              {WORKOUT_GUIDELINES.progressionMethod.description}
-            </p>
-          </div>
-
-          {/* Example Table */}
-          <div className="bg-white rounded-3xl p-4.5 border border-slate-200/80 shadow-xs">
-            <h4 className="text-xs font-extrabold uppercase tracking-wider text-slate-500 mb-2.5">
-              Esempio Pratico: Esercizio 3 × 8–12
-            </h4>
-            <div className="space-y-1.5 text-xs">
-              {WORKOUT_GUIDELINES.progressionMethod.example.map((row, i) => (
-                <div
-                  key={i}
-                  className={`flex items-center justify-between p-2.5 rounded-2xl border ${
-                    i === 4
-                      ? 'bg-emerald-50/80 border-emerald-300 font-bold text-emerald-900'
-                      : 'bg-[#F0F4F3] border-slate-200/80 text-[#1F2937]'
-                  }`}
-                >
-                  <span className="font-semibold">{row.session}</span>
-                  <span className="font-mono font-bold text-emerald-800">{row.reps}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Increment Guidelines */}
-          <div className="bg-emerald-50/90 rounded-3xl p-4.5 border border-emerald-200/80 text-xs text-emerald-950 space-y-1.5 shadow-xs">
-            <p className="font-extrabold text-emerald-900">Incrementi Consigliati:</p>
-            <p className="text-slate-700 leading-relaxed font-medium">{WORKOUT_GUIDELINES.progressionMethod.weightIncrements}</p>
-            <p className="text-[11px] text-emerald-800 italic pt-1 font-medium">
-              *Dopo l'aumento è del tutto normale tornare vicino al limite basso del range (es. da 12-12-12 a 9-8-8 reps).
-            </p>
-          </div>
-
-          {/* When NOT to increase */}
-          <div className="bg-rose-50/90 rounded-3xl p-4.5 border border-rose-200/80 text-xs text-rose-950 space-y-2 shadow-xs">
-            <p className="font-extrabold text-rose-900">NON Aumentare il Carico Quando:</p>
-            <ul className="list-disc list-inside space-y-1 text-slate-800 pl-1">
-              {WORKOUT_GUIDELINES.progressionMethod.doNotIncreaseWhen.map((rule, idx) => (
-                <li key={idx} className="font-medium">{rule}</li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Golden Rule Banner */}
-          <div className="bg-slate-900 text-white rounded-3xl p-4.5 text-xs leading-relaxed border border-slate-800 shadow-md">
-            <p className="text-amber-300 font-extrabold mb-1">⭐ Regola d'Oro del Personal Trainer:</p>
-            <p className="text-slate-200 leading-relaxed">{WORKOUT_GUIDELINES.goldenRule}</p>
-          </div>
-        </div>
-      )}
-
-      {/* TAB 3: GOMITO DEL TENNISTA & SICUREZZA */}
-      {activeTab === 'gomito' && (
-        <div className="space-y-3.5">
-          <div className="bg-amber-50/90 rounded-3xl p-4.5 border border-amber-300/80 space-y-2 shadow-xs">
-            <div className="flex items-center gap-2 text-amber-900 font-extrabold text-sm">
-              <ShieldAlert className="w-5 h-5 text-amber-600" />
-              <span>Precauzioni per il Gomito del Tennista</span>
-            </div>
-            <p className="text-xs text-slate-700 leading-relaxed font-medium">
-              Il programma è stato strutturato per evitare lo stress sul tendine dell'avambraccio, privilegiando macchine guidate e prese neutre.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-3xl p-4.5 border border-slate-200/80 shadow-xs space-y-2.5">
-            <h4 className="text-xs font-extrabold uppercase tracking-wider text-slate-500">
-              Regole Fondamentali
-            </h4>
-            <div className="space-y-2 text-xs">
-              {WORKOUT_GUIDELINES.elbowPrecautions.map((p, i) => (
-                <div key={i} className="flex items-start gap-2.5 p-3 bg-[#F0F4F3] rounded-2xl border border-slate-200/80">
-                  <div className="w-4.5 h-4.5 rounded-full bg-emerald-600 text-white text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">
-                    ✓
-                  </div>
-                  <p className="text-[#1F2937] leading-relaxed font-medium">{p}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Rest Times Reference Table */}
-          <div className="bg-white rounded-3xl p-4.5 border border-slate-200/80 shadow-xs space-y-2">
-            <h4 className="text-xs font-extrabold uppercase tracking-wider text-slate-500 mb-2">
-              Tabella Recuperi Consigliati
-            </h4>
-            <div className="space-y-1.5 text-xs">
-              {WORKOUT_GUIDELINES.restRules.map((rule, idx) => (
-                <div key={idx} className="flex items-center justify-between p-2.5 bg-[#F0F4F3] rounded-2xl border border-slate-200/80">
-                  <span className="font-semibold text-[#1F2937]">{rule.category}</span>
-                  <span className="font-bold text-emerald-800 font-mono bg-white px-2 py-0.5 rounded-full border border-slate-200/60">{rule.rest}</span>
-                </div>
-              ))}
-            </div>
-            <p className="text-[11px] text-slate-500 italic pt-1 font-medium">
-              Se allo scadere del timer sei ancora affannato, attendi altri 20-30 secondi: la tecnica viene prima del cronometro.
-            </p>
-          </div>
-        </div>
-      )}
+              <label className="flex items-center gap-2 text-xs font-semibold">
+                <input type="checkbox" className="h-5 w-5 accent-emerald-600" aria-label={`Completato: ${exercise.name}`} checked={entry.done} onChange={event => updateExercise({ done: event.target.checked })} /> Esercizio completato
+              </label>
+            </div>;
+          })}
+        </section> : <p className="rounded-2xl bg-white border border-slate-200 p-4 text-sm">Routine gomito: oggi riposo.</p>}
+        <label className="block text-sm font-bold">Note della giornata
+          <textarea className={`${inputClass} mt-2`} rows={3} placeholder="Carichi, varianti scelte, sensazioni…" value={log.notes} onChange={event => updateDay({ notes: event.target.value })} />
+        </label>
+        <label className="flex items-center gap-3 text-sm font-bold"><input type="checkbox" className="h-5 w-5 accent-emerald-600" checked={log.done} onChange={event => updateDay({ done: event.target.checked })} />{workout ? 'Allenamento completato' : 'Giornata completata'}</label>
+        <button type="button" onClick={() => updateDay({})} className="w-full rounded-full bg-emerald-700 py-3 text-sm font-bold text-white">Salva progressi</button>
+      </fieldset>
+      <p role="status" className="text-xs text-emerald-800">{saved}</p>
     </div>
   );
 };

@@ -41,10 +41,10 @@ export const RecipeModal: React.FC<RecipeModalProps> = ({
   };
 
   const scaledKcal = Math.round(
-    recipe.hpVariant!.kcal * (servings / recipe.defaultServings)
+    (recipe.hpVariant?.kcal ?? recipe.kcal) * (recipe.sourcePage ? 1 : servings / recipe.defaultServings)
   );
 
-  const estimatedProtein = Math.round(recipe.hpVariant!.proteinGrams * (servings / recipe.defaultServings));
+  const estimatedProtein = Math.round((recipe.hpVariant?.proteinGrams ?? recipe.originalProteinGrams ?? 0) * (recipe.sourcePage ? 1 : servings / recipe.defaultServings));
 
   return (
     <div
@@ -81,27 +81,27 @@ export const RecipeModal: React.FC<RecipeModalProps> = ({
           <div className="flex flex-wrap items-center gap-2 mt-2.5 text-xs text-slate-600">
             <span className="flex items-center gap-1 font-bold text-emerald-800 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200/60">
               <Flame className="w-3.5 h-3.5 fill-current text-emerald-600" />
-              {scaledKcal} kcal totali
+              {scaledKcal ? `${scaledKcal} kcal${recipe.sourcePage ? '' : ' totali'}` : 'Kcal non indicate'}
             </span>
-            {estimatedProtein && (
+            {estimatedProtein > 0 && (
               <span className="flex items-center gap-1 font-bold text-sky-800 bg-sky-50 px-3 py-1 rounded-full border border-sky-200/60">
                 ⚡ ~{estimatedProtein} g proteine
               </span>
             )}
             <span className="flex items-center gap-1 font-semibold text-slate-700 bg-white px-2.5 py-1 rounded-full border border-slate-200/80">
               <Clock className="w-3.5 h-3.5 text-slate-400" />
-              {recipe.timeMinutes} min
+              {recipe.timeLabel ?? `${recipe.timeMinutes} min`}
             </span>
             <span className="flex items-center gap-1 font-semibold capitalize text-slate-700 bg-white px-2.5 py-1 rounded-full border border-slate-200/80">
               <ChefHat className="w-3.5 h-3.5 text-slate-400" />
-              {recipe.difficulty}
+              {recipe.sourcePage ? recipe.nutritionLabel : recipe.difficulty}
             </span>
           </div>
         </div>
 
         {/* Scrollable Content */}
         <div className="overflow-y-auto px-5 py-4 space-y-4.5 flex-1 overscroll-contain">
-          <div className="p-4 rounded-3xl bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200/80 shadow-xs">
+          {recipe.hpVariant && <div className="p-4 rounded-3xl bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200/80 shadow-xs">
             <div className="flex items-center gap-2">
               <Sparkles className="w-4 h-4 text-emerald-600" />
               <span className="text-xs font-extrabold text-emerald-900">Ricetta High-Protein</span>
@@ -114,15 +114,20 @@ export const RecipeModal: React.FC<RecipeModalProps> = ({
               </ul>
               {recipe.hpVariant!.tips && <p className="text-[11px] text-emerald-800 font-semibold italic pt-1.5 border-t border-emerald-100">💡 {recipe.hpVariant!.tips}</p>}
             </div>
-          </div>
+          </div>}
 
+          {recipe.sourceUrl && <div className="rounded-2xl bg-emerald-50 border border-emerald-200 p-3 text-xs space-y-2">
+            <a href={recipe.sourceUrl} target="_blank" rel="noopener noreferrer" className="block font-bold text-emerald-800 underline">Apri la ricetta originale ↗</a>
+            <a href={`${import.meta.env.BASE_URL}documents/ricette-healthy.pdf#page=${recipe.sourcePage}`} target="_blank" rel="noopener noreferrer" className="block text-emerald-800 underline">Vedi nel ricettario PDF · pagina {recipe.sourcePage}</a>
+            <p>Dosi originali per {recipe.yieldLabel}{/^\d+(?:-\d+)?$/.test(recipe.yieldLabel ?? '') ? ' porzioni' : ''}. Aggiunte e contorni del piano sono riportati nella giornata.</p>
+          </div>}
           {/* Description */}
           <p className="text-xs text-slate-600 leading-relaxed bg-[#F0F4F3] p-3.5 rounded-2xl border border-slate-200/80 font-medium">
             {recipe.description}
           </p>
 
           {/* Servings Scaler */}
-          <div className="flex items-center justify-between bg-[#F0F4F3] p-3 rounded-2xl border border-slate-200/80">
+          {!recipe.sourcePage && <div className="flex items-center justify-between bg-[#F0F4F3] p-3 rounded-2xl border border-slate-200/80">
             <span className="text-xs font-bold text-[#1F2937]">Numero di porzioni:</span>
             <div className="flex items-center gap-2 bg-white rounded-full p-1 shadow-2xs border border-slate-200">
               <button
@@ -140,12 +145,12 @@ export const RecipeModal: React.FC<RecipeModalProps> = ({
                 <Plus className="w-3.5 h-3.5" />
               </button>
             </div>
-          </div>
+          </div>}
 
           {/* Ingredients Section */}
           <div>
             <div className="flex items-center justify-between mb-2">
-              <h3 className="text-sm font-extrabold text-[#1F2937]">Ingredienti ({servings} {servings === 1 ? 'porzione' : 'porzioni'})</h3>
+              <h3 className="text-sm font-extrabold text-[#1F2937]">Ingredienti · {recipe.sourcePage ? `dosi originali per ${recipe.yieldLabel}${/^\d+(?:-\d+)?$/.test(recipe.yieldLabel ?? '') ? ' porzioni' : ''}` : `${servings} ${servings === 1 ? 'porzione' : 'porzioni'}`}</h3>
               <span className="text-[11px] text-slate-500 font-medium">Tocca per spuntare</span>
             </div>
 
@@ -177,19 +182,21 @@ export const RecipeModal: React.FC<RecipeModalProps> = ({
                       >
                         {isChecked && <Check className="w-3 h-3 stroke-[3]" />}
                       </div>
-                      <span className="text-xs font-semibold">{ing.name}</span>
+                      <span className="text-xs font-semibold">{ing.sourceText ?? ing.name}{ing.notes && <small className="block text-slate-500 font-normal">{ing.notes}</small>}</span>
                     </div>
-                    <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${
+                    {displayQuantity && <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${
                       isChecked ? 'text-slate-400 bg-slate-100' : 'text-emerald-800 bg-emerald-50 border border-emerald-200/60'
                     }`}>
                       {displayQuantity}
-                    </span>
+                    </span>}
                   </div>
                 );
               })}
             </div>
           </div>
 
+          {recipe.sourceNotes && <div className="rounded-2xl bg-amber-50 border border-amber-200 p-3 text-xs leading-relaxed"><h3 className="font-bold mb-2">Note della ricetta</h3>{recipe.sourceNotes}</div>}
+          {recipe.nutritionDetails && <details className="rounded-2xl bg-slate-50 p-3 text-xs"><summary className="font-bold cursor-pointer">Valori nutrizionali della fonte</summary><p className="whitespace-pre-line mt-2">{recipe.nutritionDetails}</p></details>}
           {/* Instructions Step-by-Step */}
           <div>
             <h3 className="text-sm font-extrabold text-[#1F2937] mb-2.5">Preparazione</h3>
@@ -252,7 +259,7 @@ export const RecipeModal: React.FC<RecipeModalProps> = ({
             className="flex-1 py-3 px-4 rounded-2xl bg-emerald-600 text-white font-bold text-xs flex items-center justify-center gap-1.5 active:scale-98 shadow-md shadow-emerald-500/25 hover:bg-emerald-700 transition-all"
           >
             <Timer className="w-4 h-4 text-emerald-100" />
-            Timer Totale ({recipe.timeMinutes} min)
+            Timer ({recipe.timeMinutes} min)
           </button>
           <button
             onClick={onClose}

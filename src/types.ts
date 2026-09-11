@@ -4,6 +4,9 @@ export interface Ingredient {
   name: string;
   amount?: string;
   grams?: number;
+  quantity?: number;
+  quantityMax?: number;
+  sourceText?: string;
   unit?: string;
   notes?: string;
 }
@@ -19,7 +22,15 @@ export interface Recipe {
   defaultServings: number;
   ingredients: Ingredient[];
   instructions: string[];
-  hpVariant: {
+  sourceUrl?: string;
+  sourcePage?: number;
+  sourceNotes?: string;
+  maxServings?: number;
+  yieldLabel?: string;
+  timeLabel?: string;
+  nutritionLabel?: string;
+  nutritionDetails?: string;
+  hpVariant?: {
     title: string;
     description: string;
     kcal: number;
@@ -37,6 +48,8 @@ export interface MealSlot {
   recipeId?: string;
   isHp: boolean;
   notes?: string;
+  recipeServings?: number;
+  extras?: Ingredient[];
   estimatedKcal?: number;
   estimatedProtein?: number;
 }

@@ -1,19 +1,21 @@
 import React, { useState, useMemo } from 'react';
 import { Recipe } from '../types';
-import { RECIPES } from '../data/recipes';
+import { PREVIOUS_RECIPES, HEALTHY_RECIPES } from '../data/recipes';
 import { Search, Sparkles, Clock, Flame, ChefHat, Filter, ChevronRight } from 'lucide-react';
 
 interface RecipesViewProps {
+  currentDay: number;
   onOpenRecipe: (recipe: Recipe, isHp: boolean) => void;
 }
 
-export const RecipesView: React.FC<RecipesViewProps> = ({ onOpenRecipe }) => {
+export const RecipesView: React.FC<RecipesViewProps> = ({ onOpenRecipe, currentDay }) => {
+  const recipes = currentDay >= 21 ? HEALTHY_RECIPES : PREVIOUS_RECIPES;
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [selectedCategory, setSelectedCategory] = useState<string>('TUTTE');
   const [filterQuickOnly, setFilterQuickOnly] = useState<boolean>(false);
 
   const filteredRecipes = useMemo(() => {
-    return RECIPES.filter((r) => {
+    return recipes.filter((r) => {
       // Category filter
       if (selectedCategory !== 'TUTTE' && r.category !== selectedCategory) {
         return false;
@@ -32,17 +34,18 @@ export const RecipesView: React.FC<RecipesViewProps> = ({ onOpenRecipe }) => {
       }
       return true;
     });
-  }, [searchQuery, selectedCategory, filterQuickOnly]);
+  }, [searchQuery, selectedCategory, filterQuickOnly, recipes]);
 
   const categories = [
-    { id: 'TUTTE', label: 'Tutte', count: RECIPES.length },
-    { id: 'COLAZIONE', label: 'Colazioni', count: RECIPES.filter((r) => r.category === 'COLAZIONE').length },
-    { id: 'PRANZO / CENA', label: 'Pranzo / Cena', count: RECIPES.filter((r) => r.category === 'PRANZO / CENA').length },
-    { id: 'SNACK', label: 'Snack', count: RECIPES.filter((r) => r.category === 'SNACK').length }
+    { id: 'TUTTE', label: 'Tutte', count: recipes.length },
+    { id: 'COLAZIONE', label: 'Colazioni', count: recipes.filter((r) => r.category === 'COLAZIONE').length },
+    { id: 'PRANZO / CENA', label: 'Pranzo / Cena', count: recipes.filter((r) => r.category === 'PRANZO / CENA').length },
+    { id: 'SNACK', label: 'Snack', count: recipes.filter((r) => r.category === 'SNACK').length }
   ];
 
   return (
     <div className="space-y-3.5 pb-4">
+      <p className="text-xs font-bold text-emerald-800">{currentDay >= 21 ? 'Ricette healthy · dal 21 settembre 2026' : 'Archivio ricette · prima del 21 settembre 2026'}</p>
       {/* Search Input Bar */}
       <div className="relative">
         <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-emerald-700/60" />
@@ -112,7 +115,11 @@ export const RecipesView: React.FC<RecipesViewProps> = ({ onOpenRecipe }) => {
           filteredRecipes.map((recipe) => (
             <div
               key={recipe.id}
-              onClick={() => onOpenRecipe(recipe, true)}
+              role="button"
+              tabIndex={0}
+              aria-label={`Apri ricetta: ${recipe.title}`}
+              onKeyDown={event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); onOpenRecipe(recipe, !!recipe.hpVariant); } }}
+              onClick={() => onOpenRecipe(recipe, !!recipe.hpVariant)}
               className="group bg-white rounded-2xl p-4 border border-slate-200/80 shadow-xs hover:border-emerald-400 active:scale-[0.99] transition-all cursor-pointer"
             >
               <div className="flex items-start justify-between gap-3">
@@ -121,9 +128,9 @@ export const RecipesView: React.FC<RecipesViewProps> = ({ onOpenRecipe }) => {
                     <span className="text-[10px] font-extrabold uppercase tracking-wider text-emerald-800 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-100">
                       {recipe.category}
                     </span>
-                    <span className="inline-flex items-center gap-1 text-[10px] font-bold text-teal-800 bg-teal-50 px-2 py-0.5 rounded-full border border-teal-200/60">
+                    {recipe.hpVariant && <span className="inline-flex items-center gap-1 text-[10px] font-bold text-teal-800 bg-teal-50 px-2 py-0.5 rounded-full border border-teal-200/60">
                       <Sparkles className="w-2.5 h-2.5" /> High-Protein
-                    </span>
+                    </span>}
                   </div>
 
                   <h3 className="text-base font-bold text-[#1F2937] leading-snug group-hover:text-emerald-700 transition-colors">
@@ -136,18 +143,16 @@ export const RecipesView: React.FC<RecipesViewProps> = ({ onOpenRecipe }) => {
 
                   <div className="flex flex-wrap items-center gap-2 mt-3 text-xs">
                     <span className="font-extrabold text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200/50">
-                      🔥 {recipe.hpVariant!.kcal} kcal
+                      {(recipe.hpVariant?.kcal ?? recipe.kcal) ? `🔥 ${recipe.hpVariant?.kcal ?? recipe.kcal} kcal` : 'Kcal non indicate'}
                     </span>
                     <span className="font-extrabold text-sky-800 bg-sky-50 px-2.5 py-1 rounded-full border border-sky-200/50">
-                      ⚡ ~{recipe.hpVariant!.proteinGrams}g proteine
+                      {(recipe.hpVariant?.proteinGrams ?? recipe.originalProteinGrams) != null ? `⚡ ${recipe.hpVariant?.proteinGrams ?? recipe.originalProteinGrams}g proteine` : 'Proteine non indicate'}
                     </span>
                     <span className="text-slate-500 flex items-center gap-1 font-semibold bg-[#F0F4F3] px-2 py-1 rounded-full">
                       <Clock className="w-3 h-3 text-slate-400" />
                       {recipe.timeMinutes} min
                     </span>
-                    <span className="text-slate-500 capitalize text-[11px] font-medium">
-                      • {recipe.difficulty}
-                    </span>
+                    {recipe.sourcePage ? <span className="text-[11px] text-slate-500">{recipe.nutritionLabel}</span> : <span className="text-slate-500 capitalize text-[11px] font-medium">• {recipe.difficulty}</span>}
                   </div>
                 </div>
 

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Play, Pause, X, Bell, RotateCcw } from 'lucide-react';
-import { playTimerCompletionSound } from '../utils/audio';
 
 interface FloatingTimerProps {
   initialSeconds: number;
@@ -28,7 +27,6 @@ export const FloatingTimer: React.FC<FloatingTimerProps> = ({ initialSeconds, la
           if (prev <= 1) {
             setIsActive(false);
             setHasFinished(true);
-            playTimerCompletionSound();
             return 0;
           }
           return prev - 1;
@@ -68,6 +66,8 @@ export const FloatingTimer: React.FC<FloatingTimerProps> = ({ initialSeconds, la
   return (
     <aside
       aria-label="Timer attivo"
+      aria-live="assertive"
+      role="alert"
       className="fixed bottom-20 left-4 right-4 sm:left-auto sm:right-6 sm:w-80 z-50 bg-[#1F2937]/95 text-white rounded-3xl shadow-2xl backdrop-blur-xl border border-slate-700/80 p-4 transition-all duration-300 animate-in fade-in slide-in-from-bottom-4"
     >
       <div className="flex items-center justify-between gap-2">

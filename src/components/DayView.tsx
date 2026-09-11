@@ -5,7 +5,7 @@ import { RECIPES } from '../data/recipes';
 import { Flame, Sparkles, CheckCircle2, Circle, ChevronLeft, ChevronRight, BookOpen, Clock, Zap, Activity } from 'lucide-react';
 import { FitnessRings } from './FitnessRings';
 import { triggerHaptic } from '../utils/haptics';
-import { formatCalendarDate } from '../utils/dates';
+import { formatCalendarDate, mealProgressKey } from '../utils/dates';
 
 interface DayViewProps {
   currentDay: number;
@@ -44,26 +44,25 @@ export const DayView: React.FC<DayViewProps> = ({
     if (scrollContainerRef.current) {
       const activeBtn = scrollContainerRef.current.querySelector(`[data-day="${currentDay}"]`) as HTMLElement;
       if (activeBtn) {
-        activeBtn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+        scrollContainerRef.current.scrollTo({ left: activeBtn.offsetLeft - scrollContainerRef.current.offsetLeft - scrollContainerRef.current.clientWidth / 2 + activeBtn.clientWidth / 2, behavior: 'smooth' });
       }
     }
   }, [currentDay]);
 
   const toggleMealEaten = (mealIndex: number, e: React.MouseEvent) => {
     e.stopPropagation();
-    const key = `day_${currentDay}_meal_${idxKey(mealIndex)}`;
+    const key = mealProgressKey(currentDay, mealIndex);
     const willBeDone = !eatenMeals[key];
     setEatenMeals((prev) => ({ ...prev, [key]: willBeDone }));
     triggerHaptic(willBeDone ? 'success' : 'light');
   };
 
-  const idxKey = (idx: number) => idx;
 
   const getMealRecipe = (slot: MealSlot): Recipe | undefined => {
     return RECIPES.find((r) => r.id === slot.recipeId);
   };
 
-  const completedCount = dayPlan.meals.filter((_, idx) => eatenMeals[`day_${currentDay}_meal_${idx}`]).length;
+  const completedCount = dayPlan.meals.filter((_, idx) => eatenMeals[mealProgressKey(currentDay, idx)]).length;
   const mealCount = dayPlan.meals.length;
   const hasNutritionTargets = dayPlan.totalKcal > 0 && dayPlan.totalProtein > 0;
 
@@ -83,7 +82,12 @@ export const DayView: React.FC<DayViewProps> = ({
 
   return (
     <div className="space-y-3.5 pb-4">
-      {/* 31-Days Horizontal iOS Carousel */}
+      {currentDay >= 21 && <div className="rounded-2xl bg-emerald-50 border border-emerald-200 p-3 text-xs space-y-2">
+        <p className="font-bold text-emerald-900">Settimana {Math.floor((currentDay - 21) / 7) + 1} di 6 · Piano dal 21 settembre al 1° novembre 2026</p>
+        <p>I totali giornalieri sono quelli del piano. Le dosi aggiuntive sono indicate in ciascun pasto; i valori delle ricette si riferiscono alla sola ricetta base.</p>
+        <a href={`${import.meta.env.BASE_URL}documents/piano-alimentare-6-settimane.pdf`} target="_blank" rel="noopener noreferrer" className="inline-block font-bold underline">Apri il piano originale PDF</a>
+      </div>}
+      {/* Dated meal calendar */}
       <div className="bg-white rounded-3xl p-3 shadow-xs border border-slate-200/70">
         <div className="flex items-center justify-between px-1 mb-2 text-xs text-slate-500 font-medium">
           <span className="font-semibold text-slate-600">Calendario</span>
@@ -113,9 +117,9 @@ export const DayView: React.FC<DayViewProps> = ({
                 }`}
               >
                 <span className="text-[9px] font-bold uppercase opacity-80">{formatCalendarDate(plan.dayNumber, { weekday: 'short' }).replace('.', '')}</span>
-                <span className="text-base font-extrabold leading-none my-0.5">{plan.dayNumber}</span>
+                <span className="text-base font-extrabold leading-none my-0.5">{formatCalendarDate(plan.dayNumber, { day: 'numeric' })}</span>
                 <span className={`text-[8px] font-bold ${isSelected ? 'text-emerald-100' : 'text-slate-500'}`}>
-                  {plan.totalProtein ? `${plan.totalProtein}g` : 'Plank'}
+                  {formatCalendarDate(plan.dayNumber, { month: 'short' })}
                 </span>
               </button>
             );
@@ -198,7 +202,7 @@ export const DayView: React.FC<DayViewProps> = ({
         </div>
 
         {dayPlan.meals.map((meal, idx) => {
-          const isDone = !!eatenMeals[`day_${currentDay}_meal_${idx}`];
+          const isDone = !!eatenMeals[mealProgressKey(currentDay, idx)];
           const recipe = getMealRecipe(meal);
           const icon = mealSlotIcons[meal.type] || '🍽️';
 
@@ -207,7 +211,7 @@ export const DayView: React.FC<DayViewProps> = ({
               key={idx}
               onClick={() => {
                 triggerHaptic('light');
-                if (recipe) onOpenRecipe(recipe, true);
+                if (recipe) onOpenRecipe(recipe, meal.isHp);
               }}
               className={`group bg-white rounded-3xl p-3.5 border transition-all duration-200 shadow-xs cursor-pointer active:scale-[0.98] select-none ${
                 isDone
@@ -222,6 +226,8 @@ export const DayView: React.FC<DayViewProps> = ({
                     onClick={(e) => toggleMealEaten(idx, e)}
                     className="mt-0.5 text-slate-300 hover:text-emerald-600 active:scale-90 transition-all shrink-0 p-0.5"
                     title={isDone ? 'Segna come non consumato' : 'Segna come consumato'}
+                    aria-label={`${meal.type}: ${isDone ? 'segna come non consumato' : 'segna come consumato'}`}
+                    aria-pressed={isDone}
                   >
                     {isDone ? (
                       <CheckCircle2 className="w-5 h-5 text-emerald-600 fill-emerald-100" />
@@ -235,7 +241,7 @@ export const DayView: React.FC<DayViewProps> = ({
                       <span className="text-[10px] font-extrabold uppercase tracking-wider text-slate-600 bg-[#F0F4F3] px-2.5 py-0.5 rounded-full border border-slate-200/60">
                         {icon} {meal.type}
                       </span>
-                      {recipe && <span className="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-800 bg-emerald-100/80 border border-emerald-300/80 px-2 py-0.5 rounded-full"><Sparkles className="w-2.5 h-2.5" /> HP</span>}
+                      {recipe?.hpVariant && <span className="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-800 bg-emerald-100/80 border border-emerald-300/80 px-2 py-0.5 rounded-full"><Sparkles className="w-2.5 h-2.5" /> HP</span>}
                     </div>
 
                     <h3 className={`text-sm font-bold mt-1 text-[#1F2937] leading-snug group-hover:text-emerald-700 transition-colors ${
@@ -259,11 +265,11 @@ export const DayView: React.FC<DayViewProps> = ({
                         <span>•</span>
                         <span className="flex items-center gap-1 font-bold text-slate-700">
                           <Flame className="w-3 h-3 text-amber-500" />
-                          {recipe.hpVariant!.kcal} kcal
+                          {recipe.sourcePage ? 'Ricetta base' : `${recipe.hpVariant?.kcal ?? recipe.kcal} kcal`}
                         </span>
                         <span>•</span>
                         <span className="font-extrabold text-emerald-700">
-                          ~{recipe.hpVariant!.proteinGrams}g prot
+                          {recipe.sourcePage ? 'Vedi dosi' : `~${recipe.hpVariant?.proteinGrams ?? recipe.originalProteinGrams}g prot`}
                         </span>
                       </div>
                     )}
@@ -273,12 +279,14 @@ export const DayView: React.FC<DayViewProps> = ({
                 {/* View Recipe Button */}
                 {recipe && (
                   <button
-                    onClick={() => {
+                    onClick={(event) => {
+                      event.stopPropagation();
                       triggerHaptic('light');
-                      onOpenRecipe(recipe, true);
+                      onOpenRecipe(recipe, meal.isHp);
                     }}
                     className="p-2.5 rounded-2xl bg-[#F0F4F3] text-slate-600 group-hover:bg-emerald-600 group-hover:text-white active:scale-90 transition-all shrink-0 mt-0.5 shadow-2xs"
                     title="Vedi ingredienti e preparazione"
+                    aria-label={`Apri ricetta: ${recipe.title}`}
                   >
                     <BookOpen className="w-4 h-4" />
                   </button>
@@ -306,22 +314,22 @@ export const DayView: React.FC<DayViewProps> = ({
         <button
           onClick={() => {
             triggerHaptic('light');
-            onSelectDay(1);
+            onSelectDay(21);
           }}
           className="px-4 py-3 rounded-full bg-[#F0F4F3] text-slate-700 font-bold text-xs hover:bg-slate-200 active:scale-95 transition-all border border-slate-200"
         >
-          1° del mese
+          21 settembre
         </button>
 
         <button
           onClick={() => {
             triggerHaptic('light');
-            onSelectDay(Math.min(31, currentDay + 1));
+            onSelectDay(Math.min(62, currentDay + 1));
           }}
-          disabled={currentDay >= 31}
+          disabled={currentDay >= 62}
           className="flex-1 py-3 px-3 rounded-full bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-bold text-xs flex items-center justify-center gap-1 disabled:opacity-40 active:scale-95 transition-all shadow-md shadow-emerald-500/25"
         >
-          {formatCalendarDate(Math.min(31, currentDay + 1), { day: 'numeric', month: 'short' })}
+          {formatCalendarDate(Math.min(62, currentDay + 1), { day: 'numeric', month: 'short' })}
           <ChevronRight className="w-4 h-4" />
         </button>
       </div>

@@ -1,3 +1,4 @@
+import { WeeklyShoppingView } from './WeeklyShoppingView';
 import React, { useState, useEffect } from 'react';
 import { MONTHLY_PANTRY, FOUR_DAY_BLOCKS, MONTHLY_PROTEIN_SUMMARY } from '../data/shoppingList';
 import { Check, RotateCcw, Package, ShoppingCart, Sparkles, ChefHat, Copy, CheckCheck, Info } from 'lucide-react';
@@ -7,7 +8,11 @@ interface ShoppingViewProps {
   currentDay: number;
 }
 
-export const ShoppingView: React.FC<ShoppingViewProps> = ({ currentDay }) => {
+export const ShoppingView: React.FC<ShoppingViewProps> = ({ currentDay }) => currentDay >= 21
+  ? <WeeklyShoppingView currentDay={currentDay} />
+  : <PreviousShoppingView currentDay={currentDay} />;
+
+const PreviousShoppingView: React.FC<ShoppingViewProps> = ({ currentDay }) => {
   // Find which block currentDay belongs to
   const defaultBlock = FOUR_DAY_BLOCKS.find((b) => currentDay >= b.startDay && currentDay <= b.endDay) || FOUR_DAY_BLOCKS[0];
 

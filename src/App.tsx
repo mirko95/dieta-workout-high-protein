@@ -16,13 +16,18 @@ import { InfoModal } from './components/InfoModal';
 import { FloatingTimer } from './components/FloatingTimer';
 import { IosStatusBar } from './components/IosStatusBar';
 import { Recipe } from './types';
+import { MONTHLY_PLAN } from './data/monthlyPlan';
+import { dayNumberFromDate } from './utils/dates';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<TabType>('oggi');
   const [currentDay, setCurrentDay] = useState<number>(() => {
     try {
       const saved = localStorage.getItem('diet_current_day');
-      return saved ? parseInt(saved, 10) : new Date().getDate();
+      const today = new Date();
+      const todayNumber = dayNumberFromDate(`${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`);
+      const selected = saved ? Number(saved) : Math.max(1, Math.min(62, todayNumber));
+      return MONTHLY_PLAN.some(day => day.dayNumber === selected) ? selected : 21;
     } catch {
       return 1;
     }
@@ -92,11 +97,11 @@ export default function App() {
         {activeTab === 'dati' && <BodyMetricsView />}
 
         {activeTab === 'ricette' && (
-          <RecipesView onOpenRecipe={handleOpenRecipe} />
+          <RecipesView currentDay={currentDay} onOpenRecipe={handleOpenRecipe} />
         )}
 
         {activeTab === 'spesa' && (
-          <ShoppingView currentDay={currentDay} />
+          <ShoppingView key={currentDay < 21 ? "archive" : `week-${Math.floor((currentDay - 21) / 7)}`} currentDay={currentDay} />
         )}
 
         {activeTab === 'allenamento' && (
