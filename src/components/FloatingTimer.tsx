@@ -11,6 +11,21 @@ export const FloatingTimer: React.FC<FloatingTimerProps> = ({ initialSeconds, la
   const [secondsLeft, setSecondsLeft] = useState<number>(initialSeconds);
   const [isActive, setIsActive] = useState<boolean>(true);
   const [hasFinished, setHasFinished] = useState<boolean>(false);
+  const [notificationPermission, setNotificationPermission] = useState<NotificationPermission | 'unsupported'>(() =>
+    'Notification' in window ? Notification.permission : 'unsupported'
+  );
+
+  const notifyCompletion = () => {
+    if ('vibrate' in navigator) navigator.vibrate([100, 50, 150]);
+    if (notificationPermission === 'granted') {
+      new Notification('Timer terminato', { body: label, tag: 'dieta-fit-timer' });
+    }
+  };
+
+  const enableNotifications = async () => {
+    if (!('Notification' in window)) return;
+    setNotificationPermission(await Notification.requestPermission());
+  };
 
   useEffect(() => {
     setSecondsLeft(initialSeconds);
@@ -27,6 +42,7 @@ export const FloatingTimer: React.FC<FloatingTimerProps> = ({ initialSeconds, la
           if (prev <= 1) {
             setIsActive(false);
             setHasFinished(true);
+            notifyCompletion();
             return 0;
           }
           return prev - 1;
@@ -112,7 +128,20 @@ export const FloatingTimer: React.FC<FloatingTimerProps> = ({ initialSeconds, la
             <X className="w-4 h-4" />
           </button>
         </div>
-      </div>
+        </div>
+
+        {notificationPermission === 'default' && !hasFinished && (
+          <button
+            type="button"
+            onClick={enableNotifications}
+            className="mt-3 w-full rounded-xl border border-emerald-400/50 bg-emerald-500/15 px-3 py-2 text-xs font-bold text-emerald-300"
+          >
+            Attiva notifiche e vibrazione
+          </button>
+        )}
+        {notificationPermission === 'denied' && (
+          <p className="mt-3 text-xs text-slate-400">Notifiche bloccate dal browser: abilitate nelle impostazioni del sito.</p>
+        )}
 
       {/* Mini progress bar */}
       <div className="w-full bg-slate-800 h-1.5 rounded-full mt-3 overflow-hidden">
