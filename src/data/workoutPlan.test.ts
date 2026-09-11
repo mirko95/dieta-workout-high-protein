@@ -15,6 +15,7 @@ assert.equal(WORKOUTS[0].exercises[3].name, 'Stacco rumeno con manubri');
 assert.equal(WORKOUTS[2].exercises[3].name, 'Pull-through ai cavi con corda');
 assert.equal(WORKOUTS[1].exercises[5].reps, '20–40 sec per lato');
 assert.ok(WORKOUTS.flatMap(workout => workout.exercises).every(exercise => exercise.gifUrl?.includes('raw.githubusercontent.com') && exercise.instructionSteps?.length));
+assert.ok(WORKOUTS.flatMap(workout => workout.exercises).every(exercise => exercise.alternatives?.length === 2));
 const progress = {
   '2026-09-14': { ...emptyDay(), sets: { '0:0': { weight: '42.5', reps: '12', done: true } }, cardioMinutes: '18', notes: 'Leg press', done: true },
   '2026-09-21': emptyDay(),

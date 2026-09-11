@@ -97,6 +97,7 @@ export interface WorkoutExercise {
   equipment?: string;
   instructionSteps?: string[];
   gifUrl?: string;
+  alternatives?: string[];
   perSide?: boolean;
 }
 
