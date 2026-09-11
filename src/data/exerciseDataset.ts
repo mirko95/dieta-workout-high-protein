@@ -26,3 +26,9 @@ export const datasetExercise = (id: keyof typeof records) => ({
   instructionSteps: records[id].steps,
   gifUrl: `${baseUrl}${records[id].gif}`,
 });
+
+export const datasetAnimation = (id: string, equipment: string, gif: string) => ({
+  datasetId: id,
+  equipment,
+  gifUrl: `${baseUrl}${gif}`,
+});

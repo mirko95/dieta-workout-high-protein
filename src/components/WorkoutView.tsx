@@ -106,7 +106,19 @@ export const WorkoutView: React.FC<WorkoutViewProps> = ({ onStartTimer }) => {
               <span>{exercise.sets} × {exercise.reps} · Recupero {exercise.restLabel ?? exercise.restSeconds} s</span>
               <button type="button" onClick={() => onStartTimer(exercise.restSeconds, `Recupero: ${exercise.name}`)} className="flex items-center gap-1 rounded-full border px-3 py-2 text-emerald-800" aria-label={`Avvia recupero per ${exercise.name}`}><Play className="h-3 w-3" />{exercise.restSeconds} s</button>
             </div>
-            {exercise.alternatives?.length && <p className="text-xs text-slate-600"><span className="font-bold">Alternative:</span> {exercise.alternatives.join(' · ')}</p>}
+            {!!exercise.alternatives?.length && <details className="rounded-xl border border-slate-200 p-3">
+              <summary className="cursor-pointer text-xs font-bold text-slate-700">Alternative con animazione</summary>
+              <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                {exercise.alternatives.map(alternative => <div key={alternative.datasetId} className="flex gap-3 rounded-lg bg-slate-50 p-2">
+                  <img src={alternative.gifUrl} alt={`Animazione: ${alternative.name}`} className="h-20 w-20 shrink-0 rounded-lg object-cover" loading="lazy" />
+                  <div className="min-w-0 text-xs text-slate-700">
+                    <p className="font-bold">{alternative.name}</p>
+                    <p>Attrezzo: {alternative.equipment}</p>
+                    <a href={DATASET_SOURCE} target="_blank" rel="noreferrer" className="mt-2 inline-block text-[10px] text-slate-500 underline">Exercise Dataset · © Gym visual</a>
+                  </div>
+                </div>)}
+              </div>
+            </details>}
             <div className="grid grid-cols-[2rem_1fr_1.4fr_2rem] gap-2 text-[10px] text-slate-500" aria-hidden="true"><span>Serie</span><span>Kg</span><span>{exercise.perSide ? (exercise.name === 'Side plank' ? 'Secondi per lato' : 'Reps per gamba') : 'Reps'}</span><span>Fatto</span></div>
             {Array.from({ length: Number(exercise.sets) }, (_, setIndex) => {
               const key = `${index}:${setIndex}`;

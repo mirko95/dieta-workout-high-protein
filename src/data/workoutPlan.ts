@@ -1,38 +1,41 @@
 import { WorkoutSession } from '../types';
-import { datasetExercise } from './exerciseDataset';
+import { datasetAnimation, datasetExercise } from './exerciseDataset';
+
+const alternatives = (...items: [string, string, string, string][]) =>
+  items.map(([name, id, equipment, gif]) => ({ name, ...datasetAnimation(id, equipment, gif) }));
 
 export const WORKOUTS: WorkoutSession[] = [
   {
     id: 'a', name: 'Workout A', targetFocus: 'Full body', schedule: 'Lunedì',
     exercises: [
-      { name: 'Hack squat alla slitta', sets: '3', reps: '8–12', restSeconds: 180, restLabel: '120–180', alternatives: ['Leg press', 'Goblet squat con manubrio'], ...datasetExercise('0743') },
-      { name: 'Chest press alla macchina', sets: '3', reps: '8–12', restSeconds: 120, alternatives: ['Panca piana con manubri', 'Push-up inclinati'], ...datasetExercise('0577') },
-      { name: 'Rematore da seduto alla macchina', sets: '3', reps: '8–12', restSeconds: 120, alternatives: ['Rematore con manubrio su panca', 'Rematore al cavo basso con presa neutra'], ...datasetExercise('1350') },
-      { name: 'Stacco rumeno con manubri', sets: '3', reps: '8–12', restSeconds: 120, alternatives: ['Stacco rumeno con bilanciere', 'Hip thrust alla macchina o con bilanciere'], ...datasetExercise('1459') },
-      { name: 'Leg curl da seduto alla macchina', sets: '2', reps: '10–15', restSeconds: 90, restLabel: '60–90', alternatives: ['Leg curl sdraiato', 'Sliding leg curl con asciugamani o dischi'], ...datasetExercise('0599') },
-      { name: 'Crunch inverso', sets: '3', reps: '10–15', restSeconds: 60, alternatives: ['Dead bug', 'Hanging knee raise assistito'], ...datasetExercise('0872') },
+      { name: 'Hack squat alla slitta', sets: '3', reps: '8–12', restSeconds: 180, restLabel: '120–180', alternatives: alternatives(['Leg press', '0739', 'slitta', 'videos/0739-10Z2DXU.gif'], ['Goblet squat con manubrio', '1760', 'manubrio', 'videos/1760-yn8yg1r.gif']), ...datasetExercise('0743') },
+      { name: 'Chest press alla macchina', sets: '3', reps: '8–12', restSeconds: 120, alternatives: alternatives(['Panca piana con manubri', '0289', 'manubri', 'videos/0289-SpYC0Kp.gif'], ['Push-up inclinati', '0493', 'corpo libero', 'videos/0493-B1EVP9F.gif']), ...datasetExercise('0577') },
+      { name: 'Rematore da seduto alla macchina', sets: '3', reps: '8–12', restSeconds: 120, alternatives: alternatives(['Rematore con manubrio su panca', '0292', 'manubrio', 'videos/0292-C0MA9bC.gif'], ['Rematore al cavo basso con presa neutra', '0861', 'cavi', 'videos/0861-fUBheHs.gif']), ...datasetExercise('1350') },
+      { name: 'Stacco rumeno con manubri', sets: '3', reps: '8–12', restSeconds: 120, alternatives: alternatives(['Stacco rumeno con bilanciere', '0085', 'bilanciere', 'videos/0085-wQ2c4XD.gif'], ['Glute bridge con bilanciere', '1409', 'bilanciere', 'videos/1409-qKBpF7I.gif']), ...datasetExercise('1459') },
+      { name: 'Leg curl da seduto alla macchina', sets: '2', reps: '10–15', restSeconds: 90, restLabel: '60–90', alternatives: alternatives(['Leg curl sdraiato', '0586', 'macchina a leve', 'videos/0586-17lJ1kr.gif'], ['Leg curl in piedi a corpo libero', '0795', 'corpo libero', 'videos/0795-C5jncD2.gif']), ...datasetExercise('0599') },
+      { name: 'Crunch inverso', sets: '3', reps: '10–15', restSeconds: 60, alternatives: alternatives(['Dead bug', '0276', 'corpo libero', 'videos/0276-iny3m5y.gif'], ['Hanging knee raise assistito', '0011', 'assistito', 'videos/0011-03lzqwk.gif']), ...datasetExercise('0872') },
     ],
   },
   {
     id: 'b', name: 'Workout B', targetFocus: 'Full body', schedule: 'Mercoledì',
     exercises: [
-      { name: 'Iperestensioni su panca', sets: '3', reps: '10–15', restSeconds: 120, alternatives: ['Good morning con elastico', 'Hip thrust'], ...datasetExercise('0488') },
-      { name: 'Lat machine con maniglie parallele', sets: '3', reps: '8–12', restSeconds: 120, alternatives: ['Pulldown ai cavi con corda', 'Rematore alla macchina con presa neutra'], ...datasetExercise('0818') },
-      { name: 'Split squat con supporto', sets: '3', reps: '8–10 per gamba', restSeconds: 120, alternatives: ['Affondi indietro con manubri', 'Step-up basso'], perSide: true, ...datasetExercise('2368') },
-      { name: 'Shoulder press alla macchina con presa neutra', sets: '2', reps: '8–12', restSeconds: 120, alternatives: ['Shoulder press con manubri presa neutra', 'Landmine press a un braccio'], ...datasetExercise('0603') },
-      { name: 'Leg extension alla macchina', sets: '2', reps: '10–15', restSeconds: 90, restLabel: '60–90', alternatives: ['Sissy squat assistito', 'Spanish squat con elastico'], ...datasetExercise('0585') },
-      { name: 'Side plank', sets: '3', reps: '20–40 sec per lato', restSeconds: 60, alternatives: ['Pallof press', 'Suitcase carry leggero'], perSide: true, ...datasetExercise('0705') },
+      { name: 'Iperestensioni su panca', sets: '3', reps: '10–15', restSeconds: 120, alternatives: alternatives(['Good morning con bilanciere', '0044', 'bilanciere', 'videos/0044-XlZ4lAC.gif'], ['Glute bridge con bilanciere', '1409', 'bilanciere', 'videos/1409-qKBpF7I.gif']), ...datasetExercise('0488') },
+      { name: 'Lat machine con maniglie parallele', sets: '3', reps: '8–12', restSeconds: 120, alternatives: alternatives(['Pulldown con elastico presa stretta', '0974', 'elastico', 'videos/0974-DptumMx.gif'], ['Pulldown braccia tese con corda', '0237', 'cavi', 'videos/0237-DT14T9T.gif']), ...datasetExercise('0818') },
+      { name: 'Split squat con supporto', sets: '3', reps: '8–10 per gamba', restSeconds: 120, alternatives: alternatives(['Affondi indietro con manubri', '0381', 'manubri', 'videos/0381-SSsBDwB.gif'], ['Step-up con manubri', '0431', 'manubri', 'videos/0431-aXtJhlg.gif']), perSide: true, ...datasetExercise('2368') },
+      { name: 'Shoulder press alla macchina con presa neutra', sets: '2', reps: '8–12', restSeconds: 120, alternatives: alternatives(['Shoulder press seduto con manubri presa neutra', '0404', 'manubri', 'videos/0404-f1jf47L.gif'], ['Shoulder press ai cavi', '0219', 'cavi', 'videos/0219-PzQanLE.gif']), ...datasetExercise('0603') },
+      { name: 'Leg extension alla macchina', sets: '2', reps: '10–15', restSeconds: 90, restLabel: '60–90', alternatives: alternatives(['Sissy squat assistito', '1489', 'corpo libero', 'videos/1489-xdYPUtE.gif'], ['Squat con elastico', '1004', 'elastico', 'videos/1004-TUZLh71.gif']), ...datasetExercise('0585') },
+      { name: 'Side plank', sets: '3', reps: '20–40 sec per lato', restSeconds: 60, alternatives: alternatives(['Pallof press con elastico', '0979', 'elastico', 'videos/0979-9pa4H5m.gif'], ['Farmer walk con manubri', '2133', 'manubri', 'videos/2133-qPEzJjA.gif']), perSide: true, ...datasetExercise('0705') },
     ],
   },
   {
     id: 'c', name: 'Workout C', targetFocus: 'Full body', schedule: 'Venerdì',
     exercises: [
-      { name: 'Squat alla Smith machine', sets: '3', reps: '8–12', restSeconds: 180, restLabel: '120–180', alternatives: ['Leg press', 'Goblet box squat'], ...datasetExercise('0770') },
-      { name: 'Chest press inclinata alla macchina', sets: '3', reps: '8–12', restSeconds: 120, alternatives: ['Panca inclinata con manubri', 'Push-up inclinati'], ...datasetExercise('1299') },
-      { name: 'Rematore da seduto alla macchina', sets: '3', reps: '8–12', restSeconds: 120, alternatives: ['Rematore chest-supported con manubri', 'Rematore al cavo basso con presa neutra'], ...datasetExercise('1350') },
-      { name: 'Pull-through ai cavi con corda', sets: '3', reps: '10–15', restSeconds: 120, alternatives: ['Hip thrust', 'Glute bridge con manubrio'], ...datasetExercise('0196') },
-      { name: 'Lat machine con maniglie parallele', sets: '2', reps: '10–12', restSeconds: 90, alternatives: ['Pulldown ai cavi con corda', 'Rematore alla macchina con presa neutra'], ...datasetExercise('0818') },
-      { name: 'Crunch inverso', sets: '3', reps: '10–15', restSeconds: 60, alternatives: ['Dead bug', 'Hanging knee raise assistito'], ...datasetExercise('0872') },
+      { name: 'Squat alla Smith machine', sets: '3', reps: '8–12', restSeconds: 180, restLabel: '120–180', alternatives: alternatives(['Leg press', '0739', 'slitta', 'videos/0739-10Z2DXU.gif'], ['Goblet squat con manubrio', '1760', 'manubrio', 'videos/1760-yn8yg1r.gif']), ...datasetExercise('0770') },
+      { name: 'Chest press inclinata alla macchina', sets: '3', reps: '8–12', restSeconds: 120, alternatives: alternatives(['Panca inclinata con manubri', '0314', 'manubri', 'videos/0314-ns0SIbU.gif'], ['Push-up inclinati', '0493', 'corpo libero', 'videos/0493-B1EVP9F.gif']), ...datasetExercise('1299') },
+      { name: 'Rematore da seduto alla macchina', sets: '3', reps: '8–12', restSeconds: 120, alternatives: alternatives(['Rematore con manubrio su panca', '0292', 'manubrio', 'videos/0292-C0MA9bC.gif'], ['Rematore al cavo basso con presa neutra', '0861', 'cavi', 'videos/0861-fUBheHs.gif']), ...datasetExercise('1350') },
+      { name: 'Pull-through ai cavi con corda', sets: '3', reps: '10–15', restSeconds: 120, alternatives: alternatives(['Glute bridge con bilanciere', '1409', 'bilanciere', 'videos/1409-qKBpF7I.gif'], ['Glute bridge a terra', '3013', 'corpo libero', 'videos/3013-u0cNiij.gif']), ...datasetExercise('0196') },
+      { name: 'Lat machine con maniglie parallele', sets: '2', reps: '10–12', restSeconds: 90, alternatives: alternatives(['Pulldown con elastico presa stretta', '0974', 'elastico', 'videos/0974-DptumMx.gif'], ['Pulldown braccia tese con corda', '0237', 'cavi', 'videos/0237-DT14T9T.gif']), ...datasetExercise('0818') },
+      { name: 'Crunch inverso', sets: '3', reps: '10–15', restSeconds: 60, alternatives: alternatives(['Dead bug', '0276', 'corpo libero', 'videos/0276-iny3m5y.gif'], ['Hanging knee raise assistito', '0011', 'assistito', 'videos/0011-03lzqwk.gif']), ...datasetExercise('0872') },
     ],
   },
 ];
